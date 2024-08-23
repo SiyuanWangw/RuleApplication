@@ -1,0 +1,1153 @@
+[
+ {
+  "context": "Box 0 contains the bill and the flower, Box 1 contains nothing, Box 2 contains nothing, Box 3 contains the drink and the guitar, Box 4 contains the glass, Box 5 contains the car and the seed, Box 6 contains the milk. Put the branch into Box 3. Remove the car from Box 5. Remove the seed from Box 5. Move the branch and the drink from Box 3 to Box 4. Move the contents of Box 6 to Box 1. Move the contents of Box 1 to Box 3. Move the milk from Box 3 to Box 6. Move the contents of Box 6 to Box 0. Put the crown and the ring into Box 3. Remove the guitar and the ring from Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the crown"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the bill and the flower, Box 1 contains nothing, Box 2 contains nothing, Box 3 contains the drink and the guitar, Box 4 contains the glass, Box 5 contains the car and the seed, Box 6 contains the milk. Put the branch into Box 3. Remove the car from Box 5. Remove the seed from Box 5. Move the branch and the drink from Box 3 to Box 4. Move the contents of Box 6 to Box 1. Move the contents of Box 1 to Box 3. Move the milk from Box 3 to Box 6. Move the contents of Box 6 to Box 0. Put the crown and the ring into Box 3. Remove the guitar and the ring from Box 3. Put the train into Box 5.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the crown"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the brick and the ice and the plant, Box 1 contains the bone and the watch, Box 2 contains the beer and the creature and the glass, Box 3 contains the mirror, Box 4 contains nothing, Box 5 contains nothing, Box 6 contains the bus. Remove the brick from Box 0. Remove the beer and the creature from Box 2. Remove the ice from Box 0. Move the watch from Box 1 to Box 0. Put the phone into Box 5. Move the contents of Box 3 to Box 0. Remove the glass from Box 2. Put the string into Box 1. Move the contents of Box 1 to Box 5. Move the mirror and the plant from Box 0 to Box 2. Move the bone and the string from Box 5 to Box 6. Remove the watch from Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the glass and the letter and the medicine, Box 1 contains the boot and the brain and the mirror, Box 2 contains the cash and the egg, Box 3 contains the clock and the ice and the tea, Box 4 contains the jacket and the radio, Box 5 contains the document, Box 6 contains the newspaper and the paper and the picture. Remove the glass and the letter from Box 0. Remove the medicine from Box 0. Move the contents of Box 5 to Box 0. Remove the boot and the mirror from Box 1. Move the contents of Box 1 to Box 2. Move the ice and the tea from Box 3 to Box 0. Move the document and the ice from Box 0 to Box 5. Move the picture from Box 6 to Box 4. Remove the tea from Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the glass and the letter and the medicine, Box 1 contains the boot and the brain and the mirror, Box 2 contains the cash and the egg, Box 3 contains the clock and the ice and the tea, Box 4 contains the jacket and the radio, Box 5 contains the document, Box 6 contains the newspaper and the paper and the picture. Remove the glass and the letter from Box 0. Remove the medicine from Box 0. Move the contents of Box 5 to Box 0. Remove the boot and the mirror from Box 1. Move the contents of Box 1 to Box 2. Move the ice and the tea from Box 3 to Box 0. Move the document and the ice from Box 0 to Box 5. Move the picture from Box 6 to Box 4. Remove the tea from Box 0. Put the letter and the watch into Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the letter",
+   "the watch"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the glass and the letter and the medicine, Box 1 contains the boot and the brain and the mirror, Box 2 contains the cash and the egg, Box 3 contains the clock and the ice and the tea, Box 4 contains the jacket and the radio, Box 5 contains the document, Box 6 contains the newspaper and the paper and the picture. Remove the glass and the letter from Box 0. Remove the medicine from Box 0. Move the contents of Box 5 to Box 0. Remove the boot and the mirror from Box 1. Move the contents of Box 1 to Box 2. Move the ice and the tea from Box 3 to Box 0. Move the document and the ice from Box 0 to Box 5. Move the picture from Box 6 to Box 4. Remove the tea from Box 0. Put the letter and the watch into Box 0. Put the medicine and the television into Box 3.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the letter",
+   "the watch"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the glass and the letter and the medicine, Box 1 contains the boot and the brain and the mirror, Box 2 contains the cash and the egg, Box 3 contains the clock and the ice and the tea, Box 4 contains the jacket and the radio, Box 5 contains the document, Box 6 contains the newspaper and the paper and the picture. Remove the glass and the letter from Box 0. Remove the medicine from Box 0. Move the contents of Box 5 to Box 0. Remove the boot and the mirror from Box 1. Move the contents of Box 1 to Box 2. Move the ice and the tea from Box 3 to Box 0. Move the document and the ice from Box 0 to Box 5. Move the picture from Box 6 to Box 4. Remove the tea from Box 0. Put the letter and the watch into Box 0. Put the medicine and the television into Box 3. Put the cigarette into Box 5.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the letter",
+   "the watch"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains nothing, Box 2 contains the fig, Box 3 contains the engine, Box 4 contains the knife and the plane and the rose, Box 5 contains the cup and the pipe and the seed, Box 6 contains the boat. Put the card and the ticket into Box 0. Move the contents of Box 6 to Box 2. Remove the cup and the seed from Box 5. Move the contents of Box 5 to Box 6. Put the note into Box 0. Put the beer into Box 6. Move the contents of Box 6 to Box 3. Move the contents of Box 4 to Box 6. Move the knife and the rose from Box 6 to Box 4.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the plane"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains nothing, Box 2 contains the fig, Box 3 contains the engine, Box 4 contains the knife and the plane and the rose, Box 5 contains the cup and the pipe and the seed, Box 6 contains the boat. Put the card and the ticket into Box 0. Move the contents of Box 6 to Box 2. Remove the cup and the seed from Box 5. Move the contents of Box 5 to Box 6. Put the note into Box 0. Put the beer into Box 6. Move the contents of Box 6 to Box 3. Move the contents of Box 4 to Box 6. Move the knife and the rose from Box 6 to Box 4. Move the beer from Box 3 to Box 5.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the plane"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains nothing, Box 2 contains the fig, Box 3 contains the engine, Box 4 contains the knife and the plane and the rose, Box 5 contains the cup and the pipe and the seed, Box 6 contains the boat. Put the card and the ticket into Box 0. Move the contents of Box 6 to Box 2. Remove the cup and the seed from Box 5. Move the contents of Box 5 to Box 6. Put the note into Box 0. Put the beer into Box 6. Move the contents of Box 6 to Box 3. Move the contents of Box 4 to Box 6. Move the knife and the rose from Box 6 to Box 4. Move the beer from Box 3 to Box 5. Move the ticket from Box 0 to Box 3.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the plane"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the glass, Box 1 contains the branch and the watch, Box 2 contains nothing, Box 3 contains the plant and the sheet, Box 4 contains the bone and the card, Box 5 contains nothing, Box 6 contains the plate and the tie. Move the sheet from Box 3 to Box 5. Remove the plant from Box 3. Remove the sheet from Box 5. Move the tie from Box 6 to Box 1. Remove the glass from Box 0. Put the creature into Box 6. Move the plate from Box 6 to Box 2. Put the crown into Box 0. Move the contents of Box 0 to Box 6. Put the cheese into Box 5. Remove the crown from Box 6. Remove the creature from Box 6.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the drink, Box 1 contains nothing, Box 2 contains the cigarette, Box 3 contains the cheese, Box 4 contains the card and the ice and the magazine, Box 5 contains the crown and the drug and the meat, Box 6 contains the bone and the machine and the tea. Move the contents of Box 2 to Box 1. Remove the drink from Box 0. Put the hat into Box 0. Put the bottle into Box 0. Remove the card and the ice from Box 4. Remove the cigarette from Box 1. Put the rose and the shirt into Box 3. Move the contents of Box 4 to Box 2. Move the contents of Box 0 to Box 2. Move the bone from Box 6 to Box 0. Put the stone into Box 0. Remove the bone from Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the stone"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the television, Box 1 contains the document and the jacket, Box 2 contains the gift, Box 3 contains the cigarette and the computer, Box 4 contains the crown and the shoe and the string, Box 5 contains the block and the brain, Box 6 contains the dish and the rock and the seed. Remove the cigarette and the computer from Box 3. Remove the crown and the string from Box 4. Remove the brain from Box 5. Remove the dish and the rock from Box 6. Move the contents of Box 2 to Box 0. Remove the shoe from Box 4. Remove the block from Box 5. Move the contents of Box 6 to Box 5. Put the clock into Box 0. Move the jacket from Box 1 to Box 5. Move the contents of Box 5 to Box 1. Put the dress and the watch into Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the dress",
+   "the watch"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the car and the plant and the wire, Box 1 contains the glass and the tie, Box 2 contains the engine and the suit, Box 3 contains the flower, Box 4 contains the guitar and the plate, Box 5 contains the magazine, Box 6 contains the bowl. Move the plate from Box 4 to Box 6. Remove the guitar from Box 4. Remove the bowl and the plate from Box 6. Move the contents of Box 3 to Box 6. Remove the flower from Box 6. Remove the engine from Box 2. Remove the tie from Box 1. Put the egg and the medicine into Box 5. Remove the magazine and the medicine from Box 5. Remove the egg from Box 5. Put the guitar and the rose into Box 6. Remove the guitar and the rose from Box 6.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the branch and the cake and the map, Box 1 contains the block and the bomb and the tea, Box 2 contains nothing, Box 3 contains the meat and the shirt and the watch, Box 4 contains the ball and the fig, Box 5 contains the wire, Box 6 contains the dish and the engine and the pipe. Remove the branch and the cake and the map from Box 0. Move the ball from Box 4 to Box 0. Remove the meat and the watch from Box 3. Put the cheese and the letter into Box 2. Put the rock and the television into Box 0. Move the ball and the television from Box 0 to Box 5. Put the ring into Box 4. Put the bell into Box 0. Put the ticket into Box 2. Remove the letter and the ticket from Box 2. Move the contents of Box 2 to Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the bell",
+   "the cheese",
+   "the rock"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the branch and the cake and the map, Box 1 contains the block and the bomb and the tea, Box 2 contains nothing, Box 3 contains the meat and the shirt and the watch, Box 4 contains the ball and the fig, Box 5 contains the wire, Box 6 contains the dish and the engine and the pipe. Remove the branch and the cake and the map from Box 0. Move the ball from Box 4 to Box 0. Remove the meat and the watch from Box 3. Put the cheese and the letter into Box 2. Put the rock and the television into Box 0. Move the ball and the television from Box 0 to Box 5. Put the ring into Box 4. Put the bell into Box 0. Put the ticket into Box 2. Remove the letter and the ticket from Box 2. Move the contents of Box 2 to Box 0. Move the block from Box 1 to Box 4.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the bell",
+   "the cheese",
+   "the rock"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the book and the magazine, Box 1 contains the disk, Box 2 contains the hat, Box 3 contains nothing, Box 4 contains the car and the wheel, Box 5 contains the cake, Box 6 contains the painting and the seed. Put the boot into Box 5. Remove the boot from Box 5. Move the contents of Box 1 to Box 5. Move the car from Box 4 to Box 2. Remove the car from Box 2. Put the clock into Box 1. Remove the cake from Box 5. Remove the disk from Box 5. Remove the wheel from Box 4. Move the contents of Box 2 to Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the hat"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the book and the magazine, Box 1 contains the disk, Box 2 contains the hat, Box 3 contains nothing, Box 4 contains the car and the wheel, Box 5 contains the cake, Box 6 contains the painting and the seed. Put the boot into Box 5. Remove the boot from Box 5. Move the contents of Box 1 to Box 5. Move the car from Box 4 to Box 2. Remove the car from Box 2. Put the clock into Box 1. Remove the cake from Box 5. Remove the disk from Box 5. Remove the wheel from Box 4. Move the contents of Box 2 to Box 5. Remove the magazine from Box 0.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the hat"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the book and the magazine, Box 1 contains the disk, Box 2 contains the hat, Box 3 contains nothing, Box 4 contains the car and the wheel, Box 5 contains the cake, Box 6 contains the painting and the seed. Put the boot into Box 5. Remove the boot from Box 5. Move the contents of Box 1 to Box 5. Move the car from Box 4 to Box 2. Remove the car from Box 2. Put the clock into Box 1. Remove the cake from Box 5. Remove the disk from Box 5. Remove the wheel from Box 4. Move the contents of Box 2 to Box 5. Remove the magazine from Box 0. Remove the book from Box 0.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the hat"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the ball and the ring and the suit, Box 2 contains the document and the game, Box 3 contains the brain and the guitar, Box 4 contains the computer and the letter, Box 5 contains the dish and the fan and the painting, Box 6 contains the book and the rock. Put the bone into Box 3. Remove the book and the rock from Box 6. Remove the fan from Box 5. Remove the painting from Box 5. Move the ball from Box 1 to Box 6. Remove the dish from Box 5. Remove the ball from Box 6. Move the contents of Box 4 to Box 6. Move the computer from Box 6 to Box 0. Move the bone and the brain from Box 3 to Box 5. Put the creature into Box 6.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the creature",
+   "the letter"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the ticket, Box 1 contains the pot, Box 2 contains the apple, Box 3 contains the bottle and the television, Box 4 contains the fan and the mirror and the sheet, Box 5 contains the chemical and the shirt and the tissue, Box 6 contains the machine and the shoe. Remove the bottle and the television from Box 3. Remove the pot from Box 1. Move the chemical and the shirt from Box 5 to Box 2. Move the contents of Box 0 to Box 1. Move the sheet from Box 4 to Box 1. Put the cream into Box 1. Remove the sheet and the ticket from Box 1. Put the sheet into Box 3. Put the coffee and the ring into Box 5. Remove the shoe from Box 6. Put the cigarette into Box 1. Move the contents of Box 4 to Box 3.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the cigarette",
+   "the cream"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains nothing, Box 2 contains the boat, Box 3 contains the rock, Box 4 contains the dish and the magazine and the mirror, Box 5 contains nothing, Box 6 contains the cake and the machine. Remove the dish from Box 4. Remove the mirror from Box 4. Put the apple into Box 0. Move the contents of Box 0 to Box 4. Remove the cake and the machine from Box 6. Put the book into Box 4. Put the block into Box 0. Remove the block from Box 0. Remove the magazine from Box 4. Move the contents of Box 3 to Box 2. Put the cash into Box 2. Move the apple from Box 4 to Box 6.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "the book"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the fish and the guitar and the train, Box 1 contains the bread and the tie, Box 2 contains the string, Box 3 contains the tape, Box 4 contains the bone, Box 5 contains nothing, Box 6 contains the boot and the coffee and the newspaper. Remove the tie from Box 1. Remove the bread from Box 1. Remove the tape from Box 3. Move the contents of Box 2 to Box 1. Remove the boot from Box 6. Move the contents of Box 4 to Box 2. Remove the string from Box 1. Put the file into Box 2. Put the cup and the drink into Box 1. Put the mirror into Box 2. Remove the drink from Box 1.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the cup"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the fish and the guitar and the train, Box 1 contains the bread and the tie, Box 2 contains the string, Box 3 contains the tape, Box 4 contains the bone, Box 5 contains nothing, Box 6 contains the boot and the coffee and the newspaper. Remove the tie from Box 1. Remove the bread from Box 1. Remove the tape from Box 3. Move the contents of Box 2 to Box 1. Remove the boot from Box 6. Move the contents of Box 4 to Box 2. Remove the string from Box 1. Put the file into Box 2. Put the cup and the drink into Box 1. Put the mirror into Box 2. Remove the drink from Box 1. Remove the mirror from Box 2.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the cup"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the file and the phone, Box 1 contains the card and the game and the guitar, Box 2 contains the book and the bread, Box 3 contains nothing, Box 4 contains nothing, Box 5 contains the gift and the letter, Box 6 contains the branch and the cheese. Move the contents of Box 6 to Box 3. Move the bread from Box 2 to Box 4. Remove the letter from Box 5. Remove the file and the phone from Box 0. Move the contents of Box 2 to Box 4. Remove the game from Box 1. Move the bread from Box 4 to Box 0. Remove the cheese from Box 3. Put the jacket and the string into Box 4. Move the book from Box 4 to Box 0. Move the contents of Box 3 to Box 5. Remove the string from Box 4.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "the jacket"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the file and the hat and the plane, Box 1 contains the brain and the drug and the plant, Box 2 contains the cream and the machine and the tea, Box 3 contains the cup, Box 4 contains the mirror and the pipe, Box 5 contains the letter, Box 6 contains the bag and the fish. Move the contents of Box 5 to Box 3. Put the ball into Box 3. Remove the ball and the cup and the letter from Box 3. Remove the mirror from Box 4. Move the contents of Box 0 to Box 3. Put the branch into Box 6. Remove the file and the plane from Box 3. Remove the bag and the fish from Box 6. Move the brain and the drug from Box 1 to Box 4. Remove the hat from Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the file and the hat and the plane, Box 1 contains the brain and the drug and the plant, Box 2 contains the cream and the machine and the tea, Box 3 contains the cup, Box 4 contains the mirror and the pipe, Box 5 contains the letter, Box 6 contains the bag and the fish. Move the contents of Box 5 to Box 3. Put the ball into Box 3. Remove the ball and the cup and the letter from Box 3. Remove the mirror from Box 4. Move the contents of Box 0 to Box 3. Put the branch into Box 6. Remove the file and the plane from Box 3. Remove the bag and the fish from Box 6. Move the brain and the drug from Box 1 to Box 4. Remove the hat from Box 3. Remove the plant from Box 1. Move the drug from Box 4 to Box 5.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains nothing, Box 2 contains nothing, Box 3 contains the cash, Box 4 contains the radio and the television and the tie, Box 5 contains the bill and the cheese, Box 6 contains nothing. Remove the bill from Box 5. Remove the cash from Box 3. Put the dress into Box 5. Put the map into Box 2. Put the car into Box 6. Move the contents of Box 5 to Box 3. Move the contents of Box 6 to Box 3. Move the contents of Box 2 to Box 0. Remove the cheese from Box 3. Move the radio from Box 4 to Box 3. Put the cross into Box 6. Move the radio from Box 3 to Box 6.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the car",
+   "the dress"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the ticket and the wheel, Box 1 contains the bomb and the bottle and the newspaper, Box 2 contains the jacket and the map, Box 3 contains nothing, Box 4 contains the painting, Box 5 contains the radio, Box 6 contains the beer and the plate. Remove the painting from Box 4. Move the bomb and the bottle from Box 1 to Box 5. Remove the newspaper from Box 1. Move the wheel from Box 0 to Box 6. Move the contents of Box 6 to Box 1. Remove the bomb and the bottle from Box 5. Put the apple into Box 6. Move the jacket from Box 2 to Box 6. Move the contents of Box 5 to Box 6. Remove the apple from Box 6.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the jacket",
+   "the radio"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the ticket and the wheel, Box 1 contains the bomb and the bottle and the newspaper, Box 2 contains the jacket and the map, Box 3 contains nothing, Box 4 contains the painting, Box 5 contains the radio, Box 6 contains the beer and the plate. Remove the painting from Box 4. Move the bomb and the bottle from Box 1 to Box 5. Remove the newspaper from Box 1. Move the wheel from Box 0 to Box 6. Move the contents of Box 6 to Box 1. Remove the bomb and the bottle from Box 5. Put the apple into Box 6. Move the jacket from Box 2 to Box 6. Move the contents of Box 5 to Box 6. Remove the apple from Box 6. Move the plate from Box 1 to Box 4.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the jacket",
+   "the radio"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the ticket and the wheel, Box 1 contains the bomb and the bottle and the newspaper, Box 2 contains the jacket and the map, Box 3 contains nothing, Box 4 contains the painting, Box 5 contains the radio, Box 6 contains the beer and the plate. Remove the painting from Box 4. Move the bomb and the bottle from Box 1 to Box 5. Remove the newspaper from Box 1. Move the wheel from Box 0 to Box 6. Move the contents of Box 6 to Box 1. Remove the bomb and the bottle from Box 5. Put the apple into Box 6. Move the jacket from Box 2 to Box 6. Move the contents of Box 5 to Box 6. Remove the apple from Box 6. Move the plate from Box 1 to Box 4. Move the contents of Box 0 to Box 3.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the jacket",
+   "the radio"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the jacket, Box 2 contains the painting, Box 3 contains the dish, Box 4 contains the mirror, Box 5 contains the apple and the branch and the fan, Box 6 contains the bowl. Move the branch from Box 5 to Box 3. Move the contents of Box 1 to Box 6. Remove the mirror from Box 4. Remove the apple from Box 5. Move the contents of Box 5 to Box 1. Move the dish from Box 3 to Box 1. Put the train into Box 1. Move the contents of Box 3 to Box 4. Remove the jacket from Box 6. Move the contents of Box 6 to Box 2. Move the dish from Box 1 to Box 2. Move the train from Box 1 to Box 3.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the fan"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the bus and the fish, Box 1 contains the book and the egg and the pot, Box 2 contains the bowl and the hat, Box 3 contains the tissue, Box 4 contains the bread and the game, Box 5 contains the brain and the fan and the stone, Box 6 contains the glass. Move the game from Box 4 to Box 3. Remove the game from Box 3. Put the rock into Box 2. Move the fish from Box 0 to Box 3. Remove the glass from Box 6. Move the contents of Box 4 to Box 3. Put the glass and the key into Box 6. Remove the egg from Box 1. Remove the hat and the rock from Box 2. Move the pot from Box 1 to Box 2. Move the tissue from Box 3 to Box 1. Remove the fish from Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the bread"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the document and the leaf and the ring, Box 1 contains the drug and the phone, Box 2 contains the apple and the meat and the ticket, Box 3 contains the bread, Box 4 contains the cake and the fan, Box 5 contains the branch and the plate, Box 6 contains the knife and the medicine and the picture. Move the contents of Box 3 to Box 4. Move the apple from Box 2 to Box 1. Move the cake and the fan from Box 4 to Box 3. Put the machine into Box 4. Remove the cake and the fan from Box 3. Move the knife from Box 6 to Box 2. Remove the meat from Box 2. Move the knife from Box 2 to Box 4. Move the bread and the machine from Box 4 to Box 2. Remove the branch and the plate from Box 5. Remove the knife from Box 4. Remove the medicine and the picture from Box 6.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the coffee, Box 1 contains the rock, Box 2 contains the plane and the rose, Box 3 contains the coat and the drug and the pipe, Box 4 contains the wire, Box 5 contains nothing, Box 6 contains the bell. Put the fan and the knife into Box 6. Move the fan from Box 6 to Box 4. Remove the drug and the pipe from Box 3. Put the painting into Box 3. Move the painting from Box 3 to Box 6. Move the contents of Box 0 to Box 3. Put the computer and the meat into Box 1. Remove the bell from Box 6. Remove the knife from Box 6. Move the contents of Box 6 to Box 0. Move the computer and the meat from Box 1 to Box 5.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the card and the jacket and the painting, Box 1 contains the beer, Box 2 contains the cross, Box 3 contains the clock, Box 4 contains the cash and the sheet and the wire, Box 5 contains the ice and the leaf and the ring, Box 6 contains the mirror. Remove the beer from Box 1. Remove the mirror from Box 6. Put the bowl and the picture into Box 1. Put the coat into Box 3. Put the flower into Box 1. Move the flower and the picture from Box 1 to Box 2. Move the contents of Box 3 to Box 1. Remove the bowl from Box 1.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the clock",
+   "the coat"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the card and the jacket and the painting, Box 1 contains the beer, Box 2 contains the cross, Box 3 contains the clock, Box 4 contains the cash and the sheet and the wire, Box 5 contains the ice and the leaf and the ring, Box 6 contains the mirror. Remove the beer from Box 1. Remove the mirror from Box 6. Put the bowl and the picture into Box 1. Put the coat into Box 3. Put the flower into Box 1. Move the flower and the picture from Box 1 to Box 2. Move the contents of Box 3 to Box 1. Remove the bowl from Box 1. Move the ice and the ring from Box 5 to Box 3.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the clock",
+   "the coat"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the card and the jacket and the painting, Box 1 contains the beer, Box 2 contains the cross, Box 3 contains the clock, Box 4 contains the cash and the sheet and the wire, Box 5 contains the ice and the leaf and the ring, Box 6 contains the mirror. Remove the beer from Box 1. Remove the mirror from Box 6. Put the bowl and the picture into Box 1. Put the coat into Box 3. Put the flower into Box 1. Move the flower and the picture from Box 1 to Box 2. Move the contents of Box 3 to Box 1. Remove the bowl from Box 1. Move the ice and the ring from Box 5 to Box 3. Put the bag and the fig into Box 5.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the clock",
+   "the coat"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the card and the jacket and the painting, Box 1 contains the beer, Box 2 contains the cross, Box 3 contains the clock, Box 4 contains the cash and the sheet and the wire, Box 5 contains the ice and the leaf and the ring, Box 6 contains the mirror. Remove the beer from Box 1. Remove the mirror from Box 6. Put the bowl and the picture into Box 1. Put the coat into Box 3. Put the flower into Box 1. Move the flower and the picture from Box 1 to Box 2. Move the contents of Box 3 to Box 1. Remove the bowl from Box 1. Move the ice and the ring from Box 5 to Box 3. Put the bag and the fig into Box 5. Remove the jacket from Box 0.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the clock",
+   "the coat"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the crown and the tissue, Box 1 contains the book and the branch and the creature, Box 2 contains the cigarette and the glass and the plane, Box 3 contains nothing, Box 4 contains the bomb and the clock and the mirror, Box 5 contains the cash and the sheet, Box 6 contains nothing. Move the bomb from Box 4 to Box 0. Remove the crown from Box 0. Put the dress and the drug into Box 3. Remove the cigarette and the plane from Box 2. Move the dress from Box 3 to Box 6. Remove the tissue from Box 0. Move the contents of Box 2 to Box 0. Put the game into Box 5. Move the contents of Box 5 to Box 2. Remove the glass from Box 0. Move the game and the sheet from Box 2 to Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the bomb",
+   "the game",
+   "the sheet"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the crown and the tissue, Box 1 contains the book and the branch and the creature, Box 2 contains the cigarette and the glass and the plane, Box 3 contains nothing, Box 4 contains the bomb and the clock and the mirror, Box 5 contains the cash and the sheet, Box 6 contains nothing. Move the bomb from Box 4 to Box 0. Remove the crown from Box 0. Put the dress and the drug into Box 3. Remove the cigarette and the plane from Box 2. Move the dress from Box 3 to Box 6. Remove the tissue from Box 0. Move the contents of Box 2 to Box 0. Put the game into Box 5. Move the contents of Box 5 to Box 2. Remove the glass from Box 0. Move the game and the sheet from Box 2 to Box 0. Put the document into Box 3.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the bomb",
+   "the game",
+   "the sheet"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the disk and the gift and the rock, Box 1 contains nothing, Box 2 contains the brick, Box 3 contains the bowl and the fan and the hat, Box 4 contains the creature, Box 5 contains the block, Box 6 contains the fish and the painting and the plane. Put the cup and the phone into Box 2. Remove the bowl and the fan from Box 3. Move the cup and the phone from Box 2 to Box 5. Remove the block and the cup and the phone from Box 5. Move the contents of Box 2 to Box 4. Move the contents of Box 4 to Box 5. Remove the disk and the gift from Box 0. Remove the fish from Box 6. Remove the brick and the creature from Box 5. Put the brain into Box 5. Move the contents of Box 5 to Box 3.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the note and the rose, Box 1 contains the cheese and the television and the tie, Box 2 contains the brain and the fig and the picture, Box 3 contains the bag and the brick and the coffee, Box 4 contains the apple and the engine and the seed, Box 5 contains nothing, Box 6 contains nothing. Remove the cheese and the television from Box 1. Remove the note from Box 0. Put the card and the plane into Box 6. Move the card from Box 6 to Box 1. Remove the tie from Box 1. Put the chemical into Box 1. Remove the brain and the fig from Box 2. Remove the plane from Box 6. Put the ball and the shoe into Box 5. Move the contents of Box 0 to Box 1. Remove the chemical from Box 1. Move the seed from Box 4 to Box 2.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the card",
+   "the rose"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the knife, Box 1 contains nothing, Box 2 contains the bell and the cake and the cigarette, Box 3 contains the branch and the shirt and the watch, Box 4 contains the boat and the bottle and the cross, Box 5 contains the phone, Box 6 contains the ball and the document and the wire. Remove the phone from Box 5. Remove the cross from Box 4. Move the cake from Box 2 to Box 1. Remove the boat from Box 4. Move the contents of Box 3 to Box 5. Move the contents of Box 4 to Box 0. Remove the bell from Box 2. Remove the shirt and the watch from Box 5. Move the contents of Box 0 to Box 5. Move the branch and the knife from Box 5 to Box 0. Move the contents of Box 5 to Box 4.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the knife, Box 1 contains nothing, Box 2 contains the bell and the cake and the cigarette, Box 3 contains the branch and the shirt and the watch, Box 4 contains the boat and the bottle and the cross, Box 5 contains the phone, Box 6 contains the ball and the document and the wire. Remove the phone from Box 5. Remove the cross from Box 4. Move the cake from Box 2 to Box 1. Remove the boat from Box 4. Move the contents of Box 3 to Box 5. Move the contents of Box 4 to Box 0. Remove the bell from Box 2. Remove the shirt and the watch from Box 5. Move the contents of Box 0 to Box 5. Move the branch and the knife from Box 5 to Box 0. Move the contents of Box 5 to Box 4. Remove the wire from Box 6.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the dress and the shoe, Box 1 contains nothing, Box 2 contains the plant and the rock and the watch, Box 3 contains the block and the machine and the plate, Box 4 contains the bell and the fig and the sheet, Box 5 contains the drink and the flower, Box 6 contains nothing. Remove the shoe from Box 0. Move the contents of Box 5 to Box 0. Remove the dress and the drink and the flower from Box 0. Put the book into Box 0. Remove the fig and the sheet from Box 4. Move the contents of Box 4 to Box 1. Remove the plant and the rock from Box 2. Remove the book from Box 0. Move the block from Box 3 to Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the block"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the dress and the shoe, Box 1 contains nothing, Box 2 contains the plant and the rock and the watch, Box 3 contains the block and the machine and the plate, Box 4 contains the bell and the fig and the sheet, Box 5 contains the drink and the flower, Box 6 contains nothing. Remove the shoe from Box 0. Move the contents of Box 5 to Box 0. Remove the dress and the drink and the flower from Box 0. Put the book into Box 0. Remove the fig and the sheet from Box 4. Move the contents of Box 4 to Box 1. Remove the plant and the rock from Box 2. Remove the book from Box 0. Move the block from Box 3 to Box 0. Remove the block from Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the dress and the shoe, Box 1 contains nothing, Box 2 contains the plant and the rock and the watch, Box 3 contains the block and the machine and the plate, Box 4 contains the bell and the fig and the sheet, Box 5 contains the drink and the flower, Box 6 contains nothing. Remove the shoe from Box 0. Move the contents of Box 5 to Box 0. Remove the dress and the drink and the flower from Box 0. Put the book into Box 0. Remove the fig and the sheet from Box 4. Move the contents of Box 4 to Box 1. Remove the plant and the rock from Box 2. Remove the book from Box 0. Move the block from Box 3 to Box 0. Remove the block from Box 0. Put the flower into Box 2.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the chemical and the mirror, Box 2 contains the gift, Box 3 contains the cash and the coat, Box 4 contains the magazine and the shell, Box 5 contains nothing, Box 6 contains the sheet and the tape. Move the cash from Box 3 to Box 2. Remove the cash and the gift from Box 2. Remove the sheet from Box 6. Move the contents of Box 3 to Box 6. Put the bone and the gift and the tie into Box 5. Move the chemical from Box 1 to Box 6. Remove the chemical and the coat from Box 6. Remove the tape from Box 6. Move the contents of Box 1 to Box 6.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the mirror"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the chemical and the mirror, Box 2 contains the gift, Box 3 contains the cash and the coat, Box 4 contains the magazine and the shell, Box 5 contains nothing, Box 6 contains the sheet and the tape. Move the cash from Box 3 to Box 2. Remove the cash and the gift from Box 2. Remove the sheet from Box 6. Move the contents of Box 3 to Box 6. Put the bone and the gift and the tie into Box 5. Move the chemical from Box 1 to Box 6. Remove the chemical and the coat from Box 6. Remove the tape from Box 6. Move the contents of Box 1 to Box 6. Move the contents of Box 6 to Box 2.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the chemical and the mirror, Box 2 contains the gift, Box 3 contains the cash and the coat, Box 4 contains the magazine and the shell, Box 5 contains nothing, Box 6 contains the sheet and the tape. Move the cash from Box 3 to Box 2. Remove the cash and the gift from Box 2. Remove the sheet from Box 6. Move the contents of Box 3 to Box 6. Put the bone and the gift and the tie into Box 5. Move the chemical from Box 1 to Box 6. Remove the chemical and the coat from Box 6. Remove the tape from Box 6. Move the contents of Box 1 to Box 6. Move the contents of Box 6 to Box 2. Remove the mirror from Box 2.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the chemical and the mirror, Box 2 contains the gift, Box 3 contains the cash and the coat, Box 4 contains the magazine and the shell, Box 5 contains nothing, Box 6 contains the sheet and the tape. Move the cash from Box 3 to Box 2. Remove the cash and the gift from Box 2. Remove the sheet from Box 6. Move the contents of Box 3 to Box 6. Put the bone and the gift and the tie into Box 5. Move the chemical from Box 1 to Box 6. Remove the chemical and the coat from Box 6. Remove the tape from Box 6. Move the contents of Box 1 to Box 6. Move the contents of Box 6 to Box 2. Remove the mirror from Box 2. Put the boot and the plant into Box 1.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the coffee, Box 1 contains the drug and the engine and the letter, Box 2 contains the boat and the car and the card, Box 3 contains nothing, Box 4 contains the gift and the rose and the string, Box 5 contains the plant and the television, Box 6 contains the fig and the key. Remove the engine and the letter from Box 1. Move the key from Box 6 to Box 1. Remove the drug from Box 1. Move the plant from Box 5 to Box 1. Remove the gift and the rose and the string from Box 4. Move the contents of Box 6 to Box 0. Remove the plant from Box 1. Put the watch into Box 5. Move the contents of Box 1 to Box 3. Move the contents of Box 3 to Box 6. Put the coat and the cup into Box 6. Move the watch from Box 5 to Box 3.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the bag and the chemical, Box 1 contains the ticket, Box 2 contains the bus and the guitar, Box 3 contains the coat and the tissue, Box 4 contains the ball and the bill, Box 5 contains the leaf and the tea, Box 6 contains the bottle and the medicine. Move the coat from Box 3 to Box 1. Put the ice into Box 3. Move the bus from Box 2 to Box 4. Move the contents of Box 2 to Box 3. Remove the ball from Box 4. Remove the bag and the chemical from Box 0. Remove the ice and the tissue from Box 3. Remove the coat and the ticket from Box 1. Remove the bus from Box 4. Put the map and the television into Box 0. Put the camera and the disk into Box 3. Remove the disk and the guitar from Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the camera"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the milk and the stone, Box 1 contains the bill and the game, Box 2 contains nothing, Box 3 contains nothing, Box 4 contains the dish and the letter, Box 5 contains the drug and the tea, Box 6 contains the pipe. Remove the pipe from Box 6. Put the suit into Box 1. Move the milk from Box 0 to Box 3. Put the wheel into Box 4. Put the bag into Box 3. Move the contents of Box 0 to Box 3. Remove the dish and the letter and the wheel from Box 4. Put the fish into Box 2. Remove the milk and the stone from Box 3. Remove the bag from Box 3. Move the tea from Box 5 to Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the tea"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the cream, Box 1 contains the bread and the clock and the creature, Box 2 contains the brain and the game and the train, Box 3 contains the book and the meat and the phone, Box 4 contains the drug and the tea, Box 5 contains nothing, Box 6 contains nothing. Remove the brain from Box 2. Remove the game from Box 2. Move the drug from Box 4 to Box 2. Move the creature from Box 1 to Box 6. Remove the tea from Box 4. Move the contents of Box 0 to Box 4. Remove the cream from Box 4. Put the cream into Box 1. Put the coffee and the paper into Box 5. Move the clock from Box 1 to Box 4. Remove the clock from Box 4.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the cream, Box 1 contains the bread and the clock and the creature, Box 2 contains the brain and the game and the train, Box 3 contains the book and the meat and the phone, Box 4 contains the drug and the tea, Box 5 contains nothing, Box 6 contains nothing. Remove the brain from Box 2. Remove the game from Box 2. Move the drug from Box 4 to Box 2. Move the creature from Box 1 to Box 6. Remove the tea from Box 4. Move the contents of Box 0 to Box 4. Remove the cream from Box 4. Put the cream into Box 1. Put the coffee and the paper into Box 5. Move the clock from Box 1 to Box 4. Remove the clock from Box 4. Remove the meat from Box 3.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the apple and the fig, Box 1 contains the beer, Box 2 contains nothing, Box 3 contains the coat and the computer and the medicine, Box 4 contains the train, Box 5 contains the suit, Box 6 contains the radio and the rose. Put the car into Box 6. Remove the train from Box 4. Put the ring into Box 4. Move the radio from Box 6 to Box 0. Put the paper into Box 5. Remove the car from Box 6. Move the contents of Box 6 to Box 5. Remove the suit from Box 5. Remove the paper and the rose from Box 5. Move the coat and the computer from Box 3 to Box 5. Move the coat from Box 5 to Box 3.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the computer"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the apple and the fig, Box 1 contains the beer, Box 2 contains nothing, Box 3 contains the coat and the computer and the medicine, Box 4 contains the train, Box 5 contains the suit, Box 6 contains the radio and the rose. Put the car into Box 6. Remove the train from Box 4. Put the ring into Box 4. Move the radio from Box 6 to Box 0. Put the paper into Box 5. Remove the car from Box 6. Move the contents of Box 6 to Box 5. Remove the suit from Box 5. Remove the paper and the rose from Box 5. Move the coat and the computer from Box 3 to Box 5. Move the coat from Box 5 to Box 3. Remove the apple from Box 0.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the computer"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the bell and the jacket, Box 1 contains the suit and the wire, Box 2 contains the dish and the train, Box 3 contains nothing, Box 4 contains the cake and the disk and the string, Box 5 contains the rock and the shoe, Box 6 contains the bowl and the egg and the ring. Move the jacket from Box 0 to Box 1. Remove the dish and the train from Box 2. Put the pipe and the train into Box 3. Move the pipe from Box 3 to Box 0. Remove the bell from Box 0. Put the camera and the pot into Box 0. Remove the bowl and the egg from Box 6. Remove the pipe from Box 0. Move the contents of Box 3 to Box 0. Put the wheel into Box 5.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the camera",
+   "the pot",
+   "the train"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the bell and the jacket, Box 1 contains the suit and the wire, Box 2 contains the dish and the train, Box 3 contains nothing, Box 4 contains the cake and the disk and the string, Box 5 contains the rock and the shoe, Box 6 contains the bowl and the egg and the ring. Move the jacket from Box 0 to Box 1. Remove the dish and the train from Box 2. Put the pipe and the train into Box 3. Move the pipe from Box 3 to Box 0. Remove the bell from Box 0. Put the camera and the pot into Box 0. Remove the bowl and the egg from Box 6. Remove the pipe from Box 0. Move the contents of Box 3 to Box 0. Put the wheel into Box 5. Move the rock from Box 5 to Box 6. Move the jacket and the suit from Box 1 to Box 3.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the camera",
+   "the pot",
+   "the train"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the book, Box 1 contains the engine and the wheel, Box 2 contains the apple and the dish and the tape, Box 3 contains the chemical and the fan and the suit, Box 4 contains nothing, Box 5 contains nothing, Box 6 contains the sheet. Move the wheel from Box 1 to Box 6. Remove the sheet from Box 6. Remove the tape from Box 2. Remove the fan from Box 3. Remove the engine from Box 1. Move the dish from Box 2 to Box 6. Move the contents of Box 6 to Box 1. Remove the wheel from Box 1. Remove the chemical and the suit from Box 3. Put the hat into Box 1. Move the hat from Box 1 to Box 0.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the dish"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the block and the pipe, Box 1 contains the cash and the engine and the medicine, Box 2 contains nothing, Box 3 contains the phone and the plate, Box 4 contains nothing, Box 5 contains the book and the cigarette and the machine, Box 6 contains the letter. Move the contents of Box 6 to Box 3. Move the contents of Box 0 to Box 6. Put the drink into Box 6. Put the car into Box 4. Move the book and the machine from Box 5 to Box 4. Remove the block and the drink from Box 6. Remove the cigarette from Box 5. Move the letter and the plate from Box 3 to Box 6. Remove the letter and the plate from Box 6.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the pipe"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the block and the pipe, Box 1 contains the cash and the engine and the medicine, Box 2 contains nothing, Box 3 contains the phone and the plate, Box 4 contains nothing, Box 5 contains the book and the cigarette and the machine, Box 6 contains the letter. Move the contents of Box 6 to Box 3. Move the contents of Box 0 to Box 6. Put the drink into Box 6. Put the car into Box 4. Move the book and the machine from Box 5 to Box 4. Remove the block and the drink from Box 6. Remove the cigarette from Box 5. Move the letter and the plate from Box 3 to Box 6. Remove the letter and the plate from Box 6. Move the contents of Box 4 to Box 0.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the pipe"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the block and the pipe, Box 1 contains the cash and the engine and the medicine, Box 2 contains nothing, Box 3 contains the phone and the plate, Box 4 contains nothing, Box 5 contains the book and the cigarette and the machine, Box 6 contains the letter. Move the contents of Box 6 to Box 3. Move the contents of Box 0 to Box 6. Put the drink into Box 6. Put the car into Box 4. Move the book and the machine from Box 5 to Box 4. Remove the block and the drink from Box 6. Remove the cigarette from Box 5. Move the letter and the plate from Box 3 to Box 6. Remove the letter and the plate from Box 6. Move the contents of Box 4 to Box 0. Remove the machine from Box 0.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the pipe"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the block and the pipe, Box 1 contains the cash and the engine and the medicine, Box 2 contains nothing, Box 3 contains the phone and the plate, Box 4 contains nothing, Box 5 contains the book and the cigarette and the machine, Box 6 contains the letter. Move the contents of Box 6 to Box 3. Move the contents of Box 0 to Box 6. Put the drink into Box 6. Put the car into Box 4. Move the book and the machine from Box 5 to Box 4. Remove the block and the drink from Box 6. Remove the cigarette from Box 5. Move the letter and the plate from Box 3 to Box 6. Remove the letter and the plate from Box 6. Move the contents of Box 4 to Box 0. Remove the machine from Box 0. Move the contents of Box 3 to Box 2.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the pipe"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the shoe, Box 1 contains the bell and the block and the brick, Box 2 contains nothing, Box 3 contains the paper, Box 4 contains the fig and the stone, Box 5 contains the engine and the flower, Box 6 contains the clock. Put the shell into Box 2. Remove the clock from Box 6. Put the medicine into Box 2. Put the file into Box 5. Remove the medicine and the shell from Box 2. Remove the block from Box 1. Move the brick from Box 1 to Box 2. Remove the brick from Box 2. Remove the fig from Box 4. Move the contents of Box 0 to Box 2. Move the contents of Box 2 to Box 3.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the tea, Box 1 contains the shoe and the string, Box 2 contains the bread and the file, Box 3 contains the bill and the coffee, Box 4 contains the leaf and the rock and the wheel, Box 5 contains the bowl and the cream and the document, Box 6 contains nothing. Remove the rock and the wheel from Box 4. Move the contents of Box 1 to Box 0. Remove the shoe and the string from Box 0. Remove the bowl and the document from Box 5. Remove the leaf from Box 4. Remove the tea from Box 0. Put the fan into Box 0. Move the coffee from Box 3 to Box 5. Move the contents of Box 3 to Box 0. Remove the coffee and the cream from Box 5. Remove the fan from Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the bill"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the tea, Box 1 contains the shoe and the string, Box 2 contains the bread and the file, Box 3 contains the bill and the coffee, Box 4 contains the leaf and the rock and the wheel, Box 5 contains the bowl and the cream and the document, Box 6 contains nothing. Remove the rock and the wheel from Box 4. Move the contents of Box 1 to Box 0. Remove the shoe and the string from Box 0. Remove the bowl and the document from Box 5. Remove the leaf from Box 4. Remove the tea from Box 0. Put the fan into Box 0. Move the coffee from Box 3 to Box 5. Move the contents of Box 3 to Box 0. Remove the coffee and the cream from Box 5. Remove the fan from Box 0. Put the boat and the television into Box 1.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the bill"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the crown and the fig and the shoe, Box 1 contains the dish and the leaf and the sheet, Box 2 contains the game and the pot and the wheel, Box 3 contains the tie, Box 4 contains the wire, Box 5 contains nothing, Box 6 contains the drink and the engine. Remove the fig from Box 0. Remove the drink and the engine from Box 6. Remove the game from Box 2. Move the contents of Box 0 to Box 6. Remove the wire from Box 4. Put the machine and the rose into Box 0. Put the dress into Box 0. Remove the dress and the rose from Box 0. Move the shoe from Box 6 to Box 0. Remove the shoe from Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the machine"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the crown and the fig and the shoe, Box 1 contains the dish and the leaf and the sheet, Box 2 contains the game and the pot and the wheel, Box 3 contains the tie, Box 4 contains the wire, Box 5 contains nothing, Box 6 contains the drink and the engine. Remove the fig from Box 0. Remove the drink and the engine from Box 6. Remove the game from Box 2. Move the contents of Box 0 to Box 6. Remove the wire from Box 4. Put the machine and the rose into Box 0. Put the dress into Box 0. Remove the dress and the rose from Box 0. Move the shoe from Box 6 to Box 0. Remove the shoe from Box 0. Remove the crown from Box 6.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the machine"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the crown and the fig and the shoe, Box 1 contains the dish and the leaf and the sheet, Box 2 contains the game and the pot and the wheel, Box 3 contains the tie, Box 4 contains the wire, Box 5 contains nothing, Box 6 contains the drink and the engine. Remove the fig from Box 0. Remove the drink and the engine from Box 6. Remove the game from Box 2. Move the contents of Box 0 to Box 6. Remove the wire from Box 4. Put the machine and the rose into Box 0. Put the dress into Box 0. Remove the dress and the rose from Box 0. Move the shoe from Box 6 to Box 0. Remove the shoe from Box 0. Remove the crown from Box 6. Put the dress and the file into Box 6.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the machine"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the coat and the fish, Box 1 contains the tissue, Box 2 contains the milk, Box 3 contains nothing, Box 4 contains the block, Box 5 contains the bomb and the cross and the drink, Box 6 contains nothing. Move the contents of Box 1 to Box 4. Move the contents of Box 2 to Box 0. Put the television into Box 1. Put the flower and the mirror into Box 6. Remove the cross and the drink from Box 5. Remove the flower from Box 6. Move the contents of Box 4 to Box 1. Move the television and the tissue from Box 1 to Box 5. Move the contents of Box 6 to Box 4. Move the contents of Box 4 to Box 1. Put the bowl into Box 1.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the block",
+   "the bowl",
+   "the mirror"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the coat and the fish, Box 1 contains the tissue, Box 2 contains the milk, Box 3 contains nothing, Box 4 contains the block, Box 5 contains the bomb and the cross and the drink, Box 6 contains nothing. Move the contents of Box 1 to Box 4. Move the contents of Box 2 to Box 0. Put the television into Box 1. Put the flower and the mirror into Box 6. Remove the cross and the drink from Box 5. Remove the flower from Box 6. Move the contents of Box 4 to Box 1. Move the television and the tissue from Box 1 to Box 5. Move the contents of Box 6 to Box 4. Move the contents of Box 4 to Box 1. Put the bowl into Box 1. Remove the television from Box 5.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the block",
+   "the bowl",
+   "the mirror"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the key and the machine and the map, Box 1 contains the apple, Box 2 contains nothing, Box 3 contains the card and the cross, Box 4 contains the fig and the tea, Box 5 contains the gift, Box 6 contains the bottle and the picture. Put the fish and the magazine into Box 5. Move the cross from Box 3 to Box 6. Remove the gift and the magazine from Box 5. Put the milk into Box 5. Move the contents of Box 1 to Box 5. Remove the apple from Box 5. Put the bone into Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bone",
+   "the fish",
+   "the milk"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the key and the machine and the map, Box 1 contains the apple, Box 2 contains nothing, Box 3 contains the card and the cross, Box 4 contains the fig and the tea, Box 5 contains the gift, Box 6 contains the bottle and the picture. Put the fish and the magazine into Box 5. Move the cross from Box 3 to Box 6. Remove the gift and the magazine from Box 5. Put the milk into Box 5. Move the contents of Box 1 to Box 5. Remove the apple from Box 5. Put the bone into Box 5. Put the creature into Box 3. Put the watch into Box 3.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bone",
+   "the fish",
+   "the milk"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the key and the machine and the map, Box 1 contains the apple, Box 2 contains nothing, Box 3 contains the card and the cross, Box 4 contains the fig and the tea, Box 5 contains the gift, Box 6 contains the bottle and the picture. Put the fish and the magazine into Box 5. Move the cross from Box 3 to Box 6. Remove the gift and the magazine from Box 5. Put the milk into Box 5. Move the contents of Box 1 to Box 5. Remove the apple from Box 5. Put the bone into Box 5. Put the creature into Box 3. Put the watch into Box 3. Move the bone and the fish from Box 5 to Box 1.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the milk"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the key and the machine and the map, Box 1 contains the apple, Box 2 contains nothing, Box 3 contains the card and the cross, Box 4 contains the fig and the tea, Box 5 contains the gift, Box 6 contains the bottle and the picture. Put the fish and the magazine into Box 5. Move the cross from Box 3 to Box 6. Remove the gift and the magazine from Box 5. Put the milk into Box 5. Move the contents of Box 1 to Box 5. Remove the apple from Box 5. Put the bone into Box 5. Put the creature into Box 3. Put the watch into Box 3. Move the bone and the fish from Box 5 to Box 1. Put the newspaper into Box 1.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the milk"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the key and the machine and the map, Box 1 contains the apple, Box 2 contains nothing, Box 3 contains the card and the cross, Box 4 contains the fig and the tea, Box 5 contains the gift, Box 6 contains the bottle and the picture. Put the fish and the magazine into Box 5. Move the cross from Box 3 to Box 6. Remove the gift and the magazine from Box 5. Put the milk into Box 5. Move the contents of Box 1 to Box 5. Remove the apple from Box 5. Put the bone into Box 5. Put the creature into Box 3. Put the watch into Box 3. Move the bone and the fish from Box 5 to Box 1. Put the newspaper into Box 1. Remove the bone from Box 1.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the milk"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the cup and the wheel, Box 1 contains the computer, Box 2 contains the leaf and the wire, Box 3 contains the picture, Box 4 contains the creature and the egg, Box 5 contains the drink, Box 6 contains nothing. Put the chemical and the drug into Box 6. Move the wheel from Box 0 to Box 6. Remove the drink from Box 5. Put the paper into Box 5. Remove the computer from Box 1. Remove the paper from Box 5. Move the contents of Box 4 to Box 5. Move the contents of Box 2 to Box 0. Put the brick and the camera into Box 3. Remove the cup and the wire from Box 0. Remove the egg from Box 5. Move the picture from Box 3 to Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the creature",
+   "the picture"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the ball and the bell and the coat, Box 1 contains the clock, Box 2 contains nothing, Box 3 contains the computer and the disk and the egg, Box 4 contains the bottle and the flower, Box 5 contains the book and the branch and the milk, Box 6 contains the tape. Remove the book and the branch and the milk from Box 5. Put the bone into Box 5. Remove the tape from Box 6. Move the contents of Box 5 to Box 4. Remove the bone from Box 4. Put the drug into Box 2. Put the letter into Box 5. Remove the drug from Box 2. Remove the letter from Box 5. Move the bottle from Box 4 to Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bottle"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the ball and the bell and the coat, Box 1 contains the clock, Box 2 contains nothing, Box 3 contains the computer and the disk and the egg, Box 4 contains the bottle and the flower, Box 5 contains the book and the branch and the milk, Box 6 contains the tape. Remove the book and the branch and the milk from Box 5. Put the bone into Box 5. Remove the tape from Box 6. Move the contents of Box 5 to Box 4. Remove the bone from Box 4. Put the drug into Box 2. Put the letter into Box 5. Remove the drug from Box 2. Remove the letter from Box 5. Move the bottle from Box 4 to Box 5. Move the contents of Box 4 to Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bottle",
+   "the flower"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the ball and the bell and the coat, Box 1 contains the clock, Box 2 contains nothing, Box 3 contains the computer and the disk and the egg, Box 4 contains the bottle and the flower, Box 5 contains the book and the branch and the milk, Box 6 contains the tape. Remove the book and the branch and the milk from Box 5. Put the bone into Box 5. Remove the tape from Box 6. Move the contents of Box 5 to Box 4. Remove the bone from Box 4. Put the drug into Box 2. Put the letter into Box 5. Remove the drug from Box 2. Remove the letter from Box 5. Move the bottle from Box 4 to Box 5. Move the contents of Box 4 to Box 5. Move the ball and the coat from Box 0 to Box 4.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bottle",
+   "the flower"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the cup, Box 1 contains the bell and the boat, Box 2 contains the cash and the cross and the picture, Box 3 contains the bomb and the brain and the flower, Box 4 contains the bottle and the creature and the stone, Box 5 contains the bowl and the egg, Box 6 contains nothing. Move the contents of Box 0 to Box 6. Remove the bowl and the egg from Box 5. Move the cash and the picture from Box 2 to Box 5. Remove the cash from Box 5. Move the bottle and the stone from Box 4 to Box 6. Move the contents of Box 2 to Box 0. Move the contents of Box 5 to Box 1. Remove the bell and the boat from Box 1. Remove the cross from Box 0. Put the fig and the train into Box 5. Remove the fig and the train from Box 5. Remove the bottle and the cup and the stone from Box 6.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the bomb and the branch and the map, Box 1 contains the bowl and the television, Box 2 contains the key and the mirror and the stone, Box 3 contains the computer and the magazine, Box 4 contains the camera, Box 5 contains the crown and the disk, Box 6 contains the game and the milk. Remove the magazine from Box 3. Move the milk from Box 6 to Box 4. Move the crown from Box 5 to Box 4. Put the bottle into Box 6. Put the fig into Box 3. Move the computer from Box 3 to Box 1. Move the map from Box 0 to Box 3. Move the contents of Box 3 to Box 5. Move the map from Box 5 to Box 3. Remove the bottle from Box 6. Remove the map from Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the bomb and the branch and the map, Box 1 contains the bowl and the television, Box 2 contains the key and the mirror and the stone, Box 3 contains the computer and the magazine, Box 4 contains the camera, Box 5 contains the crown and the disk, Box 6 contains the game and the milk. Remove the magazine from Box 3. Move the milk from Box 6 to Box 4. Move the crown from Box 5 to Box 4. Put the bottle into Box 6. Put the fig into Box 3. Move the computer from Box 3 to Box 1. Move the map from Box 0 to Box 3. Move the contents of Box 3 to Box 5. Move the map from Box 5 to Box 3. Remove the bottle from Box 6. Remove the map from Box 3. Remove the disk from Box 5.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the cigarette and the document and the hat, Box 2 contains the jacket, Box 3 contains the shoe, Box 4 contains the beer and the car, Box 5 contains nothing, Box 6 contains the letter and the plate. Put the meat and the rose into Box 3. Remove the jacket from Box 2. Remove the cigarette and the hat from Box 1. Move the contents of Box 1 to Box 6. Remove the rose and the shoe from Box 3. Remove the document and the plate from Box 6. Move the contents of Box 3 to Box 6. Remove the letter from Box 6. Move the contents of Box 6 to Box 0. Put the cheese and the coat into Box 6. Remove the coat from Box 6.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the cheese"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the cigarette and the document and the hat, Box 2 contains the jacket, Box 3 contains the shoe, Box 4 contains the beer and the car, Box 5 contains nothing, Box 6 contains the letter and the plate. Put the meat and the rose into Box 3. Remove the jacket from Box 2. Remove the cigarette and the hat from Box 1. Move the contents of Box 1 to Box 6. Remove the rose and the shoe from Box 3. Remove the document and the plate from Box 6. Move the contents of Box 3 to Box 6. Remove the letter from Box 6. Move the contents of Box 6 to Box 0. Put the cheese and the coat into Box 6. Remove the coat from Box 6. Remove the meat from Box 0.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the cheese"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the brick and the train, Box 1 contains the cream and the tie, Box 2 contains the shell and the tea, Box 3 contains nothing, Box 4 contains the card and the leaf and the note, Box 5 contains the knife and the television, Box 6 contains the cash and the cup and the tissue. Put the gift into Box 2. Move the leaf from Box 4 to Box 5. Remove the tie from Box 1. Remove the cash and the tissue from Box 6. Remove the cup from Box 6. Remove the leaf from Box 5. Move the contents of Box 1 to Box 5. Move the knife from Box 5 to Box 6. Remove the television from Box 5. Remove the knife from Box 6. Put the bomb and the rose into Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bomb",
+   "the cream",
+   "the rose"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the brick and the train, Box 1 contains the cream and the tie, Box 2 contains the shell and the tea, Box 3 contains nothing, Box 4 contains the card and the leaf and the note, Box 5 contains the knife and the television, Box 6 contains the cash and the cup and the tissue. Put the gift into Box 2. Move the leaf from Box 4 to Box 5. Remove the tie from Box 1. Remove the cash and the tissue from Box 6. Remove the cup from Box 6. Remove the leaf from Box 5. Move the contents of Box 1 to Box 5. Move the knife from Box 5 to Box 6. Remove the television from Box 5. Remove the knife from Box 6. Put the bomb and the rose into Box 5. Remove the gift and the shell and the tea from Box 2.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bomb",
+   "the cream",
+   "the rose"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the milk, Box 1 contains the painting, Box 2 contains nothing, Box 3 contains the brain and the cash and the cup, Box 4 contains nothing, Box 5 contains the bomb and the cigarette and the machine, Box 6 contains the apple and the bowl and the map. Put the clock and the ticket into Box 1. Put the sheet into Box 0. Put the cross into Box 2. Remove the sheet from Box 0. Remove the bomb and the cigarette and the machine from Box 5. Move the clock and the ticket from Box 1 to Box 5. Put the game and the stone into Box 0. Remove the stone from Box 0. Put the book into Box 4. Remove the game from Box 0. Move the contents of Box 0 to Box 4. Move the apple and the map from Box 6 to Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the apple",
+   "the map"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the card and the fish and the plant, Box 1 contains the bone, Box 2 contains the bread and the dress and the ticket, Box 3 contains the drug and the gift, Box 4 contains the camera and the guitar and the pot, Box 5 contains the boot and the map, Box 6 contains the phone and the sheet. Remove the dress from Box 2. Move the contents of Box 1 to Box 2. Put the dish into Box 1. Remove the bone and the ticket from Box 2. Remove the gift from Box 3. Put the brain into Box 5. Remove the bread from Box 2. Remove the drug from Box 3. Move the contents of Box 1 to Box 2. Put the television into Box 6. Put the coat into Box 2. Move the sheet and the television from Box 6 to Box 3.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the coat",
+   "the dish"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the cake and the rock, Box 1 contains the apple and the letter and the suit, Box 2 contains nothing, Box 3 contains the car, Box 4 contains the bill and the medicine and the milk, Box 5 contains the game and the tape, Box 6 contains the tea. Remove the tea from Box 6. Put the chemical into Box 6. Remove the chemical from Box 6. Remove the car from Box 3. Move the suit from Box 1 to Box 0. Put the cigarette and the fig into Box 6. Move the bill from Box 4 to Box 1. Move the contents of Box 6 to Box 3. Move the suit from Box 0 to Box 4. Move the apple from Box 1 to Box 6. Move the contents of Box 6 to Box 5.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the cake and the rock, Box 1 contains the apple and the letter and the suit, Box 2 contains nothing, Box 3 contains the car, Box 4 contains the bill and the medicine and the milk, Box 5 contains the game and the tape, Box 6 contains the tea. Remove the tea from Box 6. Put the chemical into Box 6. Remove the chemical from Box 6. Remove the car from Box 3. Move the suit from Box 1 to Box 0. Put the cigarette and the fig into Box 6. Move the bill from Box 4 to Box 1. Move the contents of Box 6 to Box 3. Move the suit from Box 0 to Box 4. Move the apple from Box 1 to Box 6. Move the contents of Box 6 to Box 5. Remove the game and the tape from Box 5.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the chemical and the paper and the rock, Box 2 contains the guitar and the note, Box 3 contains the bell and the radio and the shell, Box 4 contains the cake and the knife and the phone, Box 5 contains the plate and the shirt and the tie, Box 6 contains the wire. Put the coffee into Box 0. Put the ball into Box 6. Remove the shirt and the tie from Box 5. Move the contents of Box 0 to Box 5. Put the suit into Box 0. Move the ball from Box 6 to Box 5. Remove the radio and the shell from Box 3. Remove the ball from Box 5. Put the bill into Box 5. Move the plate from Box 5 to Box 2.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bill",
+   "the coffee"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the chemical and the paper and the rock, Box 2 contains the guitar and the note, Box 3 contains the bell and the radio and the shell, Box 4 contains the cake and the knife and the phone, Box 5 contains the plate and the shirt and the tie, Box 6 contains the wire. Put the coffee into Box 0. Put the ball into Box 6. Remove the shirt and the tie from Box 5. Move the contents of Box 0 to Box 5. Put the suit into Box 0. Move the ball from Box 6 to Box 5. Remove the radio and the shell from Box 3. Remove the ball from Box 5. Put the bill into Box 5. Move the plate from Box 5 to Box 2. Put the wheel into Box 6.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bill",
+   "the coffee"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the chemical and the paper and the rock, Box 2 contains the guitar and the note, Box 3 contains the bell and the radio and the shell, Box 4 contains the cake and the knife and the phone, Box 5 contains the plate and the shirt and the tie, Box 6 contains the wire. Put the coffee into Box 0. Put the ball into Box 6. Remove the shirt and the tie from Box 5. Move the contents of Box 0 to Box 5. Put the suit into Box 0. Move the ball from Box 6 to Box 5. Remove the radio and the shell from Box 3. Remove the ball from Box 5. Put the bill into Box 5. Move the plate from Box 5 to Box 2. Put the wheel into Box 6. Put the rose into Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bill",
+   "the coffee",
+   "the rose"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the ice and the pot, Box 1 contains the knife, Box 2 contains nothing, Box 3 contains the bill and the magazine, Box 4 contains the car and the train, Box 5 contains the machine, Box 6 contains the chemical. Move the contents of Box 4 to Box 5. Remove the car from Box 5. Remove the chemical from Box 6. Remove the bill from Box 3. Move the contents of Box 0 to Box 6. Remove the pot from Box 6. Put the cash into Box 4. Put the map into Box 4. Put the hat into Box 3. Move the cash from Box 4 to Box 5. Move the contents of Box 6 to Box 4. Move the contents of Box 4 to Box 0.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the brick and the meat and the watch, Box 1 contains the crown, Box 2 contains the plane and the wire, Box 3 contains nothing, Box 4 contains the ring, Box 5 contains the cheese and the seed and the ticket, Box 6 contains the camera and the guitar. Put the cross into Box 6. Move the seed from Box 5 to Box 3. Move the contents of Box 1 to Box 4. Move the contents of Box 3 to Box 5. Remove the cheese and the seed and the ticket from Box 5. Move the crown from Box 4 to Box 5. Remove the crown from Box 5. Move the contents of Box 2 to Box 5. Put the cream into Box 4.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the plane",
+   "the wire"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the brick and the meat and the watch, Box 1 contains the crown, Box 2 contains the plane and the wire, Box 3 contains nothing, Box 4 contains the ring, Box 5 contains the cheese and the seed and the ticket, Box 6 contains the camera and the guitar. Put the cross into Box 6. Move the seed from Box 5 to Box 3. Move the contents of Box 1 to Box 4. Move the contents of Box 3 to Box 5. Remove the cheese and the seed and the ticket from Box 5. Move the crown from Box 4 to Box 5. Remove the crown from Box 5. Move the contents of Box 2 to Box 5. Put the cream into Box 4. Remove the plane and the wire from Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the brick and the meat and the watch, Box 1 contains the crown, Box 2 contains the plane and the wire, Box 3 contains nothing, Box 4 contains the ring, Box 5 contains the cheese and the seed and the ticket, Box 6 contains the camera and the guitar. Put the cross into Box 6. Move the seed from Box 5 to Box 3. Move the contents of Box 1 to Box 4. Move the contents of Box 3 to Box 5. Remove the cheese and the seed and the ticket from Box 5. Move the crown from Box 4 to Box 5. Remove the crown from Box 5. Move the contents of Box 2 to Box 5. Put the cream into Box 4. Remove the plane and the wire from Box 5. Put the bomb and the machine into Box 3.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the seed and the television, Box 1 contains the milk, Box 2 contains the meat and the note, Box 3 contains the key and the painting, Box 4 contains the ball and the egg and the fan, Box 5 contains the camera and the coat and the jacket, Box 6 contains the boot. Put the apple into Box 3. Put the creature and the shell into Box 6. Move the meat from Box 2 to Box 1. Remove the note from Box 2. Remove the apple and the painting from Box 3. Move the contents of Box 1 to Box 2. Remove the creature from Box 6. Remove the key from Box 3. Remove the meat from Box 2. Move the coat and the jacket from Box 5 to Box 2. Remove the coat and the milk from Box 2.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the jacket"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the seed and the television, Box 1 contains the milk, Box 2 contains the meat and the note, Box 3 contains the key and the painting, Box 4 contains the ball and the egg and the fan, Box 5 contains the camera and the coat and the jacket, Box 6 contains the boot. Put the apple into Box 3. Put the creature and the shell into Box 6. Move the meat from Box 2 to Box 1. Remove the note from Box 2. Remove the apple and the painting from Box 3. Move the contents of Box 1 to Box 2. Remove the creature from Box 6. Remove the key from Box 3. Remove the meat from Box 2. Move the coat and the jacket from Box 5 to Box 2. Remove the coat and the milk from Box 2. Remove the camera from Box 5.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the jacket"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the bill and the painting and the wire, Box 2 contains the coat, Box 3 contains the fig and the milk, Box 4 contains the game, Box 5 contains the creature and the tie and the watch, Box 6 contains the medicine and the stone and the string. Remove the milk from Box 3. Move the contents of Box 2 to Box 3. Move the tie from Box 5 to Box 3. Remove the medicine and the stone and the string from Box 6. Remove the coat and the tie from Box 3. Move the contents of Box 3 to Box 2. Move the creature from Box 5 to Box 2. Remove the creature from Box 2. Move the contents of Box 5 to Box 4. Put the cheese into Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the cheese"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the bill and the painting and the wire, Box 2 contains the coat, Box 3 contains the fig and the milk, Box 4 contains the game, Box 5 contains the creature and the tie and the watch, Box 6 contains the medicine and the stone and the string. Remove the milk from Box 3. Move the contents of Box 2 to Box 3. Move the tie from Box 5 to Box 3. Remove the medicine and the stone and the string from Box 6. Remove the coat and the tie from Box 3. Move the contents of Box 3 to Box 2. Move the creature from Box 5 to Box 2. Remove the creature from Box 2. Move the contents of Box 5 to Box 4. Put the cheese into Box 3. Put the disk and the newspaper into Box 2. Move the contents of Box 3 to Box 0.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 7
+ },
+ {
+  "context": "Box 0 contains the book, Box 1 contains the ice and the suit, Box 2 contains the ball and the coat and the engine, Box 3 contains nothing, Box 4 contains the cross and the watch, Box 5 contains the bread, Box 6 contains the branch and the tea. Remove the book from Box 0. Put the wire into Box 6. Put the book and the cake into Box 0. Move the ball and the coat from Box 2 to Box 3. Remove the wire from Box 6. Remove the cross from Box 4. Move the branch from Box 6 to Box 0. Move the contents of Box 2 to Box 6. Move the tea from Box 6 to Box 3. Remove the watch from Box 4. Remove the engine from Box 6.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the beer and the branch, Box 1 contains the ball and the cross and the jacket, Box 2 contains nothing, Box 3 contains the chemical, Box 4 contains the bag and the rock and the tissue, Box 5 contains the watch, Box 6 contains the cup. Put the brain into Box 2. Move the contents of Box 5 to Box 2. Remove the bag and the tissue from Box 4. Move the contents of Box 6 to Box 0. Move the branch from Box 0 to Box 4. Remove the watch from Box 2. Put the television into Box 2. Remove the brain and the television from Box 2. Put the creature into Box 2.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the creature"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the beer and the branch, Box 1 contains the ball and the cross and the jacket, Box 2 contains nothing, Box 3 contains the chemical, Box 4 contains the bag and the rock and the tissue, Box 5 contains the watch, Box 6 contains the cup. Put the brain into Box 2. Move the contents of Box 5 to Box 2. Remove the bag and the tissue from Box 4. Move the contents of Box 6 to Box 0. Move the branch from Box 0 to Box 4. Remove the watch from Box 2. Put the television into Box 2. Remove the brain and the television from Box 2. Put the creature into Box 2. Move the ball and the jacket from Box 1 to Box 5.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the creature"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the beer and the branch, Box 1 contains the ball and the cross and the jacket, Box 2 contains nothing, Box 3 contains the chemical, Box 4 contains the bag and the rock and the tissue, Box 5 contains the watch, Box 6 contains the cup. Put the brain into Box 2. Move the contents of Box 5 to Box 2. Remove the bag and the tissue from Box 4. Move the contents of Box 6 to Box 0. Move the branch from Box 0 to Box 4. Remove the watch from Box 2. Put the television into Box 2. Remove the brain and the television from Box 2. Put the creature into Box 2. Move the ball and the jacket from Box 1 to Box 5. Put the map into Box 4.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the creature"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the beer and the branch, Box 1 contains the ball and the cross and the jacket, Box 2 contains nothing, Box 3 contains the chemical, Box 4 contains the bag and the rock and the tissue, Box 5 contains the watch, Box 6 contains the cup. Put the brain into Box 2. Move the contents of Box 5 to Box 2. Remove the bag and the tissue from Box 4. Move the contents of Box 6 to Box 0. Move the branch from Box 0 to Box 4. Remove the watch from Box 2. Put the television into Box 2. Remove the brain and the television from Box 2. Put the creature into Box 2. Move the ball and the jacket from Box 1 to Box 5. Put the map into Box 4. Move the contents of Box 0 to Box 6.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the creature"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the guitar and the note and the sheet, Box 1 contains the hat, Box 2 contains the bag and the clock and the tea, Box 3 contains the medicine and the radio and the tape, Box 4 contains the engine and the plane, Box 5 contains the dress, Box 6 contains the boot. Remove the tape from Box 3. Move the plane from Box 4 to Box 5. Move the radio from Box 3 to Box 4. Move the dress from Box 5 to Box 4. Remove the hat from Box 1. Move the contents of Box 3 to Box 5. Move the contents of Box 6 to Box 5. Remove the boot and the medicine from Box 5. Remove the bag and the clock from Box 2. Move the engine from Box 4 to Box 1. Move the guitar from Box 0 to Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the guitar",
+   "the plane"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the mirror, Box 1 contains the crown and the newspaper and the plate, Box 2 contains the jacket and the pot, Box 3 contains the document and the fish, Box 4 contains the bottle and the bus and the cheese, Box 5 contains nothing, Box 6 contains the cross. Remove the mirror from Box 0. Remove the cheese from Box 4. Put the bag into Box 4. Remove the bag from Box 4. Move the contents of Box 6 to Box 5. Move the jacket from Box 2 to Box 0. Remove the bottle from Box 4. Move the contents of Box 4 to Box 6. Remove the pot from Box 2. Remove the crown and the newspaper and the plate from Box 1. Put the suit into Box 6. Move the contents of Box 5 to Box 4.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "the cross"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the boot and the cake and the camera, Box 1 contains the jacket and the newspaper and the tape, Box 2 contains the document and the dress and the rose, Box 3 contains the machine and the note, Box 4 contains the glass and the pot, Box 5 contains the beer and the cross and the engine, Box 6 contains nothing. Remove the glass and the pot from Box 4. Remove the boot from Box 0. Move the tape from Box 1 to Box 3. Remove the machine and the note from Box 3. Move the contents of Box 0 to Box 3. Remove the document from Box 2. Move the beer from Box 5 to Box 2. Remove the cake and the camera from Box 3. Remove the tape from Box 3. Put the coffee and the paper and the tape into Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the coffee",
+   "the paper",
+   "the tape"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the boot and the cake and the camera, Box 1 contains the jacket and the newspaper and the tape, Box 2 contains the document and the dress and the rose, Box 3 contains the machine and the note, Box 4 contains the glass and the pot, Box 5 contains the beer and the cross and the engine, Box 6 contains nothing. Remove the glass and the pot from Box 4. Remove the boot from Box 0. Move the tape from Box 1 to Box 3. Remove the machine and the note from Box 3. Move the contents of Box 0 to Box 3. Remove the document from Box 2. Move the beer from Box 5 to Box 2. Remove the cake and the camera from Box 3. Remove the tape from Box 3. Put the coffee and the paper and the tape into Box 3. Move the engine from Box 5 to Box 0.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the coffee",
+   "the paper",
+   "the tape"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the map and the plant and the tissue, Box 1 contains nothing, Box 2 contains the bowl and the creature, Box 3 contains the cream and the engine, Box 4 contains nothing, Box 5 contains the computer and the tea and the ticket, Box 6 contains the coat. Remove the coat from Box 6. Remove the engine from Box 3. Remove the tea and the ticket from Box 5. Move the contents of Box 5 to Box 3. Put the cake and the ring into Box 6. Remove the bowl from Box 2. Remove the computer from Box 3. Remove the cream from Box 3. Move the contents of Box 2 to Box 1. Remove the creature from Box 1. Put the leaf into Box 3. Put the phone into Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the leaf",
+   "the phone"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the medicine and the plant, Box 1 contains nothing, Box 2 contains the document and the ice and the plane, Box 3 contains the boat and the coffee, Box 4 contains the brain and the dress, Box 5 contains the card and the cup, Box 6 contains the book and the drink and the watch. Remove the brain from Box 4. Move the contents of Box 4 to Box 1. Put the glass into Box 0. Remove the watch from Box 6. Remove the boat from Box 3. Put the picture into Box 4. Remove the document and the plane from Box 2. Move the contents of Box 1 to Box 2. Move the contents of Box 4 to Box 2. Move the contents of Box 2 to Box 4. Put the tie into Box 2. Move the contents of Box 2 to Box 1.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the medicine and the plant and the shell, Box 2 contains nothing, Box 3 contains the cheese and the document and the tea, Box 4 contains the glass and the knife, Box 5 contains the brick and the gift and the machine, Box 6 contains the egg and the painting. Put the rose and the stone into Box 0. Put the cash into Box 6. Put the paper into Box 4. Put the beer and the disk and the plate into Box 2. Remove the rose from Box 0. Remove the medicine from Box 1. Remove the stone from Box 0. Put the picture into Box 0. Remove the gift and the machine from Box 5. Move the contents of Box 5 to Box 0. Move the brick from Box 0 to Box 1.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the picture"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the medicine and the plant and the shell, Box 2 contains nothing, Box 3 contains the cheese and the document and the tea, Box 4 contains the glass and the knife, Box 5 contains the brick and the gift and the machine, Box 6 contains the egg and the painting. Put the rose and the stone into Box 0. Put the cash into Box 6. Put the paper into Box 4. Put the beer and the disk and the plate into Box 2. Remove the rose from Box 0. Remove the medicine from Box 1. Remove the stone from Box 0. Put the picture into Box 0. Remove the gift and the machine from Box 5. Move the contents of Box 5 to Box 0. Move the brick from Box 0 to Box 1. Remove the paper from Box 4.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the picture"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the bag and the cake, Box 2 contains nothing, Box 3 contains the gift and the newspaper and the sheet, Box 4 contains nothing, Box 5 contains the book and the coat and the picture, Box 6 contains the jacket and the paper and the ring. Put the dish into Box 2. Remove the bag and the cake from Box 1. Remove the jacket from Box 6. Move the ring from Box 6 to Box 1. Move the contents of Box 1 to Box 6. Move the contents of Box 6 to Box 0. Remove the dish from Box 2. Move the contents of Box 0 to Box 1. Remove the paper from Box 1. Move the picture from Box 5 to Box 1. Move the contents of Box 3 to Box 0.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the picture",
+   "the ring"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the coat and the ice, Box 1 contains the bowl and the bus and the dress, Box 2 contains the document, Box 3 contains the block and the flower and the guitar, Box 4 contains the apple and the ball and the jacket, Box 5 contains the branch, Box 6 contains the book. Remove the branch from Box 5. Remove the coat and the ice from Box 0. Move the contents of Box 6 to Box 5. Move the bus from Box 1 to Box 2. Remove the block and the flower from Box 3. Move the document from Box 2 to Box 0. Remove the book from Box 5. Remove the bus from Box 2. Move the bowl from Box 1 to Box 5. Put the dish into Box 5. Move the contents of Box 0 to Box 5.",
+  "question": "What is contained in Box 5?",
+  "answers": [
+   "the bowl",
+   "the dish",
+   "the document"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the apple, Box 1 contains the boat and the drink, Box 2 contains the coffee and the tie, Box 3 contains the paper, Box 4 contains the bone, Box 5 contains the camera and the drug and the stone, Box 6 contains the suit. Remove the boat and the drink from Box 1. Put the bowl into Box 0. Move the camera and the stone from Box 5 to Box 1. Move the contents of Box 6 to Box 1. Remove the bone from Box 4. Move the contents of Box 3 to Box 6. Remove the camera and the stone from Box 1. Remove the bowl from Box 0. Put the cheese into Box 1. Move the contents of Box 6 to Box 5. Put the bone and the ticket into Box 4. Put the beer into Box 1.",
+  "question": "What is contained in Box 1?",
+  "answers": [
+   "the beer",
+   "the cheese",
+   "the suit"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the boot and the leaf and the shell, Box 1 contains the bowl and the bus, Box 2 contains the fish and the ice, Box 3 contains the radio and the wire, Box 4 contains the clock and the creature, Box 5 contains the book, Box 6 contains the brick and the phone and the sheet. Remove the clock from Box 4. Remove the radio from Box 3. Put the pot into Box 3. Remove the creature from Box 4. Move the wire from Box 3 to Box 2. Put the drink into Box 1. Move the phone and the sheet from Box 6 to Box 5. Remove the book and the phone from Box 5. Remove the sheet from Box 5. Move the contents of Box 3 to Box 5. Put the bag into Box 3. Move the wire from Box 2 to Box 3.",
+  "question": "What is contained in Box 3?",
+  "answers": [
+   "the bag",
+   "the wire"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the chemical, Box 1 contains the bone and the cigarette and the dish, Box 2 contains nothing, Box 3 contains the crown and the dress, Box 4 contains the pot, Box 5 contains the gift, Box 6 contains the phone and the seed and the shirt. Remove the gift from Box 5. Move the contents of Box 0 to Box 2. Remove the crown from Box 3. Put the disk into Box 0. Move the contents of Box 3 to Box 0. Move the contents of Box 2 to Box 0. Move the disk and the dress from Box 0 to Box 2. Put the fish and the gift into Box 4. Put the cake into Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the cake",
+   "the chemical"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the chemical, Box 1 contains the bone and the cigarette and the dish, Box 2 contains nothing, Box 3 contains the crown and the dress, Box 4 contains the pot, Box 5 contains the gift, Box 6 contains the phone and the seed and the shirt. Remove the gift from Box 5. Move the contents of Box 0 to Box 2. Remove the crown from Box 3. Put the disk into Box 0. Move the contents of Box 3 to Box 0. Move the contents of Box 2 to Box 0. Move the disk and the dress from Box 0 to Box 2. Put the fish and the gift into Box 4. Put the cake into Box 0. Remove the fish from Box 4.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the cake",
+   "the chemical"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the chemical, Box 1 contains the bone and the cigarette and the dish, Box 2 contains nothing, Box 3 contains the crown and the dress, Box 4 contains the pot, Box 5 contains the gift, Box 6 contains the phone and the seed and the shirt. Remove the gift from Box 5. Move the contents of Box 0 to Box 2. Remove the crown from Box 3. Put the disk into Box 0. Move the contents of Box 3 to Box 0. Move the contents of Box 2 to Box 0. Move the disk and the dress from Box 0 to Box 2. Put the fish and the gift into Box 4. Put the cake into Box 0. Remove the fish from Box 4. Move the gift from Box 4 to Box 5.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the cake",
+   "the chemical"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the chemical, Box 1 contains the bone and the cigarette and the dish, Box 2 contains nothing, Box 3 contains the crown and the dress, Box 4 contains the pot, Box 5 contains the gift, Box 6 contains the phone and the seed and the shirt. Remove the gift from Box 5. Move the contents of Box 0 to Box 2. Remove the crown from Box 3. Put the disk into Box 0. Move the contents of Box 3 to Box 0. Move the contents of Box 2 to Box 0. Move the disk and the dress from Box 0 to Box 2. Put the fish and the gift into Box 4. Put the cake into Box 0. Remove the fish from Box 4. Move the gift from Box 4 to Box 5. Remove the seed and the shirt from Box 6.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "the cake",
+   "the chemical"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the creature and the shoe, Box 1 contains nothing, Box 2 contains the suit, Box 3 contains the mirror, Box 4 contains the dress, Box 5 contains the disk and the document and the tea, Box 6 contains the bomb and the coat and the sheet. Remove the dress from Box 4. Put the cheese into Box 4. Put the note into Box 2. Remove the cheese from Box 4. Remove the creature and the shoe from Box 0. Move the contents of Box 2 to Box 4. Move the suit from Box 4 to Box 2. Put the letter into Box 1. Remove the disk from Box 5. Move the contents of Box 1 to Box 3. Put the dress into Box 3. Put the jacket into Box 4.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "the jacket",
+   "the note"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the bowl and the string, Box 1 contains nothing, Box 2 contains the milk and the phone and the shell, Box 3 contains the bread and the jacket, Box 4 contains the book and the drink and the glass, Box 5 contains the cream and the wire, Box 6 contains the stone. Move the contents of Box 6 to Box 0. Move the cream from Box 5 to Box 6. Remove the drink from Box 4. Remove the milk and the phone and the shell from Box 2. Move the contents of Box 5 to Box 4. Remove the cream from Box 6. Move the glass from Box 4 to Box 1. Move the stone and the string from Box 0 to Box 2. Move the contents of Box 4 to Box 0. Put the painting into Box 4. Put the leaf into Box 1. Move the bread from Box 3 to Box 4.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "the bread",
+   "the painting"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the tape, Box 1 contains the chemical and the magazine and the plane, Box 2 contains the ball and the key and the seed, Box 3 contains the bomb and the book and the ticket, Box 4 contains the ice, Box 5 contains the cake and the cash, Box 6 contains the pot and the rock. Remove the chemical and the magazine and the plane from Box 1. Put the boat and the bowl into Box 1. Move the bomb from Box 3 to Box 0. Move the contents of Box 5 to Box 4. Move the bomb from Box 0 to Box 5. Remove the book from Box 3. Put the tea into Box 0. Move the contents of Box 5 to Box 0. Remove the boat and the bowl from Box 1. Remove the ticket from Box 3. Move the tape and the tea from Box 0 to Box 1. Remove the bomb from Box 0.",
+  "question": "What is contained in Box 0?",
+  "answers": [
+   "nothing"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the fig and the suit and the tie, Box 1 contains nothing, Box 2 contains the branch and the seed and the wire, Box 3 contains the glass, Box 4 contains the letter and the plane and the pot, Box 5 contains the creature and the game and the milk, Box 6 contains the file and the wheel. Remove the fig from Box 0. Move the seed and the wire from Box 2 to Box 3. Move the contents of Box 2 to Box 6. Remove the suit and the tie from Box 0. Remove the wheel from Box 6. Put the disk and the fan into Box 0. Move the file from Box 6 to Box 1. Put the bread and the cross into Box 2. Move the fan from Box 0 to Box 6. Remove the branch and the fan from Box 6. Move the contents of Box 0 to Box 1. Move the letter and the plane from Box 4 to Box 6.",
+  "question": "What is contained in Box 6?",
+  "answers": [
+   "the letter",
+   "the plane"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the phone, Box 1 contains the bone and the bowl and the chemical, Box 2 contains the branch and the tape, Box 3 contains the pot and the tissue and the wheel, Box 4 contains the sheet and the tea, Box 5 contains the watch, Box 6 contains the boot and the fan and the fig. Move the contents of Box 5 to Box 2. Remove the pot and the tissue and the wheel from Box 3. Move the contents of Box 0 to Box 4. Move the phone and the tea from Box 4 to Box 0. Remove the sheet from Box 4. Move the fan and the fig from Box 6 to Box 3. Remove the tape from Box 2. Put the note and the picture and the tape into Box 4. Move the note from Box 4 to Box 5. Move the tape from Box 4 to Box 5.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "the picture"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains the phone, Box 1 contains the bone and the bowl and the chemical, Box 2 contains the branch and the tape, Box 3 contains the pot and the tissue and the wheel, Box 4 contains the sheet and the tea, Box 5 contains the watch, Box 6 contains the boot and the fan and the fig. Move the contents of Box 5 to Box 2. Remove the pot and the tissue and the wheel from Box 3. Move the contents of Box 0 to Box 4. Move the phone and the tea from Box 4 to Box 0. Remove the sheet from Box 4. Move the fan and the fig from Box 6 to Box 3. Remove the tape from Box 2. Put the note and the picture and the tape into Box 4. Move the note from Box 4 to Box 5. Move the tape from Box 4 to Box 5. Move the contents of Box 6 to Box 5. Put the suit into Box 6.",
+  "question": "What is contained in Box 4?",
+  "answers": [
+   "the picture"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the creature and the knife and the sheet, Box 2 contains the fig and the gift and the medicine, Box 3 contains the bell and the milk, Box 4 contains the car and the document and the painting, Box 5 contains the cake and the seed and the train, Box 6 contains the television. Put the apple into Box 3. Remove the fig from Box 2. Remove the gift from Box 2. Move the contents of Box 6 to Box 2. Remove the bell from Box 3. Put the cross into Box 3. Remove the painting from Box 4. Move the television from Box 2 to Box 6. Remove the medicine from Box 2. Move the contents of Box 4 to Box 2.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the car",
+   "the document"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the creature and the knife and the sheet, Box 2 contains the fig and the gift and the medicine, Box 3 contains the bell and the milk, Box 4 contains the car and the document and the painting, Box 5 contains the cake and the seed and the train, Box 6 contains the television. Put the apple into Box 3. Remove the fig from Box 2. Remove the gift from Box 2. Move the contents of Box 6 to Box 2. Remove the bell from Box 3. Put the cross into Box 3. Remove the painting from Box 4. Move the television from Box 2 to Box 6. Remove the medicine from Box 2. Move the contents of Box 4 to Box 2. Remove the television from Box 6.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the car",
+   "the document"
+  ],
+  "numops": 6
+ },
+ {
+  "context": "Box 0 contains nothing, Box 1 contains the creature and the knife and the sheet, Box 2 contains the fig and the gift and the medicine, Box 3 contains the bell and the milk, Box 4 contains the car and the document and the painting, Box 5 contains the cake and the seed and the train, Box 6 contains the television. Put the apple into Box 3. Remove the fig from Box 2. Remove the gift from Box 2. Move the contents of Box 6 to Box 2. Remove the bell from Box 3. Put the cross into Box 3. Remove the painting from Box 4. Move the television from Box 2 to Box 6. Remove the medicine from Box 2. Move the contents of Box 4 to Box 2. Remove the television from Box 6. Put the bill and the clock into Box 4.",
+  "question": "What is contained in Box 2?",
+  "answers": [
+   "the car",
+   "the document"
+  ],
+  "numops": 6
+ }
+]

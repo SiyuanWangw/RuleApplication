@@ -1,0 +1,2074 @@
+[
+ {
+  "query": "James took his son Francisco out on a hunting trip. Natasha, Francisco's daughter, wanted to come, but they thought she was too young. Instead, James's wife Frances stayed home with her. How is Natasha related to Frances?",
+  "rule": [
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Natasha is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "husband",
+    "James"
+   ],
+   [
+    "James",
+    "son",
+    "Francisco"
+   ],
+   [
+    "Francisco",
+    "daughter",
+    "Natasha"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "son",
+    "Francisco"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Natasha"
+   ]
+  ]
+ },
+ {
+  "query": "Lena is making a salad for her husband Wesley and her son Charles. Wesley's mother Frances showed up with dessert. How is Frances related to Lena?",
+  "rule": [
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Frances is the mother of Lena.",
+  "grounded_variables": [
+   [
+    "Lena",
+    "husband",
+    "Wesley"
+   ],
+   [
+    "Wesley",
+    "son",
+    "Charles"
+   ],
+   [
+    "Charles",
+    "grandmother",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lena",
+    "son",
+    "Charles"
+   ],
+   [
+    "Lena",
+    "mother",
+    "Frances"
+   ]
+  ]
+ },
+ {
+  "query": "Irvin's grandfather, James, went out to get groceries. In the mean time, Irvin's mother, Lena, cooked up some vegetables. James took his daughter Lynn out for dinner. How is Lynn related to Lena?",
+  "rule": [
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Lynn is the sister of Lena.",
+  "grounded_variables": [
+   [
+    "Lena",
+    "son",
+    "Irvin"
+   ],
+   [
+    "Irvin",
+    "grandfather",
+    "James"
+   ],
+   [
+    "James",
+    "daughter",
+    "Lynn"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lena",
+    "father",
+    "James"
+   ],
+   [
+    "Lena",
+    "sister",
+    "Lynn"
+   ]
+  ]
+ },
+ {
+  "query": "Frances fixed her husband James dinner and then they watched a movie they rented. Wesley was talking to his daughter, Tina, on the phone. Suddenly, his father James knocked on the door, in a panic, and Wesley hung up the phone to go see what was the matter. How is Tina related to Frances?",
+  "rule": [
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Tina is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "husband",
+    "James"
+   ],
+   [
+    "James",
+    "son",
+    "Wesley"
+   ],
+   [
+    "Wesley",
+    "daughter",
+    "Tina"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "son",
+    "Wesley"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Tina"
+   ]
+  ]
+ },
+ {
+  "query": "Hugh was driving to pick up his daughter Gloria, when his mother Frances called. She said her husband James was missing. How is Gloria related to James?",
+  "rule": [
+   "If B is the wife of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Gloria is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ],
+   [
+    "Hugh",
+    "daughter",
+    "Gloria"
+   ],
+   [
+    "James",
+    "wife",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "granddaughter",
+    "Gloria"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Gloria"
+   ]
+  ]
+ },
+ {
+  "query": "James dropped his son Hugh off at a friend's house for the night, as he was taking his wife Frances out to dinner. Hugh is proud that his daughter is such a good student. Her name is Vanetta. How is Vanetta related to Frances?",
+  "rule": [
+   "If B is the husband of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Vanetta is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "James",
+    "son",
+    "Hugh"
+   ],
+   [
+    "Hugh",
+    "daughter",
+    "Vanetta"
+   ],
+   [
+    "Frances",
+    "husband",
+    "James"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "James",
+    "granddaughter",
+    "Vanetta"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Vanetta"
+   ]
+  ]
+ },
+ {
+  "query": "David asked her daughter, Evangeline, if she would like to go to a movie with her on Saturday night. Hugh and his father, James, went out to shoot clay pigeons. Hugh's daughter, Evangeline, wanted to come too, but she was scared of the noise. How is James related to David?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A."
+  ],
+  "answer": "James is the father of David.",
+  "grounded_variables": [
+   [
+    "Evangeline",
+    "father",
+    "Hugh"
+   ],
+   [
+    "Hugh",
+    "father",
+    "James"
+   ],
+   [
+    "David",
+    "daughter",
+    "Evangeline"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Evangeline",
+    "grandfather",
+    "James"
+   ],
+   [
+    "David",
+    "father",
+    "James"
+   ]
+  ]
+ },
+ {
+  "query": "Wesley had an emergency at work so he asked his father James to pick his daughter Mildred up from school. Lena asked her daughter, Mildred, if she would like to go to a movie with her on Saturday night. How is James related to Lena?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A."
+  ],
+  "answer": "James is the father of Lena.",
+  "grounded_variables": [
+   [
+    "Mildred",
+    "father",
+    "Wesley"
+   ],
+   [
+    "Wesley",
+    "father",
+    "James"
+   ],
+   [
+    "Lena",
+    "daughter",
+    "Mildred"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Mildred",
+    "grandfather",
+    "James"
+   ],
+   [
+    "Lena",
+    "father",
+    "James"
+   ]
+  ]
+ },
+ {
+  "query": "Frances and her son, Hugh, went to the park, and had a wonderful time. Frances made a pie for her granddaughter Mildred. Mildred's father Wesley ate most of it. How is Hugh related to Wesley?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Hugh is the brother of Wesley.",
+  "grounded_variables": [
+   [
+    "Wesley",
+    "daughter",
+    "Mildred"
+   ],
+   [
+    "Mildred",
+    "grandmother",
+    "Frances"
+   ],
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Wesley",
+    "mother",
+    "Frances"
+   ],
+   [
+    "Wesley",
+    "brother",
+    "Hugh"
+   ]
+  ]
+ },
+ {
+  "query": "Lynn is making a salad for her husband Joshua and her son Clarence. Joshua's mother Frances showed up with dessert. How is Frances related to Lynn?",
+  "rule": [
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the mother of B, then C is the mother-in-law of A."
+  ],
+  "answer": "Frances is the mother-in-law of Lynn.",
+  "grounded_variables": [
+   [
+    "Joshua",
+    "son",
+    "Clarence"
+   ],
+   [
+    "Clarence",
+    "grandmother",
+    "Frances"
+   ],
+   [
+    "Lynn",
+    "husband",
+    "Joshua"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Joshua",
+    "mother",
+    "Frances"
+   ],
+   [
+    "Lynn",
+    "mother-in-law",
+    "Frances"
+   ]
+  ]
+ },
+ {
+  "query": "Frances loves cooking for her son. His name is Hugh Mildred takes good care of her grandmother, Frances. Lena went to the mall, because she wanted to look for a present for her daughter, Mildred. How is Hugh related to Lena?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Hugh is the brother of Lena.",
+  "grounded_variables": [
+   [
+    "Lena",
+    "daughter",
+    "Mildred"
+   ],
+   [
+    "Mildred",
+    "grandmother",
+    "Frances"
+   ],
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lena",
+    "mother",
+    "Frances"
+   ],
+   [
+    "Lena",
+    "brother",
+    "Hugh"
+   ]
+  ]
+ },
+ {
+  "query": "Tina was excited because today she was going to the zoo with her uncle Francisco. James took his daughter Lena to the park that afternoon to play. Lena spent a great day shopping with her daughter, Tina. How is Francisco related to James?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Francisco is the son of James.",
+  "grounded_variables": [
+   [
+    "Lena",
+    "daughter",
+    "Tina"
+   ],
+   [
+    "Tina",
+    "uncle",
+    "Francisco"
+   ],
+   [
+    "James",
+    "daughter",
+    "Lena"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lena",
+    "brother",
+    "Francisco"
+   ],
+   [
+    "James",
+    "son",
+    "Francisco"
+   ]
+  ]
+ },
+ {
+  "query": "James, his wife Frances, and her son, Hugh, all went to the hospital. They were visiting Hugh's daughter, Gloria, who had just undergone surgery. How is Gloria related to James?",
+  "rule": [
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Gloria is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "James",
+    "wife",
+    "Frances"
+   ],
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ],
+   [
+    "Hugh",
+    "daughter",
+    "Gloria"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "James",
+    "son",
+    "Hugh"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Gloria"
+   ]
+  ]
+ },
+ {
+  "query": "Francisco took his wife Cindy and his son Richard on a road trip. They visited Frances Richard's grandmother as part of the road trip. How is Frances related to Cindy?",
+  "rule": [
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Frances is the mother of Cindy.",
+  "grounded_variables": [
+   [
+    "Cindy",
+    "husband",
+    "Francisco"
+   ],
+   [
+    "Francisco",
+    "son",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "grandmother",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Cindy",
+    "son",
+    "Richard"
+   ],
+   [
+    "Cindy",
+    "mother",
+    "Frances"
+   ]
+  ]
+ },
+ {
+  "query": "Anna went over to her uncle Hugh's house for dinner. Frances is visiting her daughter, Cindy. Anna want's her mother, Cindy, to take her to the zoo. How is Hugh related to Frances?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Hugh is the son of Frances.",
+  "grounded_variables": [
+   [
+    "Cindy",
+    "daughter",
+    "Anna"
+   ],
+   [
+    "Anna",
+    "uncle",
+    "Hugh"
+   ],
+   [
+    "Frances",
+    "daughter",
+    "Cindy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Cindy",
+    "brother",
+    "Hugh"
+   ],
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ]
+  ]
+ },
+ {
+  "query": "James took his son Francisco out on a hunting trip. Wilhelmina, Francisco's daughter, wanted to come, but they thought she was too young. Instead, James's wife Frances stayed home with her. How is Wilhelmina related to Frances?",
+  "rule": [
+   "If B is the husband of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Wilhelmina is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "James",
+    "son",
+    "Francisco"
+   ],
+   [
+    "Francisco",
+    "daughter",
+    "Wilhelmina"
+   ],
+   [
+    "Frances",
+    "husband",
+    "James"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "James",
+    "granddaughter",
+    "Wilhelmina"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Wilhelmina"
+   ]
+  ]
+ },
+ {
+  "query": "Frances loves her son Hugh very much. He loves her, too. Joshua and his daughter Juanita went to the hospital. Juanita's grandmother, Frances, was sick, and they wanted to pay her a visit and cheer her up. How is Hugh related to Joshua?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Hugh is the brother of Joshua.",
+  "grounded_variables": [
+   [
+    "Joshua",
+    "daughter",
+    "Juanita"
+   ],
+   [
+    "Juanita",
+    "grandmother",
+    "Frances"
+   ],
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Joshua",
+    "mother",
+    "Frances"
+   ],
+   [
+    "Joshua",
+    "brother",
+    "Hugh"
+   ]
+  ]
+ },
+ {
+  "query": "Marie takes good care of her grandmother, Frances. Frances loves cooking for her son. His name is Francisco David went to the mall, because she wanted to look for a present for her daughter, Marie. How is Francisco related to David?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Francisco is the brother of David.",
+  "grounded_variables": [
+   [
+    "David",
+    "daughter",
+    "Marie"
+   ],
+   [
+    "Marie",
+    "grandmother",
+    "Frances"
+   ],
+   [
+    "Frances",
+    "son",
+    "Francisco"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "David",
+    "mother",
+    "Frances"
+   ],
+   [
+    "David",
+    "brother",
+    "Francisco"
+   ]
+  ]
+ },
+ {
+  "query": "James took his grandson Bobby and his daughter Cindy to the beach last weekend. Bobby's father Hugh could n't go because he had to work. How is Cindy related to Hugh?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Cindy is the sister of Hugh.",
+  "grounded_variables": [
+   [
+    "Hugh",
+    "son",
+    "Bobby"
+   ],
+   [
+    "Bobby",
+    "grandfather",
+    "James"
+   ],
+   [
+    "James",
+    "daughter",
+    "Cindy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Hugh",
+    "father",
+    "James"
+   ],
+   [
+    "Hugh",
+    "sister",
+    "Cindy"
+   ]
+  ]
+ },
+ {
+  "query": "Frances took her son Joshua to the state fair. James gave his wife, Frances tickets so that they could get in. Joshua is proud that his daughter is such a good student. Her name is Dolores. How is Dolores related to James?",
+  "rule": [
+   "If B is the wife of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Dolores is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "son",
+    "Joshua"
+   ],
+   [
+    "Joshua",
+    "daughter",
+    "Dolores"
+   ],
+   [
+    "James",
+    "wife",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "granddaughter",
+    "Dolores"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Dolores"
+   ]
+  ]
+ },
+ {
+  "query": "Frances offered to her grandson Thomas a bike. Joshua and Lynn had to teach their son how to ride a bike. How is Frances related to Lynn?",
+  "rule": [
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Frances is the mother of Lynn.",
+  "grounded_variables": [
+   [
+    "Lynn",
+    "husband",
+    "Joshua"
+   ],
+   [
+    "Joshua",
+    "son",
+    "Thomas"
+   ],
+   [
+    "Thomas",
+    "grandmother",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lynn",
+    "son",
+    "Thomas"
+   ],
+   [
+    "Lynn",
+    "mother",
+    "Frances"
+   ]
+  ]
+ },
+ {
+  "query": "Lynn asked her husband Joshua to take out the trash. Joshua took it out quickly so he could get back to the game. Frances took her grandson, Don, to see his dad, Joshua. How is Frances related to Lynn?",
+  "rule": [
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the mother of B, then C is the mother-in-law of A."
+  ],
+  "answer": "Frances is the mother-in-law of Lynn.",
+  "grounded_variables": [
+   [
+    "Joshua",
+    "son",
+    "Don"
+   ],
+   [
+    "Don",
+    "grandmother",
+    "Frances"
+   ],
+   [
+    "Lynn",
+    "husband",
+    "Joshua"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Joshua",
+    "mother",
+    "Frances"
+   ],
+   [
+    "Lynn",
+    "mother-in-law",
+    "Frances"
+   ]
+  ]
+ },
+ {
+  "query": "James took his daughter Cindy to the beach and she called her daughter Carrie to see if she wanted to join. Carrie was excited because today she was going to the zoo with her uncle Wesley. How is Wesley related to James?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Wesley is the son of James.",
+  "grounded_variables": [
+   [
+    "Cindy",
+    "daughter",
+    "Carrie"
+   ],
+   [
+    "Carrie",
+    "uncle",
+    "Wesley"
+   ],
+   [
+    "James",
+    "daughter",
+    "Cindy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Cindy",
+    "brother",
+    "Wesley"
+   ],
+   [
+    "James",
+    "son",
+    "Wesley"
+   ]
+  ]
+ },
+ {
+  "query": "Frances took her granddaughter Felicia to the cinema. Frances enjoyed a homemade dinner with her son Hugh Lynn went to the mall, because she wanted to look for a present for her daughter, Felicia. How is Hugh related to Lynn?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Hugh is the brother of Lynn.",
+  "grounded_variables": [
+   [
+    "Lynn",
+    "daughter",
+    "Felicia"
+   ],
+   [
+    "Felicia",
+    "grandmother",
+    "Frances"
+   ],
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lynn",
+    "mother",
+    "Frances"
+   ],
+   [
+    "Lynn",
+    "brother",
+    "Hugh"
+   ]
+  ]
+ },
+ {
+  "query": "James bought a new dress for his daughter Lena. Pamela went to the baseball game with her uncle Hugh. Lena had picked her daughter Pamela out the cutest new dress to wear on her birthday. How is Hugh related to James?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Hugh is the son of James.",
+  "grounded_variables": [
+   [
+    "Lena",
+    "daughter",
+    "Pamela"
+   ],
+   [
+    "Pamela",
+    "uncle",
+    "Hugh"
+   ],
+   [
+    "James",
+    "daughter",
+    "Lena"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lena",
+    "brother",
+    "Hugh"
+   ],
+   [
+    "James",
+    "son",
+    "Hugh"
+   ]
+  ]
+ },
+ {
+  "query": "Frances took her grandson, Chris, to see his dad, Wesley. Lena received some beautiful roses from her husband Wesley. How is Frances related to Lena?",
+  "rule": [
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Frances is the mother of Lena.",
+  "grounded_variables": [
+   [
+    "Lena",
+    "husband",
+    "Wesley"
+   ],
+   [
+    "Wesley",
+    "son",
+    "Chris"
+   ],
+   [
+    "Chris",
+    "grandmother",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lena",
+    "son",
+    "Chris"
+   ],
+   [
+    "Lena",
+    "mother",
+    "Frances"
+   ]
+  ]
+ },
+ {
+  "query": "James was lucky to have an incredibly close relationship with his grandson, Richard. James and his daughter Lynn took a day off school to go to the zoo. Cindy and her son, Richard, went to the park, and had a wonderful time. How is Lynn related to Cindy?",
+  "rule": [
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Lynn is the sister of Cindy.",
+  "grounded_variables": [
+   [
+    "Cindy",
+    "son",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "grandfather",
+    "James"
+   ],
+   [
+    "James",
+    "daughter",
+    "Lynn"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Cindy",
+    "father",
+    "James"
+   ],
+   [
+    "Cindy",
+    "sister",
+    "Lynn"
+   ]
+  ]
+ },
+ {
+  "query": "Mildred and her father Wesley went her grandfather James's House Frances's husband, James, surprised her with tickets to a football game for their anniversary. How is Mildred related to Frances?",
+  "rule": [
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the husband of A, and C is the granddaughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Mildred is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "James",
+    "son",
+    "Wesley"
+   ],
+   [
+    "Wesley",
+    "daughter",
+    "Mildred"
+   ],
+   [
+    "Frances",
+    "husband",
+    "James"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "James",
+    "granddaughter",
+    "Mildred"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Mildred"
+   ]
+  ]
+ },
+ {
+  "query": "Wesley took his daughter Mildred out for dinner. James dropped his son Wesley off at a friend's house for the night, as he was taking his wife Frances out to dinner. How is Mildred related to Frances?",
+  "rule": [
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Mildred is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "husband",
+    "James"
+   ],
+   [
+    "James",
+    "son",
+    "Wesley"
+   ],
+   [
+    "Wesley",
+    "daughter",
+    "Mildred"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "son",
+    "Wesley"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Mildred"
+   ]
+  ]
+ },
+ {
+  "query": "Don's father, Joshua, and grandfather, James, went hiking during the first weekend of spring. James took his daughter Lena out for dinner. How is Lena related to Joshua?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Lena is the sister of Joshua.",
+  "grounded_variables": [
+   [
+    "Joshua",
+    "son",
+    "Don"
+   ],
+   [
+    "Don",
+    "grandfather",
+    "James"
+   ],
+   [
+    "James",
+    "daughter",
+    "Lena"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Joshua",
+    "father",
+    "James"
+   ],
+   [
+    "Joshua",
+    "sister",
+    "Lena"
+   ]
+  ]
+ },
+ {
+  "query": "James drove his daughter Lena to soccer practice. James enjoys reading books to his grandson, Joseph. Joseph bought to dress for his father Joshua. How is Lena related to Joshua?",
+  "rule": [
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Lena is the sister of Joshua.",
+  "grounded_variables": [
+   [
+    "Joshua",
+    "son",
+    "Joseph"
+   ],
+   [
+    "Joseph",
+    "grandfather",
+    "James"
+   ],
+   [
+    "James",
+    "daughter",
+    "Lena"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Joshua",
+    "father",
+    "James"
+   ],
+   [
+    "Joshua",
+    "sister",
+    "Lena"
+   ]
+  ]
+ },
+ {
+  "query": "James took his son Joshua out for ice cream. Juanita took her father, Joshua, out to dinner. Lynn went to the mall, because she wanted to look for a present for her daughter, Juanita. How is James related to Lynn?",
+  "rule": [
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "James is the father of Lynn.",
+  "grounded_variables": [
+   [
+    "Juanita",
+    "father",
+    "Joshua"
+   ],
+   [
+    "Joshua",
+    "father",
+    "James"
+   ],
+   [
+    "Lynn",
+    "daughter",
+    "Juanita"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Juanita",
+    "grandfather",
+    "James"
+   ],
+   [
+    "Lynn",
+    "father",
+    "James"
+   ]
+  ]
+ },
+ {
+  "query": "Johnson bought to dress for his father Hugh Hugh and David were married twenty years ago today, becoming husband and wife on a glorious spring day. Johnson's grandmother, Frances, was eager to spend a weekend with all of her grandchildren. How is Frances related to David?",
+  "rule": [
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Frances is the mother of David.",
+  "grounded_variables": [
+   [
+    "David",
+    "husband",
+    "Hugh"
+   ],
+   [
+    "Hugh",
+    "son",
+    "Johnson"
+   ],
+   [
+    "Johnson",
+    "grandmother",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "David",
+    "son",
+    "Johnson"
+   ],
+   [
+    "David",
+    "mother",
+    "Frances"
+   ]
+  ]
+ },
+ {
+  "query": "Hugh was driving to pick up his daughter Vanetta, when his mother Frances called. She said her husband James was missing. How is Vanetta related to James?",
+  "rule": [
+   "If B is the wife of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Vanetta is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ],
+   [
+    "Hugh",
+    "daughter",
+    "Vanetta"
+   ],
+   [
+    "James",
+    "wife",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "granddaughter",
+    "Vanetta"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Vanetta"
+   ]
+  ]
+ },
+ {
+  "query": "Joshua is having a meal with his father James. Frances and James are happy with each other. Joshua drove his daughter Felicia to soccer practice. How is Felicia related to Frances?",
+  "rule": [
+   "If B is the husband of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Felicia is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "James",
+    "son",
+    "Joshua"
+   ],
+   [
+    "Joshua",
+    "daughter",
+    "Felicia"
+   ],
+   [
+    "Frances",
+    "husband",
+    "James"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "James",
+    "granddaughter",
+    "Felicia"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Felicia"
+   ]
+  ]
+ },
+ {
+  "query": "James took his son Hugh out on a hunting trip. Vanetta, Hugh's daughter, wanted to come, but they thought she was too young. Instead, James's wife Frances stayed home with her. How is Vanetta related to Frances?",
+  "rule": [
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Vanetta is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "husband",
+    "James"
+   ],
+   [
+    "James",
+    "son",
+    "Hugh"
+   ],
+   [
+    "Hugh",
+    "daughter",
+    "Vanetta"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Vanetta"
+   ]
+  ]
+ },
+ {
+  "query": "Frances and James were a happy couple. They had a wonderful son, Francisco, who had a daughter named, Anna. How is Anna related to James?",
+  "rule": [
+   "If B is the wife of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Anna is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "son",
+    "Francisco"
+   ],
+   [
+    "Francisco",
+    "daughter",
+    "Anna"
+   ],
+   [
+    "James",
+    "wife",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "granddaughter",
+    "Anna"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Anna"
+   ]
+  ]
+ },
+ {
+  "query": "James took his son Hugh out on a hunting trip. Marie, Hugh's daughter, wanted to come, but they thought she was too young. Instead, James's wife Frances stayed home with her. How is Marie related to Frances?",
+  "rule": [
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Marie is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "husband",
+    "James"
+   ],
+   [
+    "James",
+    "son",
+    "Hugh"
+   ],
+   [
+    "Hugh",
+    "daughter",
+    "Marie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Marie"
+   ]
+  ]
+ },
+ {
+  "query": "James and his wife Frances wanted to do something special for their son Joshua. So they asked his daughter Juanita to help them figure something out. How is Juanita related to Frances?",
+  "rule": [
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the husband of A, and C is the granddaughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Juanita is the granddaughter of Frances.",
+  "grounded_variables": [
+   [
+    "James",
+    "son",
+    "Joshua"
+   ],
+   [
+    "Joshua",
+    "daughter",
+    "Juanita"
+   ],
+   [
+    "Frances",
+    "husband",
+    "James"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "James",
+    "granddaughter",
+    "Juanita"
+   ],
+   [
+    "Frances",
+    "granddaughter",
+    "Juanita"
+   ]
+  ]
+ },
+ {
+  "query": "Frances's son Wesley decided to spend the night at a friend's house. Frances was happy as this meant she would have some alone time with her husband James. Wesley went to see his daughter Pamela for parents day at college. How is Pamela related to James?",
+  "rule": [
+   "If B is the wife of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Pamela is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "son",
+    "Wesley"
+   ],
+   [
+    "Wesley",
+    "daughter",
+    "Pamela"
+   ],
+   [
+    "James",
+    "wife",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "granddaughter",
+    "Pamela"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Pamela"
+   ]
+  ]
+ },
+ {
+  "query": "Francisco and Cindy, the happy couple, just got married last week. Frances made cookies with her grandson Wayne. Wayne's father Francisco is not allowed to eat sugar. How is Frances related to Cindy?",
+  "rule": [
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Frances is the mother of Cindy.",
+  "grounded_variables": [
+   [
+    "Cindy",
+    "husband",
+    "Francisco"
+   ],
+   [
+    "Francisco",
+    "son",
+    "Wayne"
+   ],
+   [
+    "Wayne",
+    "grandmother",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Cindy",
+    "son",
+    "Wayne"
+   ],
+   [
+    "Cindy",
+    "mother",
+    "Frances"
+   ]
+  ]
+ },
+ {
+  "query": "David had picked her daughter Gloria out the cutest new dress to wear on her birthday. Frances asked her daughter, David, if she would like to go to a movie with her on Saturday night. Gloria went to the baseball game with her uncle Wesley. How is Wesley related to Frances?",
+  "rule": [
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Wesley is the son of Frances.",
+  "grounded_variables": [
+   [
+    "David",
+    "daughter",
+    "Gloria"
+   ],
+   [
+    "Gloria",
+    "uncle",
+    "Wesley"
+   ],
+   [
+    "Frances",
+    "daughter",
+    "David"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "David",
+    "brother",
+    "Wesley"
+   ],
+   [
+    "Frances",
+    "son",
+    "Wesley"
+   ]
+  ]
+ },
+ {
+  "query": "Frances took her son Hugh to the state fair. James gave his wife, Frances tickets so that they could get in. Hugh drove his daughter Marie to soccer practice. How is Marie related to James?",
+  "rule": [
+   "If B is the wife of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Marie is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ],
+   [
+    "Hugh",
+    "daughter",
+    "Marie"
+   ],
+   [
+    "James",
+    "wife",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "granddaughter",
+    "Marie"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Marie"
+   ]
+  ]
+ },
+ {
+  "query": "Tina and her uncle Francisco went to the pet shop. Tina saw a puppy that she loved, so Francisco bought it for her. Frances went to the mall, because she wanted to look for a present for her daughter, Lena. Lena had picked her daughter Tina out the cutest new dress to wear on her birthday. How is Francisco related to Frances?",
+  "rule": [
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Francisco is the son of Frances.",
+  "grounded_variables": [
+   [
+    "Lena",
+    "daughter",
+    "Tina"
+   ],
+   [
+    "Tina",
+    "uncle",
+    "Francisco"
+   ],
+   [
+    "Frances",
+    "daughter",
+    "Lena"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lena",
+    "brother",
+    "Francisco"
+   ],
+   [
+    "Frances",
+    "son",
+    "Francisco"
+   ]
+  ]
+ },
+ {
+  "query": "Francisco was driving to pick up his daughter Natasha, when his mother Frances called. She said her husband James was missing. How is Natasha related to James?",
+  "rule": [
+   "If B is the wife of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Natasha is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "Frances",
+    "son",
+    "Francisco"
+   ],
+   [
+    "Francisco",
+    "daughter",
+    "Natasha"
+   ],
+   [
+    "James",
+    "wife",
+    "Frances"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Frances",
+    "granddaughter",
+    "Natasha"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Natasha"
+   ]
+  ]
+ },
+ {
+  "query": "James has a daughter called Cindy. David always goes to the park with her son Bobby on Saturdays. James is his grandfather, Bobby's favorite person. How is Cindy related to David?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Cindy is the sister of David.",
+  "grounded_variables": [
+   [
+    "David",
+    "son",
+    "Bobby"
+   ],
+   [
+    "Bobby",
+    "grandfather",
+    "James"
+   ],
+   [
+    "James",
+    "daughter",
+    "Cindy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "David",
+    "father",
+    "James"
+   ],
+   [
+    "David",
+    "sister",
+    "Cindy"
+   ]
+  ]
+ },
+ {
+  "query": "Frances wanted to do something special for her son, Francisco, on his fifth birthday. She asked her husband James for gift ideas. Francisco took his daughter Carrie to the park that afternoon to play. How is Carrie related to James?",
+  "rule": [
+   "If B is the wife of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Carrie is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "James",
+    "wife",
+    "Frances"
+   ],
+   [
+    "Frances",
+    "son",
+    "Francisco"
+   ],
+   [
+    "Francisco",
+    "daughter",
+    "Carrie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "James",
+    "son",
+    "Francisco"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Carrie"
+   ]
+  ]
+ },
+ {
+  "query": "Dolores was excited because today she was going to the zoo with her uncle Wesley. Lynn thought it would be nice to bake a cake for her daughter, Dolores. Lynn's father, James, however, snuck a piece of the cake before anyone could have some! How is Wesley related to James?",
+  "rule": [
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Wesley is the son of James.",
+  "grounded_variables": [
+   [
+    "Lynn",
+    "daughter",
+    "Dolores"
+   ],
+   [
+    "Dolores",
+    "uncle",
+    "Wesley"
+   ],
+   [
+    "James",
+    "daughter",
+    "Lynn"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lynn",
+    "brother",
+    "Wesley"
+   ],
+   [
+    "James",
+    "son",
+    "Wesley"
+   ]
+  ]
+ },
+ {
+  "query": "Frances spent a great day shopping with her daughter, Lena. Lena had picked her daughter Mildred out the cutest new dress to wear on her birthday. Mildred went to the baseball game with her uncle Hugh. How is Hugh related to Frances?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Hugh is the son of Frances.",
+  "grounded_variables": [
+   [
+    "Lena",
+    "daughter",
+    "Mildred"
+   ],
+   [
+    "Mildred",
+    "uncle",
+    "Hugh"
+   ],
+   [
+    "Frances",
+    "daughter",
+    "Lena"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lena",
+    "brother",
+    "Hugh"
+   ],
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ]
+  ]
+ },
+ {
+  "query": "Natasha went with her mother Cindy to pick out a gift for Cindy's mother, Frances. Natasha and her uncle Hugh went to the pet shop. Natasha saw a puppy that she loved, so Hugh bought it for her. How is Hugh related to Frances?",
+  "rule": [
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Hugh is the son of Frances.",
+  "grounded_variables": [
+   [
+    "Cindy",
+    "daughter",
+    "Natasha"
+   ],
+   [
+    "Natasha",
+    "uncle",
+    "Hugh"
+   ],
+   [
+    "Frances",
+    "daughter",
+    "Cindy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Cindy",
+    "brother",
+    "Hugh"
+   ],
+   [
+    "Frances",
+    "son",
+    "Hugh"
+   ]
+  ]
+ },
+ {
+  "query": "Wesley took his son Irvin to the park to play catch. They met James, Irvin's grandfather, to get ice cream afterward. James brought his daughter Lynn along for ice cream. How is Lynn related to Wesley?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Lynn is the sister of Wesley.",
+  "grounded_variables": [
+   [
+    "Wesley",
+    "son",
+    "Irvin"
+   ],
+   [
+    "Irvin",
+    "grandfather",
+    "James"
+   ],
+   [
+    "James",
+    "daughter",
+    "Lynn"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Wesley",
+    "father",
+    "James"
+   ],
+   [
+    "Wesley",
+    "sister",
+    "Lynn"
+   ]
+  ]
+ },
+ {
+  "query": "Wesley is proud that his daughter is such a good student. Her name is Mildred. Frances's son Wesley was planning a trip for her husband, James. How is Mildred related to James?",
+  "rule": [
+   "If B is the wife of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Mildred is the granddaughter of James.",
+  "grounded_variables": [
+   [
+    "James",
+    "wife",
+    "Frances"
+   ],
+   [
+    "Frances",
+    "son",
+    "Wesley"
+   ],
+   [
+    "Wesley",
+    "daughter",
+    "Mildred"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "James",
+    "son",
+    "Wesley"
+   ],
+   [
+    "James",
+    "granddaughter",
+    "Mildred"
+   ]
+  ]
+ },
+ {
+  "query": "Frances always goes to the park with her son Wesley on Saturdays. Vanetta was so excited because she received two gifts on her birthday. One was from her father, Hugh, and the other was from her grandmother, Frances. How is Wesley related to Hugh?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Wesley is the brother of Hugh.",
+  "grounded_variables": [
+   [
+    "Hugh",
+    "daughter",
+    "Vanetta"
+   ],
+   [
+    "Vanetta",
+    "grandmother",
+    "Frances"
+   ],
+   [
+    "Frances",
+    "son",
+    "Wesley"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Hugh",
+    "mother",
+    "Frances"
+   ],
+   [
+    "Hugh",
+    "brother",
+    "Wesley"
+   ]
+  ]
+ },
+ {
+  "query": "David and her son, Bobby, went to the park to fly a kite. They had fun doing it all day. James enjoys reading books to his grandson, Bobby. James and his daughter Lena took a day off school to go to the zoo. How is Lena related to David?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Lena is the sister of David.",
+  "grounded_variables": [
+   [
+    "David",
+    "son",
+    "Bobby"
+   ],
+   [
+    "Bobby",
+    "grandfather",
+    "James"
+   ],
+   [
+    "James",
+    "daughter",
+    "Lena"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "David",
+    "father",
+    "James"
+   ],
+   [
+    "David",
+    "sister",
+    "Lena"
+   ]
+  ]
+ },
+ {
+  "query": "Lynn spent a great day shopping with her daughter, Andrea. Andrea was excited because today she was going to the zoo with her uncle Wesley. Frances spent a great day shopping with her daughter, Lynn. How is Wesley related to Frances?",
+  "rule": [
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Wesley is the son of Frances.",
+  "grounded_variables": [
+   [
+    "Lynn",
+    "daughter",
+    "Andrea"
+   ],
+   [
+    "Andrea",
+    "uncle",
+    "Wesley"
+   ],
+   [
+    "Frances",
+    "daughter",
+    "Lynn"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lynn",
+    "brother",
+    "Wesley"
+   ],
+   [
+    "Frances",
+    "son",
+    "Wesley"
+   ]
+  ]
+ },
+ {
+  "query": "Lena went to the mall, because she wanted to look for a present for her daughter, Martha. James went to the movies with his son Wesley. Wesley's daughter, Martha, was n't interested in the film they were seeing so she stayed home instead. How is James related to Lena?",
+  "rule": [
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "James is the father of Lena.",
+  "grounded_variables": [
+   [
+    "Martha",
+    "father",
+    "Wesley"
+   ],
+   [
+    "Wesley",
+    "father",
+    "James"
+   ],
+   [
+    "Lena",
+    "daughter",
+    "Martha"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Martha",
+    "grandfather",
+    "James"
+   ],
+   [
+    "Lena",
+    "father",
+    "James"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,31 @@
+At each turn, you will be provided a list of identified supporting facts and an inference rule. 
+Please on a new line starting with "Rule Implementation:" to implement the rule based on the supporting facts to analyze and deduce new potential fact.
+Then on a new line starting with "New fact:" to outline the new inferred fact in both natural language form and its corresponding symbolic format within "[" and "]".
+Please try to use the objects and predicates in the provided schema to describe symbolic facts. If the schema does not contain corresponding elements, generate the symbolic fact directly from its natural language form.
+Finally predict "Yes" or "No" to judge whether the new inferred fact can solve the query, in a new line starting with "Judgement:".
+
+### Examples
+Schema Objects: Joshua, Don, James
+Schema Predicates: sister_of, brother_of
+Query: How is Irvin related to Hugh?
+Fact List: 3. Frances is the mother of Wesley. 6. Hugh is the son of Frances.
+Rule: If B is the mother of A, and C is the son of B, then C is the brother of A.
+Rule Implementation: According to the rule, since Frances is the mother of Wesley, and Hugh is the son of Frances, we can infer that Hugh is the brother of Wesley.
+New fact: Hugh is the brother of Wesley. [brother_of(Hugh, Wesley)]
+Judgement: No. Because the new fact does not state the relationship between Irvin and Hugh.
+------
+Schema Objects: Joshua, Leno, James
+Schema Predicates: father_of, sister_of, daughter_of
+Query: How is Joshua related to Lena?
+Fact List: 1. James is the father of Joshua. 3. Leno is the daughter of James.
+Rule: If B is the father of A, and C is the daughter of B, then C is the sister of A.
+Rule Implementation: According to the rule, since James is the father of Joshua, and Lena is the daughter of James, we can infer that Lena is the sister of Joshua.
+New fact: Lena is the sister of Joshua. [sister_of(Lena, Joshua)]
+Judgement: Yes. Because the new fact states the relationship between Joshua and Lena.
+
+### Todo
+Schema Objects: {objects}
+Schema Predicates: {predicates}
+Query: {query}
+Fact List: {fact_list}
+Rule: {rule}

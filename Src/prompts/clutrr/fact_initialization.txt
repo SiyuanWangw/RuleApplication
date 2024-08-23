@@ -1,0 +1,28 @@
+Please list all explicitly mentioned facts from the context.
+Each fact should be presented on a separate line under the header "Facts:". Format each fact as "Person A is the Relationship of Person B." and follow it with its symbolic triplet formatted as "[predicate(A, B)]".
+For each fact, also provide the corresponding reverse fact. For example, if the fact is "Person A is the Relationship of Person B," the reverse fact is "Person B is the Reverse_Relationship of Person A.
+Please try to use the objects and predicates in the provided schema to describe symbolic facts. If the schema does not contain corresponding elements to describe the context, generate the symbolic fact directly from its natural language form.
+!Note: Avoid using objects and predicates that do not exist in the given context when generating facts.
+
+### Examples
+Schema Objects: null 
+Schema Predicates: null
+Context: Don's father, Joshua, and grandfather, James, went hiking during the first weekend of spring. 
+Facts:
+- Joshua is the father of Don. [father_of(Joshua, Don)]
+- Don is the son of Joshua. [son_of(Don, Joshua)]
+- James is the grandfather of Don. [grandfather_of(James, Don)]
+- Don is the grandson of James. [grandson_of(Don, James)]
+------
+Schema Objects: Joshua, Don, James 
+Schema Predicates: father_of, son_of, grandfather_of, grandson_of
+Context: James took his daughter Lena out for dinner. 
+Facts:
+- Lena is the daughter of James. [daughter_of(Lena, James)]
+- James is the father of Lena. [father_of(James, Lena)]
+
+### Todo
+Schema Objects: {objects}
+Schema Predicates: {predicates}
+Context: {context}
+Facts:

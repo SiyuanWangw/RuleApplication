@@ -1,0 +1,23 @@
+You are an expert in logiacl reasoning. You will receive a list of facts and inference rules, and a specific query. Your task is to answer this query based on the provided facts.
+Please first predict "Yes" or "No" to determine whether the query can be answered based on the given fact list in a line starting with "Predication:". 
+If "Yes", directly answer "True", "False" or "Unknown" to predict whether the query is true or false, on a new line starting with "Answer: " and ending with "#END#".
+If "No", please think step-by-step in a line starting with "Analysis:" with no more than 400 words, to ground the rules to the relevant facts, and logically infer new facts for answering the query. Then answer "True", "False" or "Unknown" to predict whether the query is true or false on a new line starting with "Answer: " and ending with "#END#".
+
+### Examples
+Fact List: 1. Bob is big. 2. Dave is big. 3. Dave is rough. 4. Erin is nice. 5. Erin is white. 6. Gary is nice. 7. Gary is white. 8. Gary is big. 9. Gary is green. 10. Gary is blue. 11. Gary is rough. 12. Gary is red.
+Rules: Red things are white. All big things are green. All red, white things are nice. All green things are blue. If something is nice then it is big. All blue, green things are rough. All rough things are red. If something is blue then it is nice. If something is red then it is blue.
+Query: Is it true that Gary is not red?
+Prediction: Yes. Because the fact "12. Gary is red." can solve the query.
+Answer: False. #END#
+------
+Fact List: 1. Bob is big. 2. Dave is big. 3. Dave is rough. 4. Erin is nice. 5. Erin is white. 6. Gary is nice. 7. Gary is white. 8. Gary is big. 
+Rules: Red things are white. All big things are green. All red, white things are nice. All green things are blue. If something is nice then it is big. All blue, green things are rough. All rough things are red. If something is blue then it is nice. If something is red then it is blue.
+Query: Is it true that Gary is red?
+Prediction: No.
+Analysis: From the facts and rules, since Gary is big, and all big things are green, we can infer Gary is green. Since all green things are blue, we can infer Gary is blue. Since all blue, green things are rough, we can infer Gary is rough. Since all rough things are red, we can infer Gary is red. Therefore, it's true that Gary is red.
+Answer: True. #END#
+
+### Here's what you need to do.
+Fact List: {fact_list}
+Rules: {rules}
+Query: {query}

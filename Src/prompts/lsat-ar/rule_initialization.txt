@@ -1,0 +1,26 @@
+Please list the symbolic forms of the given constraint rule in Prolog without changing its original wordings.
+Format each symbolic rule in Prolog notation, representing it either as a conclusion or as a combination of a conclusion and premises, separated by ":-". Format each atom fact in the rule as "predicate(X, Y, ...)" where X, Y, ... are the arguments of the predicate. Avoid predicate nesting such as not(smart(X)), but using not\_smart(X) instead. Avoid mathematic expression such as N =< 4, but using samller\_than(N, 4). 
+Please try to use the objects and predicates in the provided schema to describe the symbolic rule. If the schema does not contain corresponding elements, generate the symbolic rule directly from its natural language form. Please always use one predicate, i.e., constraint.
+
+### Examples: 
+Schema Objects: Monday, Tuesday, Wednesday, morning, Kyle, Lenore, Helen, George, Nina 
+Schema Predicates: constraint 
+Context: Of the eight students-George, Helen, Irving, Kyle, Lenore, Nina, Olivia, and Robert-in a seminar, exactly six will give individual oral reports during three consecutive days-Monday, Tuesday, and Wednesday. Exactly two reports will be given each day-one in the morning and one in the afternoon-according to the following conditions. 
+Constraint Rule: Tuesday is the only day on which George can give a report. 
+Symbolic Rule: 
+- constraint(George, Tuesday) 
+------ 
+Schema Objects: Monday, Tuesday, Wednesday, morning, Kyle, Lenore, Helen, George, Nina 
+Schema Predicates: constraint
+Context: Of the eight students-George, Helen, Irving, Kyle, Lenore, Nina, Olivia, and Robert-in a seminar, exactly six will give individual oral reports during three consecutive days-Monday, Tuesday, and Wednesday. Exactly two reports will be given each day-one in the morning and one in the afternoon-according to the following conditions. 
+Constraint Rule: If Nina gives a report, then on the next day Helen and Irving must both give reports, unless Nina's report is given on Wednesday. 
+Symbolic Rule: 
+- constraint(Helen, Irving, Tuesday) :- constraint(Nina, Monday) 
+- constraint(Helen, Irving, Wednesday) :- constraint(Nina, Tuesday)  
+
+### Here's what you need to do.
+Schema Objects: {objects}  
+Schema Predicates: constraint
+Context: {context} 
+Constraint Rule: {rule} 
+Symbolic Rule:

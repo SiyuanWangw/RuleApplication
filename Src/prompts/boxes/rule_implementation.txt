@@ -1,0 +1,35 @@
+At each turn, you will be provided a list of state facts and an operational fact, and a logical rule. 
+Please on a new line starting with "Rule Implementation:" to implement the rule based on the facts to infer new state facts after the operation. 
+Then output "New facts:" in a new line, and each new inferred fact in both natural language form and its corresponding symbolic format on separate lines under the header "New facts:".  
+Each line must cover all contents about a distinct Box. For example, the first is about Box 1, then the second line should not describe Box 1. 
+Format each fact in natural language as "Box X contains Y." where X is the box number and Y are the specific items instead of general "contents" in the box. 
+Format each symbolic fact in Prolog notation as "predicate(X, Y, ...)" where X, Y, ... are the arguments of the predicate, and the predicate should be "contains". 
+Please try to use the objects and predicates in the provided schema to describe symbolic facts. If the schema does not contain corresponding elements, generate the symbolic fact directly from its natural language form. 
+
+### Examples: 
+State Facts: Box 1 contains the rose. Box 2 contains the letter. 
+Operational Fact: Move the contents from Box 2 to Box 1. 
+Rule: If move the contents X from Box A to Box B, then X are not in Box A and X are in Box B. 
+Schema Objects: Box 0, the rose, the bread, the radio, the tape 
+Schema Predicates: contains, move_from_to, remove_from, put_into 
+Rule Implementation: Based on the rule, after the moving operation, we can infer that Box 1 contains the rose and the letter, and Box 2 contains nothing.
+New facts: 
+Box 1 contains the rose and the letter. [contains(Box 1, the rose, the letter)] 
+Box 2 contains nothing. [contains(Box 2, nothing)] 
+------ 
+State Facts: Box 2 contains the letter and the book. 
+Operational Fact: Remove the letter from Box 2. 
+Rule: If remove the contents X from Box A, then X are not in Box A. 
+Schema Objects: Box 0, Box 1, Box 2, the rose, the bread, the radio, the tape, the letter, the book, nothing 
+Schema Predicates: contains, move_from_to, remove_from, put_into 
+Rule Implementation: Based on the rule, after the removing operation, we can infer that Box 2 contains the book. 
+New facts:  
+Box 2 contains the book. [contains(Box 2, the book)] 
+
+### Here's what you need to do.
+State Facts: {state_facts}
+Operational Fact: {op_facts} 
+Rule: {rule} 
+Schema Objects: {objects}  
+Schema Predicates: {predicates} 
+Rule Implementation:

@@ -1,0 +1,25 @@
+Please list the symbolic fact of the given context.
+Format each symbolic fact in Prolog notation as "predicate(X, Y, ...)" where X, Y, ... are the arguments of the predicate. Avoid predicate nesting such as not(smart(X)), but using not_smart(X) instead. 
+Please try to use the objects and predicates in the provided schema to describe symbolic facts. If the schema is null or does not contain corresponding elements to describe the context, generate the symbolic fact directly from its natural language form.
+
+### Examples
+Schema Objects: David
+Schema Predicates: kind
+Context: Bob is big.  
+Fact: big(Bob)
+------
+Schema Objects: bald eagle
+Schema Predicates: needs
+Context: The cow visits the bald eagle.
+Fact: visits(cow, bald eagle)
+------
+Schema Objects: lion, squirrel
+Schema Predicates: sees
+Context: The lion does not see the squirrel.
+Fact: not_see(lion, squirrel)
+
+### Here's what you need to do.
+Schema Objects: {objects}
+Schema Predicates: {predicates}
+Context: {context}
+Fact: 

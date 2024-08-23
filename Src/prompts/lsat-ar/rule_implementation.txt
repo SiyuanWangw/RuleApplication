@@ -1,0 +1,38 @@
+At each turn, you will be provided a context background, a constraint rule and a list of relevant facts. 
+Please on a new line starting with "Rule Implementation:" to implement the rule based on the facts to analyze there is a conflict between them. If no conflict, proceed to deduce new potential facts. 
+Then predict "Yes" or "No" to judge whether there is a conflict between the rule and facts, in a new line starting with "Judgement:". 
+If the judgement is No, proceed on a new line starting with "New fact:" to outline the new inferred fact in both natural language form and its corresponding symbolic format as "predicate(X, Y, ...)" within "[" and "]". 
+Please try to use the objects and predicates in the provided schema to describe symbolic facts. If the schema does not contain corresponding elements, generate the symbolic fact directly from its natural language form. Please always use one predicate, i.e., assign.
+
+### Examples: 
+Schema Objects: Monday, Tuesday, Wednesday, morning, Kyle, Lenore, Helen, George, Nina, Irving, Robert 
+Schema Predicates: assign 
+Context: Of the eight students-George, Helen, Irving, Kyle, Lenore, Nina, Olivia, and Robert-in a seminar, exactly six will give individual oral reports during three consecutive days-Monday, Tuesday, and Wednesday. Exactly two reports will be given each day-one in the morning and one in the afternoon-according to the following conditions. 
+Rule: Tuesday is the only day on which George can give a report. 
+Query: If Kyle and Lenore do not give reports, then the morning reports on Monday, Tuesday, and Wednesday, respectively, could be given by 
+Fact List: 
+- B) Irving, Robert, and Helen 
+Rule Implementation: According to the rule and the fact Robert give report on Tuesday morning, there is no conflict and we can infer George give a report on Tuesday afternoon. 
+Judgement: No. 
+New fact: George give a report on Tuesday afternoon. [assign(George, Tuesday, afternoon)] 
+------ 
+Schema Objects: Monday, Tuesday, Wednesday, morning, afternoon, Kyle, Lenore, Helen, George, Nina, Irving, Robert 
+Schema Predicates: assign
+Context: Of the eight students-George, Helen, Irving, Kyle, Lenore, Nina, Olivia, and Robert-in a seminar, exactly six will give individual oral reports during three consecutive days-Monday, Tuesday, and Wednesday. Exactly two reports will be given each day-one in the morning and one in the afternoon-according to the following conditions. 
+Rule: Neither Olivia nor Robert can give an afternoon report. 
+Query: If Kyle and Lenore do not give reports, then the morning reports on Monday, Tuesday, and Wednesday, respectively, could be given by 
+Fact List: 
+- B) Irving, Robert, and Helen 
+- George give a report on Tuesday afternoon. 
+Rule Implementation: According to the rule, and the facts Irving, Robert, and Helen all give report on morning, there is a conflict that can not give a report on the morning. 
+Judgement: Yes. 
+
+### Here's what you need to do.
+Schema Objects: {objects} 
+Schema Predicates: assign
+Context: {context}
+Rule: {rule} 
+Query: {query}
+Fact List: 
+{facts} 
+Rule Implementation:

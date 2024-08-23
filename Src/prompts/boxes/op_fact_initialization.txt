@@ -1,0 +1,25 @@
+Please list the symbolic form of the explicitly provided fact in the context.
+Format the symbolic fact in Prolog notation as "predicate(X, Y, ...)" where X, Y, ... are the arguments of the predicate.
+Please try to use the objects and predicates in the provided schema to describe symbolic facts. If the schema is null or does not contain corresponding elements to describe the context, generate the symbolic fact directly from its natural language form.
+
+### Examples
+Schema Objects: null
+Schema Predicates: contains, move_from_to, remove_from, put_into
+Context: Put the shoe into Box 0. 
+Fact: put_into(the shoe, Box 0)
+------
+Schema Objects: null
+Schema Predicates: contains, move_from_to, remove_from, put_into
+Context: Remove the radio and the tape from Box 4. 
+Fact: remove_from(the radio, the tape, Box 4)
+------
+Schema Objects: Box 0, the rose, the bread, the radio, the tape
+Schema Predicates: contains, move_from_to, remove_from, put_into
+Context: Move the contents of Box 3 to Box 1. 
+Fact: move_from_to(the contents, Box 3, Box 1)
+
+### Here's what you need to do.
+Schema Objects: {objects}
+Schema Predicates: contains, move_from_to, remove_from, put_into
+Context: {context}
+Fact: 

@@ -1,0 +1,1975 @@
+[
+    {
+        "facts": [
+            "Bob is smart.",
+            "Bob is white.",
+            "Dave is big.",
+            "Dave is not white.",
+            "Gary is big.",
+            "Gary is blue.",
+            "Gary is smart.",
+            "Gary is white.",
+            "Gary is not young.",
+            "Harry is nice.",
+            "Harry is white.",
+            "Harry is young."
+        ],
+        "rules": [
+            "If something is big then it is furry.",
+            "All white things are furry.",
+            "Blue things are nice.",
+            "If something is nice then it is blue.",
+            "All young things are blue.",
+            "If something is nice then it is big.",
+            "If Bob is furry and Bob is smart then Bob is young.",
+            "If Bob is young and Bob is blue then Bob is furry.",
+            "All white things are smart."
+        ],
+        "question": "Bob is nice.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "The bald eagle is big.",
+            "The bald eagle sees the squirrel.",
+            "The dog eats the mouse.",
+            "The dog is not cold.",
+            "The dog is not nice.",
+            "The dog visits the mouse.",
+            "The mouse is red.",
+            "The squirrel sees the bald eagle.",
+            "The squirrel visits the bald eagle.",
+            "The squirrel visits the dog."
+        ],
+        "rules": [
+            "If something sees the mouse then it visits the mouse.",
+            "If something eats the dog then it visits the mouse.",
+            "If something eats the squirrel then it visits the mouse.",
+            "If something visits the dog then the dog visits the bald eagle.",
+            "If something is big and it visits the mouse then the mouse visits the squirrel.",
+            "If something visits the bald eagle then the bald eagle sees the mouse.",
+            "If something is big then it visits the bald eagle.",
+            "If something visits the squirrel then it is big.",
+            "If something eats the bald eagle and it sees the squirrel then it does not see the bald eagle."
+        ],
+        "question": "The mouse is big.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Bob is cold.",
+            "Dave is kind.",
+            "Dave is young.",
+            "Gary is big.",
+            "Gary is cold.",
+            "Gary is white.",
+            "Gary is young.",
+            "Harry is cold.",
+            "Harry is kind.",
+            "Harry is white.",
+            "Harry is young."
+        ],
+        "rules": [
+            "Smart, young people are furry.",
+            "All kind, furry people are big.",
+            "Smart, big people are furry.",
+            "All white, kind people are young.",
+            "If someone is furry and big then they are cold.",
+            "If someone is big then they are furry.",
+            "All cold, smart people are big.",
+            "All young people are smart.",
+            "All cold, young people are white."
+        ],
+        "question": "Dave is cold.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Anne is blue.",
+            "Anne is furry.",
+            "Anne is kind.",
+            "Anne is nice.",
+            "Anne is red.",
+            "Bob is furry.",
+            "Bob is kind.",
+            "Bob is nice.",
+            "Bob is red.",
+            "Erin is white.",
+            "Gary is kind."
+        ],
+        "rules": [
+            "All white, furry things are red.",
+            "Kind, nice things are big.",
+            "Big, nice things are furry.",
+            "All kind things are white.",
+            "If Gary is blue and Gary is white then Gary is red.",
+            "All nice, kind things are white.",
+            "If something is white then it is nice.",
+            "If Bob is white then Bob is nice.",
+            "If something is furry and blue then it is red."
+        ],
+        "question": "Gary is furry.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "The bear does not chase the lion.",
+            "The bear visits the lion.",
+            "The bear visits the tiger.",
+            "The lion chases the bear.",
+            "The lion chases the tiger.",
+            "The lion visits the bear.",
+            "The rabbit chases the tiger.",
+            "The rabbit is big.",
+            "The rabbit is not green.",
+            "The rabbit is young.",
+            "The rabbit visits the tiger.",
+            "The tiger chases the rabbit.",
+            "The tiger is rough.",
+            "The tiger visits the bear."
+        ],
+        "rules": [
+            "If something chases the bear and it sees the rabbit then the bear does not visit the rabbit.",
+            "If something chases the lion then the lion is rough.",
+            "If the rabbit chases the tiger and the tiger visits the rabbit then the rabbit is not big.",
+            "If something chases the lion then the lion does not visit the tiger.",
+            "If something chases the rabbit and it chases the tiger then the rabbit chases the bear.",
+            "If something is young and it does not see the rabbit then it sees the bear.",
+            "If something visits the lion then it is young.",
+            "If the tiger visits the bear and the bear is big then the tiger visits the lion.",
+            "Young things are big."
+        ],
+        "question": "The tiger is young.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "The cat is young.",
+            "The cow is young.",
+            "The cow visits the mouse.",
+            "The mouse eats the cat.",
+            "The mouse needs the cat.",
+            "The mouse needs the rabbit.",
+            "The mouse does not visit the cow.",
+            "The mouse visits the rabbit.",
+            "The rabbit is round.",
+            "The rabbit does not need the cat.",
+            "The rabbit visits the mouse."
+        ],
+        "rules": [
+            "If someone eats the cat and they eat the cow then they do not need the mouse.",
+            "If someone visits the cat then the cat eats the cow.",
+            "All nice people are red.",
+            "If the mouse needs the rabbit and the mouse eats the cat then the mouse eats the cow.",
+            "If someone is red and they visit the mouse then the mouse needs the cow.",
+            "If someone needs the cow then the cow visits the cat.",
+            "All round people are nice.",
+            "If someone needs the cat and the cat visits the rabbit then they do not eat the rabbit."
+        ],
+        "question": "The cow visits the cat.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "The bald eagle chases the bear.",
+            "The bald eagle is green.",
+            "The bald eagle is round.",
+            "The bald eagle likes the rabbit.",
+            "The bald eagle visits the lion.",
+            "The bear is young.",
+            "The bear visits the bald eagle.",
+            "The lion is red.",
+            "The lion is round.",
+            "The lion visits the rabbit.",
+            "The rabbit is blue.",
+            "The rabbit is red."
+        ],
+        "rules": [
+            "If someone likes the bear then the bear is blue.",
+            "If someone likes the lion then the lion likes the rabbit.",
+            "If someone chases the bear and they visit the lion then the lion likes the bear.",
+            "If someone visits the bear then they are red.",
+            "If someone likes the bear and the bear is red then they chase the bear.",
+            "If someone is red and they chase the rabbit then they are round.",
+            "If the rabbit likes the bear and the bear likes the lion then the bear is young.",
+            "If the rabbit visits the bald eagle then the bald eagle is green.",
+            "If someone is blue then they visit the bear."
+        ],
+        "question": "The bear is red.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Charlie is kind.",
+            "Charlie is young.",
+            "Erin is young.",
+            "Fiona is big.",
+            "Fiona is green.",
+            "Fiona is red.",
+            "Fiona is young.",
+            "Harry is furry.",
+            "Harry is kind.",
+            "Harry is young."
+        ],
+        "rules": [
+            "Red people are smart.",
+            "Young people are big.",
+            "All smart, young people are green.",
+            "Furry, big people are young.",
+            "If someone is green and red then they are furry.",
+            "If someone is big and young then they are red."
+        ],
+        "question": "Erin is green.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Anne is blue.",
+            "Anne is kind.",
+            "Anne is smart.",
+            "Anne is young.",
+            "Charlie is blue.",
+            "Charlie is green.",
+            "Charlie is kind.",
+            "Charlie is red.",
+            "Dave is quiet.",
+            "Harry is kind."
+        ],
+        "rules": [
+            "All kind, quiet people are young.",
+            "All kind people are quiet.",
+            "Kind, young people are blue.",
+            "All young, blue people are green.",
+            "Blue, green people are smart."
+        ],
+        "question": "Harry is green.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Bob is kind.",
+            "Bob is red.",
+            "Bob is round.",
+            "Charlie is kind.",
+            "Fiona is not green.",
+            "Fiona is smart.",
+            "Gary is round."
+        ],
+        "rules": [
+            "All round people are quiet.",
+            "All smart people are round.",
+            "If someone is furry and not green then they are smart.",
+            "Quiet people are smart.",
+            "If someone is kind and quiet then they are not furry.",
+            "If someone is smart then they are kind.",
+            "If someone is kind and not furry then they are red."
+        ],
+        "question": "Gary is not furry.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Charlie is kind.",
+            "Erin is blue.",
+            "Erin is furry.",
+            "Erin is kind.",
+            "Erin is quiet.",
+            "Gary is furry.",
+            "Gary is red.",
+            "Harry is big.",
+            "Harry is furry.",
+            "Harry is kind.",
+            "Harry is nice.",
+            "Harry is quiet."
+        ],
+        "rules": [
+            "Nice, big things are quiet.",
+            "If something is blue then it is big.",
+            "All big, red things are kind.",
+            "Big things are kind.",
+            "Red, kind things are nice.",
+            "If something is red then it is blue.",
+            "If something is quiet and kind then it is big.",
+            "If Erin is nice and Erin is big then Erin is red."
+        ],
+        "question": "Gary is nice.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "The bald eagle is green.",
+            "The bald eagle is red.",
+            "The cow is nice.",
+            "The cow likes the tiger.",
+            "The cow needs the tiger.",
+            "The mouse is nice.",
+            "The mouse needs the bald eagle.",
+            "The mouse sees the bald eagle.",
+            "The tiger likes the bald eagle.",
+            "The tiger needs the cow.",
+            "The tiger needs the mouse."
+        ],
+        "rules": [
+            "If someone is young then they need the tiger.",
+            "If the tiger is young then the tiger is green.",
+            "If someone needs the tiger then the tiger sees the bald eagle.",
+            "If someone sees the tiger and the tiger likes the bald eagle then the bald eagle sees the tiger.",
+            "If someone is green and they see the bald eagle then they are cold.",
+            "If someone is green and they like the tiger then they see the bald eagle.",
+            "If the tiger is cold then the tiger is young.",
+            "If someone needs the tiger then they like the tiger.",
+            "If someone needs the mouse then they are green."
+        ],
+        "question": "The tiger needs the tiger.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Anne is big.",
+            "Anne is green.",
+            "Bob is green.",
+            "Charlie is blue.",
+            "Charlie is nice.",
+            "Dave is nice.",
+            "Dave is quiet."
+        ],
+        "rules": [
+            "Green people are blue.",
+            "All blue people are big.",
+            "All big, nice people are kind.",
+            "Kind people are round.",
+            "All round people are green.",
+            "All quiet people are big.",
+            "Blue people are quiet.",
+            "Big, quiet people are kind.",
+            "All blue, quiet people are kind."
+        ],
+        "question": "Charlie is green.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Anne is kind.",
+            "Anne is red.",
+            "Fiona is big.",
+            "Fiona is smart.",
+            "Fiona is young.",
+            "Gary is young.",
+            "Harry is big."
+        ],
+        "rules": [
+            "All kind people are rough.",
+            "Big people are blue.",
+            "If someone is smart then they are red.",
+            "All rough, blue people are smart.",
+            "All young people are rough.",
+            "Young, kind people are big.",
+            "Blue, kind people are young.",
+            "Rough, young people are kind."
+        ],
+        "question": "Gary is blue.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "The bear needs the dog.",
+            "The cow is kind.",
+            "The cow is nice.",
+            "The cow likes the dog.",
+            "The cow needs the dog.",
+            "The dog chases the rabbit.",
+            "The dog likes the bear.",
+            "The dog likes the rabbit.",
+            "The rabbit chases the bear.",
+            "The rabbit chases the cow.",
+            "The rabbit is blue.",
+            "The rabbit is kind.",
+            "The rabbit likes the cow.",
+            "The rabbit needs the dog."
+        ],
+        "rules": [
+            "If someone needs the rabbit then the rabbit likes the bear.",
+            "If someone needs the rabbit and they chase the dog then they need the bear.",
+            "If someone is kind then they like the dog.",
+            "If someone likes the bear and they are blue then they chase the rabbit.",
+            "If the rabbit likes the dog then the dog is kind.",
+            "If someone chases the dog then the dog likes the cow.",
+            "If someone likes the dog then they are round.",
+            "If the rabbit likes the dog and the rabbit chases the cow then the dog likes the cow.",
+            "If someone needs the dog and the dog is kind then the dog needs the rabbit."
+        ],
+        "question": "The rabbit likes the bear.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Anne is young.",
+            "Dave is not nice.",
+            "Erin is blue.",
+            "Erin is young.",
+            "Fiona is blue.",
+            "Fiona is rough.",
+            "Fiona is round."
+        ],
+        "rules": [
+            "If Dave is white then Dave is rough.",
+            "If Erin is young then Erin is white.",
+            "All blue, round people are big.",
+            "Round, rough people are big.",
+            "If someone is blue and not young then they are big.",
+            "All rough people are not nice.",
+            "All white people are round.",
+            "If someone is nice and white then they are blue.",
+            "Big, round people are rough."
+        ],
+        "question": "Erin is rough.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Erin is nice.",
+            "Erin is white.",
+            "Fiona is quiet.",
+            "Gary is white.",
+            "Harry is cold.",
+            "Harry is green.",
+            "Harry is nice.",
+            "Harry is quiet.",
+            "Harry is round.",
+            "Harry is white."
+        ],
+        "rules": [
+            "All quiet people are round.",
+            "If someone is quiet then they are round.",
+            "If Erin is round then Erin is green.",
+            "Nice people are cold.",
+            "If someone is quiet and nice then they are cold.",
+            "If someone is round then they are nice.",
+            "If someone is cold then they are quiet.",
+            "If Gary is quiet then Gary is not white.",
+            "If someone is nice and green then they are smart."
+        ],
+        "question": "Erin is green.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Bob is green.",
+            "Bob is red.",
+            "Bob is young.",
+            "Dave is big.",
+            "Dave is nice.",
+            "Dave is red.",
+            "Erin is nice.",
+            "Erin is young.",
+            "Gary is big.",
+            "Gary is red."
+        ],
+        "rules": [
+            "Nice, furry people are big.",
+            "If someone is green and nice then they are red.",
+            "Nice people are furry.",
+            "If someone is big then they are furry.",
+            "Furry people are young.",
+            "If Dave is nice and Dave is young then Dave is green.",
+            "All furry, big people are green.",
+            "Red, furry people are not kind.",
+            "If Bob is not furry then Bob is young."
+        ],
+        "question": "Erin is red.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Anne is big.",
+            "Bob is round.",
+            "Bob is smart.",
+            "Bob is white.",
+            "Gary is big.",
+            "Gary is furry.",
+            "Gary is red.",
+            "Gary is rough.",
+            "Gary is round.",
+            "Harry is furry."
+        ],
+        "rules": [
+            "All big, rough things are smart.",
+            "Red, rough things are furry.",
+            "Rough things are round.",
+            "Smart things are white.",
+            "Big things are smart.",
+            "All white things are rough.",
+            "If something is furry then it is round.",
+            "Smart, round things are furry.",
+            "Round things are red."
+        ],
+        "question": "Anne is round.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "The bear is green.",
+            "The bear is young.",
+            "The bear needs the dog.",
+            "The dog chases the bear.",
+            "The dog eats the lion.",
+            "The dog is young.",
+            "The lion does not chase the rabbit.",
+            "The lion needs the bear.",
+            "The rabbit chases the dog.",
+            "The rabbit chases the lion.",
+            "The rabbit eats the bear.",
+            "The rabbit eats the lion.",
+            "The rabbit is young.",
+            "The rabbit needs the lion."
+        ],
+        "rules": [
+            "If someone eats the rabbit then the rabbit needs the bear.",
+            "If the lion does not eat the rabbit then the rabbit needs the bear.",
+            "If someone eats the dog then they chase the dog.",
+            "If someone is nice then they eat the dog.",
+            "If someone chases the dog and they need the bear then the dog is nice.",
+            "If someone chases the dog and the dog eats the bear then they eat the lion.",
+            "If the dog needs the lion and the dog eats the bear then the lion chases the dog.",
+            "If someone eats the rabbit then they are nice.",
+            "If someone needs the lion then the lion eats the dog."
+        ],
+        "question": "The dog eats the dog.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "The cat visits the rabbit.",
+            "The cow eats the cat.",
+            "The rabbit chases the squirrel.",
+            "The rabbit is cold.",
+            "The rabbit is green.",
+            "The rabbit visits the cat.",
+            "The squirrel eats the cat."
+        ],
+        "rules": [
+            "If something eats the squirrel then the squirrel is blue.",
+            "If something chases the squirrel and the squirrel eats the cow then it eats the cow.",
+            "If something chases the rabbit then it is cold.",
+            "If something is young and it visits the cow then the cow is big.",
+            "If something is big then it visits the rabbit.",
+            "If something is blue then it eats the rabbit.",
+            "If something eats the cat then it eats the cow.",
+            "If something visits the cow then the cow eats the squirrel.",
+            "If something eats the cat and it eats the cow then the cat visits the cow."
+        ],
+        "question": "The squirrel is blue.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Dave is cold.",
+            "Dave is nice.",
+            "Dave is young.",
+            "Fiona is blue.",
+            "Fiona is quiet.",
+            "Gary is cold.",
+            "Harry is smart."
+        ],
+        "rules": [
+            "All quiet, cold things are young.",
+            "If something is smart then it is blue.",
+            "If something is quiet and smart then it is nice.",
+            "Smart, young things are white.",
+            "If something is nice and blue then it is quiet.",
+            "Quiet, nice things are cold.",
+            "All blue things are quiet.",
+            "All white things are cold.",
+            "All young things are blue."
+        ],
+        "question": "Harry is cold.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Anne is green.",
+            "Anne is nice.",
+            "Anne is red.",
+            "Anne is smart.",
+            "Anne is white.",
+            "Bob is green.",
+            "Bob is nice.",
+            "Bob is round.",
+            "Bob is white.",
+            "Dave is round.",
+            "Gary is green.",
+            "Gary is nice.",
+            "Gary is red.",
+            "Gary is white."
+        ],
+        "rules": [
+            "Green, red things are smart.",
+            "Round things are cold.",
+            "Cold, smart things are round.",
+            "All smart things are cold.",
+            "Red, white things are nice.",
+            "All cold, round things are green.",
+            "White, green things are red.",
+            "All green things are smart.",
+            "All smart things are white."
+        ],
+        "question": "Dave is white.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Anne is kind.",
+            "Anne is young.",
+            "Dave is not round.",
+            "Gary is blue.",
+            "Gary is furry.",
+            "Harry is big.",
+            "Harry is cold."
+        ],
+        "rules": [
+            "If someone is big then they are young.",
+            "If someone is blue then they are kind.",
+            "Kind people are round.",
+            "If someone is young then they are round.",
+            "All round, cold people are blue.",
+            "If Anne is blue then Anne is not cold.",
+            "Kind, big people are not furry."
+        ],
+        "question": "Harry is kind.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "Anne is round.",
+            "Bob is round.",
+            "Fiona is red.",
+            "Fiona is smart.",
+            "Fiona is young.",
+            "Harry is not big.",
+            "Harry is cold."
+        ],
+        "rules": [
+            "Young people are round.",
+            "All quiet people are cold.",
+            "Big people are not cold.",
+            "If Harry is smart and Harry is red then Harry is round.",
+            "Smart people are young.",
+            "If someone is cold then they are smart.",
+            "If Bob is young then Bob is not big.",
+            "All round people are quiet."
+        ],
+        "question": "Anne is young.",
+        "answer": true
+    },
+    {
+        "facts": [
+            "The bear is kind.",
+            "The cow eats the bear.",
+            "The cow eats the dog.",
+            "The cow is not blue.",
+            "The cow is not kind.",
+            "The cow likes the dog.",
+            "The cow likes the tiger.",
+            "The cow sees the bear.",
+            "The dog eats the bear.",
+            "The dog sees the cow.",
+            "The tiger is blue.",
+            "The tiger likes the bear.",
+            "The tiger likes the cow.",
+            "The tiger likes the dog."
+        ],
+        "rules": [
+            "If the cow likes the dog and the dog sees the cow then the dog is round.",
+            "If something sees the tiger then it eats the tiger.",
+            "If something is kind and it does not like the cow then the cow sees the bear.",
+            "If something sees the cow then it sees the tiger.",
+            "If something eats the tiger and it sees the tiger then the tiger sees the cow.",
+            "If the tiger does not see the cow and the tiger does not like the bear then the tiger likes the dog.",
+            "If something sees the bear then the bear does not eat the cow.",
+            "If the bear likes the cow then the bear eats the cow.",
+            "If the tiger likes the dog then the tiger does not see the bear."
+        ],
+        "question": "The tiger does not see the tiger.",
+        "answer": false,
+        "proofs": "[(((((((((triple10) -> rule4)) -> rule2) ((triple10) -> rule4)) -> rule5)) -> rule4))]"
+    },
+    {
+        "facts": [
+            "Anne is red.",
+            "Anne is rough.",
+            "Bob is young.",
+            "Dave is cold.",
+            "Dave is kind.",
+            "Fiona is big.",
+            "Fiona is young."
+        ],
+        "rules": [
+            "If Dave is cold and Dave is young then Dave is furry.",
+            "If Fiona is rough and Fiona is kind then Fiona is red.",
+            "Kind, rough things are red.",
+            "Young, big things are rough.",
+            "Rough things are furry.",
+            "If something is cold and rough then it is red.",
+            "All furry, rough things are kind.",
+            "Young, cold things are kind.",
+            "Young things are big."
+        ],
+        "question": "Fiona is not red.",
+        "answer": false,
+        "proofs": "[(((((triple7 triple6) -> rule4) ((((((triple7 triple6) -> rule4)) -> rule5) ((triple7 triple6) -> rule4)) -> rule7)) -> rule2) OR ((((((((triple7 triple6) -> rule4)) -> rule5) ((triple7 triple6) -> rule4)) -> rule7) ((triple7 triple6) -> rule4)) -> rule3) OR ((((triple7 triple6) -> rule4) ((((((triple7 triple6) -> rule4)) -> rule5) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule7)) -> rule2) OR ((((triple7 ((triple7) -> rule9)) -> rule4) ((((((triple7 triple6) -> rule4)) -> rule5) ((triple7 triple6) -> rule4)) -> rule7)) -> rule2) OR ((((((((triple7 triple6) -> rule4)) -> rule5) ((triple7 triple6) -> rule4)) -> rule7) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule3) OR ((((((((triple7 triple6) -> rule4)) -> rule5) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule7) ((triple7 triple6) -> rule4)) -> rule3) OR ((((triple7 ((triple7) -> rule9)) -> rule4) ((((((triple7 triple6) -> rule4)) -> rule5) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule7)) -> rule2) OR ((((((((triple7 triple6) -> rule4)) -> rule5) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule7) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule3) OR ((((triple7 triple6) -> rule4) ((((((triple7 ((triple7) -> rule9)) -> rule4)) -> rule5) ((triple7 triple6) -> rule4)) -> rule7)) -> rule2) OR ((((((((triple7 ((triple7) -> rule9)) -> rule4)) -> rule5) ((triple7 triple6) -> rule4)) -> rule7) ((triple7 triple6) -> rule4)) -> rule3) OR ((((triple7 triple6) -> rule4) ((((((triple7 ((triple7) -> rule9)) -> rule4)) -> rule5) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule7)) -> rule2) OR ((((triple7 ((triple7) -> rule9)) -> rule4) ((((((triple7 ((triple7) -> rule9)) -> rule4)) -> rule5) ((triple7 triple6) -> rule4)) -> rule7)) -> rule2) OR ((((((((triple7 ((triple7) -> rule9)) -> rule4)) -> rule5) ((triple7 triple6) -> rule4)) -> rule7) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule3) OR ((((((((triple7 ((triple7) -> rule9)) -> rule4)) -> rule5) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule7) ((triple7 triple6) -> rule4)) -> rule3) OR ((((triple7 ((triple7) -> rule9)) -> rule4) ((((((triple7 ((triple7) -> rule9)) -> rule4)) -> rule5) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule7)) -> rule2) OR ((((((((triple7 ((triple7) -> rule9)) -> rule4)) -> rule5) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule7) ((triple7 ((triple7) -> rule9)) -> rule4)) -> rule3))]"
+    },
+    {
+        "facts": [
+            "The cow likes the lion.",
+            "The cow likes the mouse.",
+            "The cow likes the squirrel.",
+            "The lion eats the mouse.",
+            "The lion is green.",
+            "The lion likes the squirrel.",
+            "The mouse is blue.",
+            "The mouse likes the cow.",
+            "The mouse visits the lion.",
+            "The squirrel visits the cow."
+        ],
+        "rules": [
+            "If someone visits the cow then they eat the mouse.",
+            "If someone likes the mouse then they visit the lion.",
+            "If someone visits the cow then they eat the cow.",
+            "If someone visits the squirrel and the squirrel is blue then the squirrel likes the cow.",
+            "If someone is cold then they eat the cow.",
+            "If someone is green then they are big.",
+            "If someone is big and green then they like the lion.",
+            "If someone likes the lion then they are cold.",
+            "If someone eats the cow then they visit the cow."
+        ],
+        "question": "The cow does not eat the mouse.",
+        "answer": false,
+        "proofs": "[(((((((((triple1) -> rule8)) -> rule5)) -> rule9)) -> rule1))]"
+    },
+    {
+        "facts": [
+            "The cat is red.",
+            "The cat needs the cow.",
+            "The cow is red.",
+            "The cow needs the cat.",
+            "The cow sees the cat.",
+            "The cow does not see the dog.",
+            "The cow sees the tiger.",
+            "The dog is blue.",
+            "The dog needs the cow.",
+            "The dog does not need the tiger.",
+            "The dog sees the tiger.",
+            "The dog visits the cat.",
+            "The dog visits the cow.",
+            "The tiger is cold.",
+            "The tiger sees the cat.",
+            "The tiger sees the cow."
+        ],
+        "rules": [
+            "If something is cold and blue then it sees the dog.",
+            "If something visits the dog then the dog visits the tiger.",
+            "If something needs the cat then the cat visits the dog.",
+            "If something visits the tiger then the tiger is blue.",
+            "If something needs the dog and the dog needs the cat then the cat sees the tiger.",
+            "If something sees the dog then it visits the cat.",
+            "If something sees the tiger and the tiger is red then it needs the cat.",
+            "If something sees the tiger and the tiger sees the dog then the tiger visits the dog."
+        ],
+        "question": "The tiger does not see the dog.",
+        "answer": false,
+        "proofs": "[(((triple14 ((((((triple4) -> rule3)) -> rule2)) -> rule4)) -> rule1))]"
+    },
+    {
+        "facts": [
+            "Bob is young.",
+            "Charlie is kind.",
+            "Erin is blue.",
+            "Erin is kind.",
+            "Erin is red.",
+            "Erin is young.",
+            "Fiona is young."
+        ],
+        "rules": [
+            "If something is quiet and red then it is blue.",
+            "If something is cold then it is red.",
+            "If something is red and smart then it is blue.",
+            "Blue things are cold.",
+            "All young things are smart.",
+            "If something is young and red then it is quiet.",
+            "All smart things are quiet.",
+            "If something is quiet then it is blue.",
+            "If Bob is quiet then Bob is smart."
+        ],
+        "question": "Bob is not cold.",
+        "answer": false,
+        "proofs": "[(((((((((triple1) -> rule5)) -> rule7)) -> rule8)) -> rule4))]"
+    },
+    {
+        "facts": [
+            "Anne is big.",
+            "Anne is quiet.",
+            "Anne is not smart.",
+            "Bob is blue.",
+            "Bob is quiet.",
+            "Dave is blue.",
+            "Fiona is big.",
+            "Fiona is cold.",
+            "Fiona is quiet.",
+            "Fiona is smart."
+        ],
+        "rules": [
+            "Smart people are big.",
+            "Blue, red people are big.",
+            "If someone is cold and not blue then they are red.",
+            "All cold people are smart.",
+            "Blue people are cold.",
+            "If Bob is big and Bob is cold then Bob is not red.",
+            "If someone is smart and not red then they are white."
+        ],
+        "question": "Bob is red.",
+        "answer": false,
+        "proofs": "[(((((((((triple4) -> rule5)) -> rule4)) -> rule1) ((triple4) -> rule5)) -> rule6))]"
+    },
+    {
+        "facts": [
+            "Bob is blue.",
+            "Bob is kind.",
+            "Charlie is round.",
+            "Dave is blue.",
+            "Dave is green.",
+            "Dave is young.",
+            "Fiona is round."
+        ],
+        "rules": [
+            "Young people are not smart.",
+            "All round people are green.",
+            "If someone is kind and young then they are green.",
+            "Blue people are green.",
+            "If someone is kind and round then they are big.",
+            "If someone is round and smart then they are young.",
+            "Green, big people are young.",
+            "Green people are round."
+        ],
+        "question": "Bob is not young.",
+        "answer": false,
+        "proofs": "[(((((triple1) -> rule4) ((triple2 ((((triple1) -> rule4)) -> rule8)) -> rule5)) -> rule7))]"
+    },
+    {
+        "facts": [
+            "The cat chases the squirrel.",
+            "The cat is not big.",
+            "The cat does not like the mouse.",
+            "The cat visits the dog.",
+            "The cat visits the mouse.",
+            "The dog is not cold.",
+            "The dog is young.",
+            "The mouse likes the squirrel.",
+            "The squirrel does not chase the dog.",
+            "The squirrel likes the dog."
+        ],
+        "rules": [
+            "If the cat is green and the cat visits the mouse then the mouse is big.",
+            "If something likes the dog then it is cold.",
+            "If something likes the mouse then the mouse is green.",
+            "If something is cold then it chases the cat.",
+            "If something chases the cat then it likes the cat.",
+            "If something is young then it chases the squirrel.",
+            "If something chases the squirrel and it does not chase the mouse then the squirrel likes the cat.",
+            "If something likes the mouse and it is green then the mouse is cold.",
+            "If something chases the cat then the cat likes the dog."
+        ],
+        "question": "The cat is not cold.",
+        "answer": false,
+        "proofs": "[(((((((((triple10) -> rule2)) -> rule4)) -> rule9)) -> rule2))]"
+    },
+    {
+        "facts": [
+            "The bear eats the squirrel.",
+            "The bear is nice.",
+            "The bear visits the lion.",
+            "The cat eats the bear.",
+            "The cat eats the lion.",
+            "The cat likes the lion.",
+            "The lion is green.",
+            "The lion likes the bear.",
+            "The squirrel eats the lion.",
+            "The squirrel likes the bear.",
+            "The squirrel visits the bear.",
+            "The squirrel visits the cat."
+        ],
+        "rules": [
+            "If something eats the squirrel then it is big.",
+            "All green things are nice.",
+            "If something is big and it eats the squirrel then the squirrel is red.",
+            "If something eats the bear then it likes the lion.",
+            "If the lion is green and the lion is blue then the lion likes the cat.",
+            "If something is blue then it likes the squirrel.",
+            "If something is red and it eats the lion then the lion likes the cat.",
+            "If something likes the cat then it eats the squirrel."
+        ],
+        "question": "The lion does not eat the squirrel.",
+        "answer": false,
+        "proofs": "[(((((((((triple1) -> rule1) triple1) -> rule3) triple9) -> rule7)) -> rule8))]"
+    },
+    {
+        "facts": [
+            "Anne is quiet.",
+            "Erin is green.",
+            "Erin is kind.",
+            "Erin is quiet.",
+            "Erin is rough.",
+            "Fiona is kind.",
+            "Fiona is nice.",
+            "Fiona is quiet.",
+            "Fiona is red.",
+            "Harry is nice."
+        ],
+        "rules": [
+            "If someone is rough then they are green.",
+            "If someone is nice then they are green.",
+            "If someone is quiet and not nice then they are cold.",
+            "All quiet people are rough.",
+            "Kind people are quiet.",
+            "If someone is green then they are kind.",
+            "If someone is rough then they are red."
+        ],
+        "question": "Harry is not rough.",
+        "answer": false,
+        "proofs": "[(((((((((triple10) -> rule2)) -> rule6)) -> rule5)) -> rule4))]"
+    },
+    {
+        "facts": [
+            "Charlie is green.",
+            "Erin is cold.",
+            "Erin is kind.",
+            "Erin is quiet.",
+            "Fiona is cold.",
+            "Fiona is furry.",
+            "Fiona is green.",
+            "Fiona is kind.",
+            "Fiona is white.",
+            "Gary is cold."
+        ],
+        "rules": [
+            "Quiet people are furry.",
+            "Green, furry people are white.",
+            "All white people are quiet.",
+            "If someone is furry then they are round.",
+            "Kind people are cold.",
+            "All cold people are white.",
+            "Quiet, round people are green.",
+            "Round, white people are cold."
+        ],
+        "question": "Gary is not round.",
+        "answer": false,
+        "proofs": "[(((((((((triple10) -> rule6)) -> rule3)) -> rule1)) -> rule4))]"
+    },
+    {
+        "facts": [
+            "The bear chases the cat.",
+            "The bear chases the squirrel.",
+            "The bear is young.",
+            "The bear does not see the squirrel.",
+            "The cat chases the cow.",
+            "The cat chases the squirrel.",
+            "The cat eats the squirrel.",
+            "The cat is not kind.",
+            "The cat does not see the cow.",
+            "The cow does not chase the cat.",
+            "The cow chases the squirrel.",
+            "The squirrel chases the bear.",
+            "The squirrel eats the cat.",
+            "The squirrel eats the cow.",
+            "The squirrel is young.",
+            "The squirrel sees the cow."
+        ],
+        "rules": [
+            "If something eats the bear then the bear sees the cow.",
+            "If something is kind then it eats the bear.",
+            "If the cow chases the bear and the cat does not chase the cow then the cow sees the squirrel.",
+            "If something sees the squirrel then it is rough.",
+            "If something eats the bear and it does not chase the cat then the cat sees the bear.",
+            "If something sees the cow then it is kind.",
+            "If something eats the squirrel then it eats the cat."
+        ],
+        "question": "The bear is not kind.",
+        "answer": false,
+        "proofs": "[(((((((((triple16) -> rule6)) -> rule2)) -> rule1)) -> rule6))]"
+    },
+    {
+        "facts": [
+            "Anne is nice.",
+            "Anne is red.",
+            "Anne is rough.",
+            "Bob is blue.",
+            "Bob is cold.",
+            "Bob is red.",
+            "Dave is red.",
+            "Dave is rough.",
+            "Erin is red.",
+            "Erin is rough."
+        ],
+        "rules": [
+            "If Anne is red and Anne is blue then Anne is rough.",
+            "Furry people are red.",
+            "All rough, red people are blue.",
+            "If someone is green and blue then they are nice.",
+            "If Dave is nice then Dave is furry.",
+            "If Erin is blue then Erin is furry.",
+            "If someone is cold and blue then they are furry.",
+            "If someone is rough and furry then they are green.",
+            "Nice, green people are cold."
+        ],
+        "question": "Erin is not nice.",
+        "answer": false,
+        "proofs": "[(((((triple10 ((((triple10 triple9) -> rule3)) -> rule6)) -> rule8) ((triple10 triple9) -> rule3)) -> rule4))]"
+    },
+    {
+        "facts": [
+            "The bald eagle needs the cow.",
+            "The bald eagle needs the rabbit.",
+            "The bald eagle needs the squirrel.",
+            "The cow does not chase the rabbit.",
+            "The cow chases the squirrel.",
+            "The cow likes the bald eagle.",
+            "The rabbit is big.",
+            "The rabbit is round.",
+            "The rabbit likes the squirrel.",
+            "The squirrel chases the cow.",
+            "The squirrel chases the rabbit."
+        ],
+        "rules": [
+            "If someone chases the bald eagle and they are big then they do not like the cow.",
+            "If someone chases the cow and they are round then they are kind.",
+            "If the cow likes the rabbit and the rabbit likes the bald eagle then the bald eagle needs the rabbit.",
+            "If someone likes the cow then they are green.",
+            "If someone is big and they need the bald eagle then they chase the cow.",
+            "If someone likes the bald eagle then they do not chase the bald eagle.",
+            "If someone needs the rabbit then the rabbit likes the cow.",
+            "If the squirrel needs the cow and the cow chases the squirrel then the squirrel does not like the cow.",
+            "If someone is green then they need the bald eagle."
+        ],
+        "question": "The rabbit does not chase the cow.",
+        "answer": false,
+        "proofs": "[(((triple7 ((((((triple2) -> rule7)) -> rule4)) -> rule9)) -> rule5))]"
+    },
+    {
+        "facts": [
+            "The cat is round.",
+            "The cat sees the squirrel.",
+            "The dog needs the squirrel.",
+            "The squirrel is rough.",
+            "The squirrel needs the cat.",
+            "The tiger is rough.",
+            "The tiger needs the squirrel."
+        ],
+        "rules": [
+            "If someone needs the squirrel then they need the tiger.",
+            "If someone visits the dog and the dog visits the squirrel then the squirrel needs the tiger.",
+            "If someone is nice then they need the dog.",
+            "If someone visits the squirrel and they visit the dog then they see the cat.",
+            "If someone needs the dog then the dog is round.",
+            "If someone needs the tiger and they are nice then the tiger does not visit the dog.",
+            "If someone is round then they are nice.",
+            "If someone visits the dog and the dog does not see the cat then the dog visits the cat."
+        ],
+        "question": "The dog is not nice.",
+        "answer": false,
+        "proofs": "[(((((((((triple1) -> rule7)) -> rule3)) -> rule5)) -> rule7))]"
+    },
+    {
+        "facts": [
+            "Bob is furry.",
+            "Bob is quiet.",
+            "Erin is blue.",
+            "Erin is furry.",
+            "Erin is round.",
+            "Gary is kind.",
+            "Gary is quiet.",
+            "Gary is rough.",
+            "Gary is round.",
+            "Harry is blue.",
+            "Harry is not furry.",
+            "Harry is kind."
+        ],
+        "rules": [
+            "If Erin is rough then Erin is furry.",
+            "If someone is round and blue then they are rough.",
+            "Quiet, furry people are round.",
+            "If Bob is quiet and Bob is round then Bob is kind.",
+            "If someone is kind then they are cold.",
+            "All furry, cold people are blue."
+        ],
+        "question": "Bob is not blue.",
+        "answer": false,
+        "proofs": "[(((triple1 ((((triple2 ((triple2 triple1) -> rule3)) -> rule4)) -> rule5)) -> rule6))]"
+    },
+    {
+        "facts": [
+            "Bob is quiet.",
+            "Charlie is blue.",
+            "Charlie is cold.",
+            "Charlie is nice.",
+            "Dave is blue.",
+            "Dave is cold.",
+            "Erin is blue."
+        ],
+        "rules": [
+            "If something is blue and cold then it is big.",
+            "Round, nice things are big.",
+            "All nice, quiet things are furry.",
+            "If Bob is round then Bob is furry.",
+            "If Bob is furry and Bob is nice then Bob is big.",
+            "If something is big and blue then it is quiet.",
+            "If something is blue then it is nice.",
+            "All nice things are cold."
+        ],
+        "question": "Erin is not quiet.",
+        "answer": false,
+        "proofs": "[(((((triple7 ((((triple7) -> rule7)) -> rule8)) -> rule1) triple7) -> rule6))]"
+    },
+    {
+        "facts": [
+            "Anne is blue.",
+            "Anne is furry.",
+            "Anne is nice.",
+            "Anne is round.",
+            "Erin is furry.",
+            "Erin is red.",
+            "Fiona is furry.",
+            "Fiona is kind.",
+            "Gary is furry.",
+            "Gary is kind."
+        ],
+        "rules": [
+            "All white people are nice.",
+            "All blue people are kind.",
+            "Kind people are nice.",
+            "If Erin is round and Erin is blue then Erin is furry.",
+            "If Gary is white and Gary is furry then Gary is nice.",
+            "All nice people are round.",
+            "Red people are white.",
+            "White, round people are blue.",
+            "All furry people are white."
+        ],
+        "question": "Erin is not blue.",
+        "answer": false,
+        "proofs": "[(((((triple5) -> rule9) ((((((triple5) -> rule9)) -> rule1)) -> rule6)) -> rule8) OR ((((triple5) -> rule9) ((((((triple6) -> rule7)) -> rule1)) -> rule6)) -> rule8) OR ((((triple6) -> rule7) ((((((triple5) -> rule9)) -> rule1)) -> rule6)) -> rule8) OR ((((triple6) -> rule7) ((((((triple6) -> rule7)) -> rule1)) -> rule6)) -> rule8))]"
+    },
+    {
+        "facts": [
+            "The bald eagle chases the squirrel.",
+            "The bald eagle is cold.",
+            "The cat does not chase the mouse.",
+            "The cat is young.",
+            "The cat sees the bald eagle.",
+            "The cat sees the mouse.",
+            "The mouse eats the bald eagle.",
+            "The mouse eats the squirrel.",
+            "The mouse is round.",
+            "The mouse sees the bald eagle.",
+            "The squirrel chases the cat."
+        ],
+        "rules": [
+            "If the bald eagle is cold and the bald eagle does not chase the squirrel then the bald eagle is nice.",
+            "If someone eats the cat then they are cold.",
+            "If someone eats the cat and the cat is cold then they are kind.",
+            "If the mouse eats the bald eagle then the mouse is cold.",
+            "If someone eats the cat then the cat is cold.",
+            "Cold, kind people are not nice.",
+            "If someone chases the squirrel and the squirrel does not chase the cat then the squirrel chases the bald eagle.",
+            "If someone is cold then they eat the cat.",
+            "If someone chases the squirrel and they do not chase the bald eagle then the bald eagle does not chase the cat."
+        ],
+        "question": "The bald eagle is nice.",
+        "answer": false,
+        "proofs": "[(((triple2 ((((triple2) -> rule8) ((((triple2) -> rule8)) -> rule5)) -> rule3)) -> rule6) OR ((triple2 ((((triple2) -> rule8) ((((((triple7) -> rule4)) -> rule8)) -> rule5)) -> rule3)) -> rule6))]"
+    },
+    {
+        "facts": [
+            "Anne is big.",
+            "Anne is smart.",
+            "Dave is young.",
+            "Erin is big.",
+            "Erin is quiet.",
+            "Harry is big.",
+            "Harry is smart."
+        ],
+        "rules": [
+            "All young, big things are smart.",
+            "If something is young and kind then it is big.",
+            "Big things are kind.",
+            "All smart, red things are kind.",
+            "Young things are quiet.",
+            "All young things are quiet.",
+            "All kind things are young.",
+            "If something is smart then it is red.",
+            "All quiet things are smart."
+        ],
+        "question": "Dave is not kind.",
+        "answer": false,
+        "proofs": "[(((((((triple3) -> rule5)) -> rule9) ((((((triple3) -> rule5)) -> rule9)) -> rule8)) -> rule4) OR ((((((triple3) -> rule5)) -> rule9) ((((((triple3) -> rule6)) -> rule9)) -> rule8)) -> rule4) OR ((((((triple3) -> rule6)) -> rule9) ((((((triple3) -> rule5)) -> rule9)) -> rule8)) -> rule4) OR ((((((triple3) -> rule6)) -> rule9) ((((((triple3) -> rule6)) -> rule9)) -> rule8)) -> rule4))]"
+    },
+    {
+        "facts": [
+            "The bald eagle eats the tiger.",
+            "The bald eagle is green.",
+            "The bear chases the bald eagle.",
+            "The bear chases the dog.",
+            "The bear eats the bald eagle.",
+            "The bear eats the dog.",
+            "The bear eats the tiger.",
+            "The bear is big.",
+            "The bear is green.",
+            "The bear is young.",
+            "The dog is big.",
+            "The dog is young.",
+            "The tiger chases the bear.",
+            "The tiger chases the dog."
+        ],
+        "rules": [
+            "If something is red and it eats the dog then the dog eats the tiger.",
+            "If something visits the tiger then the tiger eats the bear.",
+            "If something eats the dog then the dog is young.",
+            "If something is green and it visits the bald eagle then it visits the dog.",
+            "If something eats the tiger then it eats the bear.",
+            "If something is rough then it eats the bear.",
+            "If something eats the bear then it is red."
+        ],
+        "question": "The dog does not eat the bear.",
+        "answer": false,
+        "proofs": "[(((((((((triple7) -> rule5)) -> rule7) triple6) -> rule1)) -> rule5))]"
+    },
+    {
+        "facts": [
+            "Anne is round.",
+            "Anne is young.",
+            "Dave is red.",
+            "Dave is smart.",
+            "Gary is big.",
+            "Gary is round.",
+            "Gary is young.",
+            "Harry is big.",
+            "Harry is blue.",
+            "Harry is red.",
+            "Harry is smart.",
+            "Harry is young."
+        ],
+        "rules": [
+            "Red things are furry.",
+            "Round, big things are young.",
+            "Smart, blue things are round.",
+            "All blue, round things are big.",
+            "All furry, red things are blue.",
+            "If something is big and young then it is round."
+        ],
+        "question": "Dave is not big.",
+        "answer": false,
+        "proofs": "[(((((((triple3) -> rule1) triple3) -> rule5) ((triple4 ((((triple3) -> rule1) triple3) -> rule5)) -> rule3)) -> rule4))]"
+    },
+    {
+        "facts": [
+            "Charlie is rough.",
+            "Erin is nice.",
+            "Erin is red.",
+            "Fiona is cold.",
+            "Fiona is red.",
+            "Harry is furry.",
+            "Harry is nice."
+        ],
+        "rules": [
+            "All furry people are nice.",
+            "Nice, red people are rough.",
+            "All nice people are rough.",
+            "If someone is red and round then they are furry.",
+            "All big, rough people are round.",
+            "All red, rough people are big.",
+            "All cold, furry people are rough.",
+            "If someone is cold and round then they are red.",
+            "All furry people are cold."
+        ],
+        "question": "Erin is not furry.",
+        "answer": false,
+        "proofs": "[(((triple3 ((((triple3 ((triple2) -> rule3)) -> rule6) ((triple2) -> rule3)) -> rule5)) -> rule4) OR ((triple3 ((((triple3 ((triple2) -> rule3)) -> rule6) ((triple2 triple3) -> rule2)) -> rule5)) -> rule4) OR ((triple3 ((((triple3 ((triple2 triple3) -> rule2)) -> rule6) ((triple2) -> rule3)) -> rule5)) -> rule4) OR ((triple3 ((((triple3 ((triple2 triple3) -> rule2)) -> rule6) ((triple2 triple3) -> rule2)) -> rule5)) -> rule4))]"
+    },
+    {
+        "facts": [
+            "The bear is nice.",
+            "The bear needs the lion.",
+            "The dog eats the lion.",
+            "The dog is cold.",
+            "The dog is green.",
+            "The dog visits the bear.",
+            "The dog visits the mouse.",
+            "The lion eats the mouse.",
+            "The lion needs the dog.",
+            "The lion visits the bear.",
+            "The mouse eats the bear.",
+            "The mouse eats the dog.",
+            "The mouse is round.",
+            "The mouse visits the lion."
+        ],
+        "rules": [
+            "If something is round then it eats the lion.",
+            "If something is nice then it eats the dog.",
+            "If something needs the lion then it visits the bear.",
+            "If something eats the lion and the lion needs the bear then it is round.",
+            "If something is round then it eats the mouse.",
+            "If something eats the mouse then the mouse visits the dog.",
+            "If the lion eats the mouse then the lion needs the bear.",
+            "If something visits the dog then the dog visits the mouse.",
+            "If something is round and it visits the bear then the bear eats the lion."
+        ],
+        "question": "The bear is not round.",
+        "answer": false,
+        "proofs": "[(((((((triple3 ((triple8) -> rule7)) -> rule4) triple6) -> rule9) ((triple8) -> rule7)) -> rule4))]"
+    },
+    {
+        "facts": [
+            "The bald eagle sees the cat.",
+            "The bald eagle sees the squirrel.",
+            "The cat is blue.",
+            "The cat is cold.",
+            "The cat is green.",
+            "The cat sees the bald eagle.",
+            "The cat sees the squirrel.",
+            "The mouse chases the bald eagle.",
+            "The mouse chases the cat.",
+            "The mouse is cold.",
+            "The mouse sees the cat.",
+            "The squirrel likes the mouse.",
+            "The squirrel sees the bald eagle.",
+            "The squirrel sees the mouse."
+        ],
+        "rules": [
+            "If something chases the bald eagle then the bald eagle is green.",
+            "If something is green and it likes the bald eagle then the bald eagle is round.",
+            "If something chases the cat and the cat is cold then it likes the bald eagle.",
+            "If something sees the mouse and the mouse sees the cat then the cat sees the bald eagle.",
+            "If something sees the bald eagle then it is cold.",
+            "If the bald eagle likes the mouse then the bald eagle chases the cat.",
+            "If something is green then it likes the mouse."
+        ],
+        "question": "The bald eagle does not like the bald eagle.",
+        "answer": false,
+        "proofs": "[(((((((((triple8) -> rule1)) -> rule7)) -> rule6) triple4) -> rule3) OR ((((((((triple8) -> rule1)) -> rule7)) -> rule6) ((triple6) -> rule5)) -> rule3) OR ((((((((triple8) -> rule1)) -> rule7)) -> rule6) ((((triple14 triple11) -> rule4)) -> rule5)) -> rule3))]"
+    },
+    {
+        "facts": [
+            "Erin is furry.",
+            "Erin is quiet.",
+            "Fiona is red.",
+            "Gary is quiet.",
+            "Gary is smart.",
+            "Harry is blue.",
+            "Harry is furry.",
+            "Harry is nice.",
+            "Harry is quiet.",
+            "Harry is red."
+        ],
+        "rules": [
+            "If Gary is blue then Gary is furry.",
+            "If someone is nice then they are young.",
+            "All red people are nice.",
+            "Young, blue people are quiet.",
+            "All nice, quiet people are red.",
+            "If someone is smart and quiet then they are red.",
+            "All red people are quiet.",
+            "All red, young people are blue.",
+            "If Harry is quiet then Harry is furry."
+        ],
+        "question": "Erin is not blue.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Anne is quiet.",
+            "Anne is smart.",
+            "Anne is white.",
+            "Anne is not young.",
+            "Bob is young.",
+            "Erin is not young.",
+            "Fiona is big.",
+            "Fiona is quiet.",
+            "Fiona is red.",
+            "Fiona is smart."
+        ],
+        "rules": [
+            "White people are quiet.",
+            "If someone is young then they are big.",
+            "Young, smart people are round.",
+            "Smart, quiet people are round.",
+            "All quiet, big people are red.",
+            "If Anne is big and Anne is young then Anne is round.",
+            "Big people are smart.",
+            "All smart people are white."
+        ],
+        "question": "Erin is quiet.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Anne is quiet.",
+            "Anne is not rough.",
+            "Anne is round.",
+            "Bob is not green.",
+            "Bob is kind.",
+            "Charlie is green.",
+            "Dave is round."
+        ],
+        "rules": [
+            "Quiet, rough people are cold.",
+            "All rough, kind people are cold.",
+            "All round people are kind.",
+            "All green people are nice.",
+            "Nice people are quiet.",
+            "If Anne is round then Anne is kind.",
+            "All nice people are rough.",
+            "All cold people are round."
+        ],
+        "question": "Bob is not round.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "The bald eagle chases the mouse.",
+            "The bald eagle eats the cat.",
+            "The cat eats the mouse.",
+            "The mouse eats the bald eagle.",
+            "The mouse is blue.",
+            "The mouse needs the tiger.",
+            "The tiger is nice."
+        ],
+        "rules": [
+            "If something is rough then it eats the cat.",
+            "If something eats the mouse and the mouse needs the cat then it eats the bald eagle.",
+            "If something eats the cat then it needs the cat.",
+            "If the bald eagle needs the mouse and the bald eagle eats the cat then the bald eagle chases the tiger.",
+            "If something is rough then it chases the bald eagle.",
+            "If something eats the bald eagle then it is rough.",
+            "If something eats the tiger then the tiger eats the bald eagle.",
+            "If something needs the cat then the cat chases the tiger.",
+            "If something eats the cat then the cat is young."
+        ],
+        "question": "The tiger does not need the cat.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Bob is not furry.",
+            "Bob is young.",
+            "Erin is red.",
+            "Erin is young.",
+            "Fiona is blue.",
+            "Harry is blue.",
+            "Harry is not rough."
+        ],
+        "rules": [
+            "If something is nice and young then it is furry.",
+            "If something is blue and not rough then it is furry.",
+            "All blue things are furry.",
+            "All rough, blue things are nice.",
+            "All cold, furry things are nice.",
+            "Furry things are cold.",
+            "If something is blue and red then it is cold.",
+            "Young things are red.",
+            "All nice things are young."
+        ],
+        "question": "Erin is not cold.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Anne is nice.",
+            "Erin is green.",
+            "Erin is quiet.",
+            "Gary is quiet.",
+            "Gary is smart.",
+            "Harry is kind.",
+            "Harry is smart."
+        ],
+        "rules": [
+            "If someone is kind and big then they are nice.",
+            "If Gary is quiet and Gary is big then Gary is smart.",
+            "If someone is cold then they are green.",
+            "If Harry is smart and Harry is cold then Harry is green.",
+            "Quiet people are big.",
+            "If someone is nice and big then they are cold.",
+            "All nice, quiet people are cold.",
+            "If Gary is nice then Gary is kind.",
+            "Smart people are quiet."
+        ],
+        "question": "Anne is not green.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Bob is furry.",
+            "Bob is nice.",
+            "Bob is rough.",
+            "Fiona is red.",
+            "Gary is furry.",
+            "Gary is not white.",
+            "Harry is nice."
+        ],
+        "rules": [
+            "If Fiona is furry then Fiona is nice.",
+            "If Fiona is nice and Fiona is red then Fiona is furry.",
+            "All white things are red.",
+            "All white things are furry.",
+            "If something is big then it is white.",
+            "All nice things are big.",
+            "If something is furry then it is quiet.",
+            "If Fiona is not nice and Fiona is not furry then Fiona is quiet.",
+            "Big, quiet things are rough."
+        ],
+        "question": "Fiona is white.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Anne is red.",
+            "Anne is white.",
+            "Bob is furry.",
+            "Bob is red.",
+            "Fiona is big.",
+            "Fiona is furry.",
+            "Fiona is green.",
+            "Gary is cold.",
+            "Gary is furry.",
+            "Gary is green."
+        ],
+        "rules": [
+            "Green, furry people are nice.",
+            "All green, nice people are big.",
+            "Big, green people are furry.",
+            "All furry people are nice.",
+            "All big, green people are furry.",
+            "Big, red people are cold.",
+            "If someone is nice and red then they are green.",
+            "Big, cold people are white.",
+            "If someone is green and cold then they are big."
+        ],
+        "question": "Anne is big.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Anne is not blue.",
+            "Anne is not cold.",
+            "Anne is smart.",
+            "Anne is young.",
+            "Charlie is quiet.",
+            "Dave is blue.",
+            "Fiona is blue.",
+            "Fiona is cold.",
+            "Fiona is quiet.",
+            "Fiona is not young."
+        ],
+        "rules": [
+            "If something is kind and quiet then it is furry.",
+            "If something is young and cold then it is quiet.",
+            "Furry things are quiet.",
+            "All cold things are smart.",
+            "If Fiona is young then Fiona is furry.",
+            "Quiet things are kind.",
+            "Smart, furry things are blue.",
+            "Kind, furry things are cold."
+        ],
+        "question": "Dave is smart.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Anne is round.",
+            "Fiona is big.",
+            "Fiona is round.",
+            "Fiona is young.",
+            "Gary is red.",
+            "Gary is white.",
+            "Harry is big.",
+            "Harry is round.",
+            "Harry is smart.",
+            "Harry is white."
+        ],
+        "rules": [
+            "Young things are smart.",
+            "Young things are red.",
+            "If something is red and smart then it is white.",
+            "Big things are red.",
+            "Big, rough things are round.",
+            "All smart, white things are red.",
+            "Smart things are big.",
+            "If something is red then it is young.",
+            "Big things are rough."
+        ],
+        "question": "Anne is not smart.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Dave is rough.",
+            "Erin is green.",
+            "Erin is nice.",
+            "Fiona is not rough.",
+            "Gary is blue.",
+            "Gary is nice.",
+            "Gary is rough."
+        ],
+        "rules": [
+            "If someone is round and not rough then they are nice.",
+            "If someone is green then they are big.",
+            "All round people are green.",
+            "If someone is rough then they are kind.",
+            "Rough, green people are kind.",
+            "Green, big people are blue.",
+            "All kind people are round."
+        ],
+        "question": "Fiona is not big.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "The bald eagle is blue.",
+            "The bald eagle visits the bear.",
+            "The bald eagle visits the rabbit.",
+            "The bear chases the bald eagle.",
+            "The dog is not cold.",
+            "The rabbit is red.",
+            "The rabbit needs the bear."
+        ],
+        "rules": [
+            "If the bald eagle visits the bear and the bald eagle is rough then the bear chases the rabbit.",
+            "If someone is rough then they chase the bald eagle.",
+            "If someone is cold then they are rough.",
+            "If someone needs the bald eagle then the bald eagle is cold.",
+            "If someone needs the rabbit and they chase the bald eagle then the bald eagle does not chase the bear.",
+            "If someone chases the bald eagle then they are kind.",
+            "If someone is kind then they need the bald eagle.",
+            "If the rabbit is red and the rabbit is blue then the rabbit needs the bear."
+        ],
+        "question": "The rabbit does not need the bald eagle.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Anne is blue.",
+            "Anne is cold.",
+            "Bob is blue.",
+            "Bob is smart.",
+            "Gary is not blue.",
+            "Gary is kind.",
+            "Harry is blue."
+        ],
+        "rules": [
+            "All smart people are kind.",
+            "If someone is smart then they are kind.",
+            "If someone is blue and smart then they are kind.",
+            "Nice people are red.",
+            "If someone is kind and cold then they are furry.",
+            "All furry, kind people are smart.",
+            "Smart, furry people are nice.",
+            "If Gary is kind and Gary is not blue then Gary is cold."
+        ],
+        "question": "Anne is red.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Anne is cold.",
+            "Anne is round.",
+            "Anne is young.",
+            "Bob is round.",
+            "Charlie is cold.",
+            "Charlie is nice.",
+            "Fiona is green."
+        ],
+        "rules": [
+            "All white, green things are young.",
+            "If something is cold and round then it is green.",
+            "All young things are furry.",
+            "If Anne is round then Anne is nice.",
+            "All cold, green things are white.",
+            "Round things are green.",
+            "Nice things are round.",
+            "If Anne is young then Anne is green.",
+            "Young things are cold."
+        ],
+        "question": "Bob is not furry.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Bob is cold.",
+            "Charlie is big.",
+            "Charlie is blue.",
+            "Charlie is cold.",
+            "Charlie is furry.",
+            "Charlie is white.",
+            "Gary is big.",
+            "Gary is cold.",
+            "Harry is big.",
+            "Harry is cold.",
+            "Harry is quiet."
+        ],
+        "rules": [
+            "Furry, blue people are big.",
+            "All big, cold people are green.",
+            "If someone is quiet and furry then they are blue.",
+            "Furry, quiet people are white.",
+            "If someone is quiet and furry then they are green.",
+            "If Gary is white then Gary is quiet.",
+            "If Bob is green and Bob is white then Bob is furry.",
+            "If someone is furry then they are white.",
+            "All green people are furry."
+        ],
+        "question": "Bob is not furry.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Bob is furry.",
+            "Bob is young.",
+            "Charlie is red.",
+            "Dave is blue.",
+            "Dave is cold.",
+            "Dave is furry.",
+            "Gary is young."
+        ],
+        "rules": [
+            "If Gary is rough and Gary is young then Gary is quiet.",
+            "All quiet things are red.",
+            "Young, blue things are red.",
+            "Furry, rough things are red.",
+            "Red things are rough.",
+            "All young, rough things are cold.",
+            "If something is rough and not young then it is cold.",
+            "If something is cold then it is furry.",
+            "All young things are quiet."
+        ],
+        "question": "Dave is red.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Anne is nice.",
+            "Anne is smart.",
+            "Charlie is green.",
+            "Fiona is nice.",
+            "Fiona is round.",
+            "Fiona is white.",
+            "Harry is blue."
+        ],
+        "rules": [
+            "White, kind things are nice.",
+            "If something is smart and kind then it is green.",
+            "If something is round and kind then it is white.",
+            "Smart things are kind.",
+            "Nice, white things are kind.",
+            "Round things are kind.",
+            "If something is nice then it is smart.",
+            "All white things are round.",
+            "If Charlie is green then Charlie is white."
+        ],
+        "question": "Harry is smart.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Bob is big.",
+            "Bob is blue.",
+            "Bob is nice.",
+            "Bob is rough.",
+            "Bob is white.",
+            "Erin is blue.",
+            "Gary is kind.",
+            "Harry is kind.",
+            "Harry is nice.",
+            "Harry is white."
+        ],
+        "rules": [
+            "Blue things are rough.",
+            "All nice, white things are young.",
+            "If something is big then it is blue.",
+            "All blue, big things are nice.",
+            "Big, rough things are kind.",
+            "All white, rough things are big.",
+            "If something is young then it is blue.",
+            "If something is rough then it is white."
+        ],
+        "question": "Gary is not rough.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Charlie is cold.",
+            "Charlie is quiet.",
+            "Dave is blue.",
+            "Dave is furry.",
+            "Dave is nice.",
+            "Dave is quiet.",
+            "Fiona is furry.",
+            "Fiona is quiet.",
+            "Fiona is red.",
+            "Fiona is smart.",
+            "Harry is cold."
+        ],
+        "rules": [
+            "All blue things are red.",
+            "Blue, nice things are quiet.",
+            "If Harry is quiet then Harry is furry.",
+            "If Charlie is smart and Charlie is cold then Charlie is furry.",
+            "If something is furry then it is nice.",
+            "Red, quiet things are smart.",
+            "Nice things are smart.",
+            "Quiet things are blue."
+        ],
+        "question": "Harry is not smart.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Charlie is cold.",
+            "Charlie is nice.",
+            "Dave is cold.",
+            "Erin is cold.",
+            "Gary is kind.",
+            "Gary is not red.",
+            "Gary is round."
+        ],
+        "rules": [
+            "All red things are kind.",
+            "If Erin is cold then Erin is red.",
+            "All nice things are rough.",
+            "All cold, white things are rough.",
+            "All white, round things are nice.",
+            "Kind, cold things are nice.",
+            "If something is nice and rough then it is round.",
+            "All rough things are red.",
+            "All cold, kind things are red."
+        ],
+        "question": "Dave is not kind.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Bob is green.",
+            "Bob is kind.",
+            "Charlie is nice.",
+            "Erin is kind.",
+            "Erin is nice.",
+            "Erin is white.",
+            "Gary is young."
+        ],
+        "rules": [
+            "All young things are white.",
+            "White things are young.",
+            "All nice, green things are kind.",
+            "If something is young then it is furry.",
+            "All kind things are nice.",
+            "All nice, green things are white.",
+            "If something is cold and kind then it is green.",
+            "If something is nice and young then it is furry.",
+            "Furry things are cold."
+        ],
+        "question": "Charlie is not young.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Bob is blue.",
+            "Dave is nice.",
+            "Dave is white.",
+            "Erin is blue.",
+            "Erin is white.",
+            "Fiona is big.",
+            "Fiona is not nice."
+        ],
+        "rules": [
+            "Big things are furry.",
+            "Blue, nice things are furry.",
+            "If something is white and kind then it is blue.",
+            "Furry, round things are blue.",
+            "All white things are round.",
+            "If something is furry then it is white.",
+            "Round things are white.",
+            "If something is blue then it is kind."
+        ],
+        "question": "Bob is not white.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Charlie is blue.",
+            "Charlie is kind.",
+            "Dave is round.",
+            "Fiona is big.",
+            "Fiona is blue.",
+            "Fiona is round.",
+            "Gary is cold."
+        ],
+        "rules": [
+            "If someone is white then they are not big.",
+            "Round people are big.",
+            "Kind people are not rough.",
+            "If someone is rough and big then they are round.",
+            "Blue people are kind.",
+            "If someone is cold then they are blue.",
+            "All white people are blue.",
+            "Big people are cold.",
+            "If Charlie is blue and Charlie is cold then Charlie is white."
+        ],
+        "question": "Charlie is white.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "The dog likes the mouse.",
+            "The dog likes the squirrel.",
+            "The mouse eats the dog.",
+            "The squirrel is cold.",
+            "The squirrel is green.",
+            "The squirrel likes the tiger.",
+            "The tiger eats the squirrel."
+        ],
+        "rules": [
+            "If something sees the squirrel then the squirrel eats the tiger.",
+            "If something is cold then it sees the squirrel.",
+            "If something likes the squirrel then the squirrel likes the dog.",
+            "If something sees the mouse then the mouse eats the squirrel.",
+            "If something sees the squirrel then it is kind.",
+            "If something likes the dog and it eats the mouse then the mouse is cold.",
+            "If something eats the dog and the dog eats the mouse then the dog sees the tiger.",
+            "If something is kind then it eats the mouse."
+        ],
+        "question": "The dog sees the tiger.",
+        "answer": "Unknown"
+    },
+    {
+        "facts": [
+            "Bob is kind.",
+            "Bob is young.",
+            "Dave is kind.",
+            "Dave is red.",
+            "Fiona is big.",
+            "Fiona is cold.",
+            "Fiona is kind.",
+            "Fiona is smart.",
+            "Fiona is young.",
+            "Harry is big."
+        ],
+        "rules": [
+            "Big, smart people are red.",
+            "Young, red people are big.",
+            "If someone is smart then they are red.",
+            "All big, kind people are rough.",
+            "Red, big people are kind.",
+            "If someone is young then they are cold.",
+            "All kind people are smart.",
+            "All rough, smart people are young.",
+            "All big people are smart."
+        ],
+        "question": "Dave is not cold.",
+        "answer": "Unknown"
+    }
+]

@@ -1,0 +1,41 @@
+Please convert the explicitly provided rule into their symbolic forms in Prolog without changing its original wordings.
+Format each symbolic rule in Prolog notation with the conclusion and premises separated by ":-", and format each atom fact in the rule as "predicate(X, Y, ...)" where X, Y, ... are the arguments of the predicate. Avoid predicate nesting such as not(smart(X)), but using not_smart(X) instead. 
+Please try to use the objects and predicates in the provided schema to describe the symbolic rule. If the schema is null or does not contain corresponding elements to describe the rule, generate the symbolic rule directly from its natural language form.
+!Note: Avoid using objects and predicates that do not exist in the provided rule when generating its symbolic form.
+
+### Examples
+Schema Objects: Bob
+Schema Predicates: kind, smart
+Rule: If something is kind and smart then it is nice.
+Symbolic Rule: nice(X) :- kind(X), smart(X)
+------
+Schema Objects: bald eagle
+Schema Predicates: needs, sees
+Rule: If someone needs the tiger then the tiger sees the bald eagle. 
+Symbolic Rule: sees(tiger, bald eagle) :- needs(X, tiger)
+------
+Schema Objects: Bob
+Schema Predicates: kind, big, furry
+Rule: Kind, big people are not furry. 
+Symbolic Rule: not_furry(X) :- kind(X), big(X)
+------
+Schema Objects: Bob
+Schema Predicates: kind, smart, needs, sees, big, furry, not_furry
+Rule: If Bob is furry and Bob is big then Bob is not quiet. 
+Symbolic Rule: not_quiet(Bob) :- furry(Bob), big(Bob)
+------
+Schema Objects: Bob
+Schema Predicates: kind, smart, needs, sees, big, furry, not_furry, not_quiet
+Rule: All furry, quiet things are smart. 
+Symbolic Rule: smart(X) :- furry(X), quiet(X)
+------
+Schema Objects: Bob
+Schema Predicates: kind, big, furry
+Rule: White people are not round. 
+Symbolic Rule: not_round(X) :- white(X)
+
+### Here's what you need to do.
+Schema Objects: {objects}
+Schema Predicates: {predicates}
+Rule: {rule}
+Symbolic Rule:

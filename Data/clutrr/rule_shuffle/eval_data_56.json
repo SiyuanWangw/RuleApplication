@@ -1,0 +1,3755 @@
+[
+ {
+  "query": "Ronald invited his father Robert and his brother James to go on a weekend fishing trip. Jon bought her mother, Katherine, a puppy for her birthday. James's mother Katherine had to help him with his homework because he was having a test soon. Katherine asked her daughter, Charlsie, if she would like to go to a movie with her on Saturday night. Katherine went to the mall, because she wanted to look for a present for her daughter, Jon. How is Charlsie related to Robert?",
+  "rule": [
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A."
+  ],
+  "answer": "Charlsie is the daughter of Robert.",
+  "grounded_variables": [
+   [
+    "Ronald",
+    "brother",
+    "James"
+   ],
+   [
+    "James",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Katherine",
+    "daughter",
+    "Jon"
+   ],
+   [
+    "Jon",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Katherine",
+    "daughter",
+    "Charlsie"
+   ],
+   [
+    "Robert",
+    "son",
+    "Ronald"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Ronald",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Ronald",
+    "sister",
+    "Jon"
+   ],
+   [
+    "Jon",
+    "sister",
+    "Charlsie"
+   ],
+   [
+    "Robert",
+    "daughter",
+    "Jon"
+   ],
+   [
+    "Robert",
+    "daughter",
+    "Charlsie"
+   ]
+  ]
+ },
+ {
+  "query": "Mary went to the mall, because she wanted to look for a present for her daughter, Bonnie. William received a novel for Christmas from his aunt Katherine. Charlsie, who is the sister of Jon, is a lovely girl. Katherine called her son, Ronald, from upstairs so that he could eat lunch. Ronald got his sister, Jon, so she could eat lunch as well. Bonnie was excited to visit her son, William, at college. How is Charlsie related to Mary?",
+  "rule": [
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Charlsie is the granddaughter of Mary.",
+  "grounded_variables": [
+   [
+    "Katherine",
+    "son",
+    "Ronald"
+   ],
+   [
+    "Ronald",
+    "sister",
+    "Jon"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "William"
+   ],
+   [
+    "William",
+    "aunt",
+    "Katherine"
+   ],
+   [
+    "Jon",
+    "sister",
+    "Charlsie"
+   ],
+   [
+    "Mary",
+    "daughter",
+    "Bonnie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Katherine",
+    "daughter",
+    "Jon"
+   ],
+   [
+    "Bonnie",
+    "sister",
+    "Katherine"
+   ],
+   [
+    "Katherine",
+    "daughter",
+    "Charlsie"
+   ],
+   [
+    "Mary",
+    "daughter",
+    "Katherine"
+   ],
+   [
+    "Mary",
+    "granddaughter",
+    "Charlsie"
+   ]
+  ]
+ },
+ {
+  "query": "Alfredo enjoys going fishing with his brother. His name is Michael. James likes to sing with his brother Ronald. Ronald's sister Jon hates when they sing. Jon went to her aunt Erica's house for dinner. Erica made meatloaf, and it was delicious. Erica and her son, Michael, went to the park, and had a wonderful time. Katherine always goes to the park with her son James on Saturdays. How is Alfredo related to Katherine?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Alfredo is the nephew of Katherine.",
+  "grounded_variables": [
+   [
+    "Erica",
+    "son",
+    "Michael"
+   ],
+   [
+    "Michael",
+    "brother",
+    "Alfredo"
+   ],
+   [
+    "Katherine",
+    "son",
+    "James"
+   ],
+   [
+    "James",
+    "brother",
+    "Ronald"
+   ],
+   [
+    "Ronald",
+    "sister",
+    "Jon"
+   ],
+   [
+    "Jon",
+    "aunt",
+    "Erica"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Erica",
+    "son",
+    "Alfredo"
+   ],
+   [
+    "Katherine",
+    "son",
+    "Ronald"
+   ],
+   [
+    "Katherine",
+    "daughter",
+    "Jon"
+   ],
+   [
+    "Katherine",
+    "sister",
+    "Erica"
+   ],
+   [
+    "Katherine",
+    "nephew",
+    "Alfredo"
+   ]
+  ]
+ },
+ {
+  "query": "Alvin dropped his son Warren off at a friend's house for the night, as he was taking his wife Dorothy out to dinner. Michael played chess with his brother Alfredo. Michael loved going to the store with his mom Erica. She always bought him snacks Dorothy and her sister, Erica, frequently bicker. However, they always make up quickly. Joseph 'son, Alfredo, aced his math class and made his father proud. How is Warren related to Joseph?",
+  "rule": [
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Warren is the nephew of Joseph.",
+  "grounded_variables": [
+   [
+    "Alfredo",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Michael",
+    "mother",
+    "Erica"
+   ],
+   [
+    "Dorothy",
+    "husband",
+    "Alvin"
+   ],
+   [
+    "Alvin",
+    "son",
+    "Warren"
+   ],
+   [
+    "Erica",
+    "sister",
+    "Dorothy"
+   ],
+   [
+    "Joseph",
+    "son",
+    "Alfredo"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Alfredo",
+    "mother",
+    "Erica"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Warren"
+   ],
+   [
+    "Alfredo",
+    "aunt",
+    "Dorothy"
+   ],
+   [
+    "Joseph",
+    "sister",
+    "Dorothy"
+   ],
+   [
+    "Joseph",
+    "nephew",
+    "Warren"
+   ]
+  ]
+ },
+ {
+  "query": "Kenneth was so happy for his brother, William, getting a promotion. Clifton was so excited to surprise his son, William, with the tickets to the playoffs. Erica has not seen her brother, Clifton in over a year. She wants to take her son, Patrick to meet him. Bonnie is going to visit her mother, Mary. Bonnie asked her son, Kenneth to come along. How is Patrick related to Mary?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the son of B, then C is the grandson of A."
+  ],
+  "answer": "Patrick is the grandson of Mary.",
+  "grounded_variables": [
+   [
+    "Bonnie",
+    "son",
+    "Kenneth"
+   ],
+   [
+    "Kenneth",
+    "brother",
+    "William"
+   ],
+   [
+    "William",
+    "father",
+    "Clifton"
+   ],
+   [
+    "Clifton",
+    "sister",
+    "Erica"
+   ],
+   [
+    "Mary",
+    "daughter",
+    "Bonnie"
+   ],
+   [
+    "Erica",
+    "son",
+    "Patrick"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Bonnie",
+    "son",
+    "William"
+   ],
+   [
+    "William",
+    "aunt",
+    "Erica"
+   ],
+   [
+    "Bonnie",
+    "sister",
+    "Erica"
+   ],
+   [
+    "Mary",
+    "daughter",
+    "Erica"
+   ],
+   [
+    "Mary",
+    "grandson",
+    "Patrick"
+   ]
+  ]
+ },
+ {
+  "query": "James took his sister Charlsie out to lunch after learning that she got accepted into her first choice for university. Robert was n't able to leave work early to go watch his son Ronald play in his first high school football game. Robert instead sent his oldest daughter, Charlsie, to film the game for him so that he could watch it later that night. Anna is enjoying dinner with her husband James. Katherine invited her daughter Jon to lunch. Jon's brother Ronald could n't leave work to join them. How is Anna related to Katherine?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the wife of B, then C is the daughter-in-law of A."
+  ],
+  "answer": "Anna is the daughter-in-law of Katherine.",
+  "grounded_variables": [
+   [
+    "Robert",
+    "daughter",
+    "Charlsie"
+   ],
+   [
+    "Charlsie",
+    "brother",
+    "James"
+   ],
+   [
+    "Jon",
+    "brother",
+    "Ronald"
+   ],
+   [
+    "Ronald",
+    "father",
+    "Robert"
+   ],
+   [
+    "Katherine",
+    "daughter",
+    "Jon"
+   ],
+   [
+    "James",
+    "wife",
+    "Anna"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Robert",
+    "son",
+    "James"
+   ],
+   [
+    "Jon",
+    "father",
+    "Robert"
+   ],
+   [
+    "Jon",
+    "brother",
+    "James"
+   ],
+   [
+    "Katherine",
+    "son",
+    "James"
+   ],
+   [
+    "Katherine",
+    "daughter-in-law",
+    "Anna"
+   ]
+  ]
+ },
+ {
+  "query": "Warren and his son Alvin went to look at cars. Warren ended up buying the Mustang. Erica loves cooking for her son. His name is Michael. Warren was disappointed that his father, Alvin, would n't be at the play to see him perform. Dorothy and her son Seth made hot dogs. Seth's brother Warren ate one. Warren received a novel for Christmas from his aunt Erica. How is Michael related to Dorothy?",
+  "rule": [
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A."
+  ],
+  "answer": "Michael is the nephew of Dorothy.",
+  "grounded_variables": [
+   [
+    "Seth",
+    "brother",
+    "Warren"
+   ],
+   [
+    "Warren",
+    "father",
+    "Alvin"
+   ],
+   [
+    "Alvin",
+    "son",
+    "Warren"
+   ],
+   [
+    "Warren",
+    "aunt",
+    "Erica"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Seth"
+   ],
+   [
+    "Erica",
+    "son",
+    "Michael"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Seth",
+    "father",
+    "Alvin"
+   ],
+   [
+    "Alvin",
+    "sister",
+    "Erica"
+   ],
+   [
+    "Seth",
+    "aunt",
+    "Erica"
+   ],
+   [
+    "Dorothy",
+    "sister",
+    "Erica"
+   ],
+   [
+    "Dorothy",
+    "nephew",
+    "Michael"
+   ]
+  ]
+ },
+ {
+  "query": "David's brother Kenneth would not let him play the xbox game. Clifton and his son William went to the cinema together. Clifton and his daughter Julie took a day off school to go to the zoo. William and his brother David went hiking with William's mother, Bonnie. Bonnie's daughter, Julie, brought the supplies. How is Kenneth related to William?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Kenneth is the brother of William.",
+  "grounded_variables": [
+   [
+    "William",
+    "father",
+    "Clifton"
+   ],
+   [
+    "Clifton",
+    "daughter",
+    "Julie"
+   ],
+   [
+    "Julie",
+    "mother",
+    "Bonnie"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "William"
+   ],
+   [
+    "William",
+    "brother",
+    "David"
+   ],
+   [
+    "David",
+    "brother",
+    "Kenneth"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "William",
+    "sister",
+    "Julie"
+   ],
+   [
+    "William",
+    "mother",
+    "Bonnie"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "David"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "Kenneth"
+   ],
+   [
+    "William",
+    "brother",
+    "Kenneth"
+   ]
+  ]
+ },
+ {
+  "query": "William was disappointed that his father, Clifton, would n't be at the play to see him perform. Bonnie took her daughter Julie to the ice cream parlor after school for a sweet treat. Since Julie gets out of school earlier than her brother Kenneth, he missed out on the trip to get ice cream. Julie and her brother Kenneth went to see a movie. Bonnie spent a great day shopping with her daughter, Julie. Julie went to her brother William's birthday party. How is Clifton related to Julie?",
+  "rule": [
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Clifton is the father of Julie.",
+  "grounded_variables": [
+   [
+    "Bonnie",
+    "daughter",
+    "Julie"
+   ],
+   [
+    "Julie",
+    "brother",
+    "William"
+   ],
+   [
+    "Kenneth",
+    "sister",
+    "Julie"
+   ],
+   [
+    "Julie",
+    "mother",
+    "Bonnie"
+   ],
+   [
+    "William",
+    "father",
+    "Clifton"
+   ],
+   [
+    "Julie",
+    "brother",
+    "Kenneth"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Bonnie",
+    "son",
+    "William"
+   ],
+   [
+    "Kenneth",
+    "mother",
+    "Bonnie"
+   ],
+   [
+    "Kenneth",
+    "brother",
+    "William"
+   ],
+   [
+    "Kenneth",
+    "father",
+    "Clifton"
+   ],
+   [
+    "Julie",
+    "father",
+    "Clifton"
+   ]
+  ]
+ },
+ {
+  "query": "Katherine had a daughter named Charlsie. Bonnie's son, William, went to have lunch with her sister, Katherine. Robert and his wife Katherine went to see a movie. Katherine's daughter, Jon, came with them. Charlsie went to the store with her sister Jon. How is William related to Robert?",
+  "rule": [
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A."
+  ],
+  "answer": "William is the nephew of Robert.",
+  "grounded_variables": [
+   [
+    "Jon",
+    "sister",
+    "Charlsie"
+   ],
+   [
+    "Charlsie",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Robert",
+    "wife",
+    "Katherine"
+   ],
+   [
+    "Katherine",
+    "daughter",
+    "Jon"
+   ],
+   [
+    "Katherine",
+    "sister",
+    "Bonnie"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "William"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Jon",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Robert",
+    "daughter",
+    "Jon"
+   ],
+   [
+    "Jon",
+    "aunt",
+    "Bonnie"
+   ],
+   [
+    "Robert",
+    "sister",
+    "Bonnie"
+   ],
+   [
+    "Robert",
+    "nephew",
+    "William"
+   ]
+  ]
+ },
+ {
+  "query": "Dorothy went to lunch with her son Arthur and her sister Bonnie. Mary spent a great day shopping with her daughter, Bonnie. Lilly went to her brother Warren's birthday party Arthur went to the game with his sister Lilly. Seth played chess with his brother Warren. How is Seth related to Mary?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Seth is the grandson of Mary.",
+  "grounded_variables": [
+   [
+    "Mary",
+    "daughter",
+    "Bonnie"
+   ],
+   [
+    "Bonnie",
+    "sister",
+    "Dorothy"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Arthur"
+   ],
+   [
+    "Arthur",
+    "sister",
+    "Lilly"
+   ],
+   [
+    "Lilly",
+    "brother",
+    "Warren"
+   ],
+   [
+    "Warren",
+    "brother",
+    "Seth"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Mary",
+    "daughter",
+    "Dorothy"
+   ],
+   [
+    "Dorothy",
+    "daughter",
+    "Lilly"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Warren"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Seth"
+   ],
+   [
+    "Mary",
+    "grandson",
+    "Seth"
+   ]
+  ]
+ },
+ {
+  "query": "Katherine and her son Ronald made hot dogs. Ronald's brother James ate one. James 'uncle, Clifton, always took him fishing on summer weekends. James loved going to the store with his mom Katherine. She always bought him snacks Robert took his son James and daughter Charlsie to the zoo on Saturday and they had a great time. How is Clifton related to Charlsie?",
+  "rule": [
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the mother of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Clifton is the uncle of Charlsie.",
+  "grounded_variables": [
+   [
+    "Charlsie",
+    "father",
+    "Robert"
+   ],
+   [
+    "Robert",
+    "son",
+    "James"
+   ],
+   [
+    "Katherine",
+    "son",
+    "Ronald"
+   ],
+   [
+    "Ronald",
+    "brother",
+    "James"
+   ],
+   [
+    "James",
+    "uncle",
+    "Clifton"
+   ],
+   [
+    "James",
+    "mother",
+    "Katherine"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Charlsie",
+    "brother",
+    "James"
+   ],
+   [
+    "Katherine",
+    "son",
+    "James"
+   ],
+   [
+    "Katherine",
+    "brother",
+    "Clifton"
+   ],
+   [
+    "Charlsie",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Charlsie",
+    "uncle",
+    "Clifton"
+   ]
+  ]
+ },
+ {
+  "query": "David and his sister, Julie love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town. Bonnie went to the mall, because she wanted to look for a present for her daughter, Julie. Erica went to her son Ross's House Clifton is Erica's older brother. He has never liked any of her boyfriends. Ross and his brother, Patrick run a turtle farm. Clifton was so proud of his son, David. he received a great scholarship to college. How is Patrick related to Bonnie?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A."
+  ],
+  "answer": "Patrick is the nephew of Bonnie.",
+  "grounded_variables": [
+   [
+    "Bonnie",
+    "daughter",
+    "Julie"
+   ],
+   [
+    "Julie",
+    "brother",
+    "David"
+   ],
+   [
+    "Erica",
+    "son",
+    "Ross"
+   ],
+   [
+    "Ross",
+    "brother",
+    "Patrick"
+   ],
+   [
+    "David",
+    "father",
+    "Clifton"
+   ],
+   [
+    "Clifton",
+    "sister",
+    "Erica"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Bonnie",
+    "son",
+    "David"
+   ],
+   [
+    "Erica",
+    "son",
+    "Patrick"
+   ],
+   [
+    "David",
+    "aunt",
+    "Erica"
+   ],
+   [
+    "Bonnie",
+    "sister",
+    "Erica"
+   ],
+   [
+    "Bonnie",
+    "nephew",
+    "Patrick"
+   ]
+  ]
+ },
+ {
+  "query": "Katherine went shoe shopping with her sister Erica. Joseph took his son Ross to the park to feed the squirrels. Ross loved going to the store with his mom Erica. She always bought him snacks Katherine went to the mall, because she wanted to look for a present for her daughter, Charlsie. Jon and her sister Charlsie were baking cake. Jon's brother James came in and tried to eat some of the mix, but they told him to wait until it was finished. How is James related to Joseph?",
+  "rule": [
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "James is the nephew of Joseph.",
+  "grounded_variables": [
+   [
+    "Charlsie",
+    "sister",
+    "Jon"
+   ],
+   [
+    "Jon",
+    "brother",
+    "James"
+   ],
+   [
+    "Ross",
+    "mother",
+    "Erica"
+   ],
+   [
+    "Erica",
+    "sister",
+    "Katherine"
+   ],
+   [
+    "Katherine",
+    "daughter",
+    "Charlsie"
+   ],
+   [
+    "Joseph",
+    "son",
+    "Ross"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Charlsie",
+    "brother",
+    "James"
+   ],
+   [
+    "Ross",
+    "aunt",
+    "Katherine"
+   ],
+   [
+    "Katherine",
+    "son",
+    "James"
+   ],
+   [
+    "Joseph",
+    "sister",
+    "Katherine"
+   ],
+   [
+    "Joseph",
+    "nephew",
+    "James"
+   ]
+  ]
+ },
+ {
+  "query": "James's mother, Katherine, took him shopping for a new television James and his brother Ronald had a tie score. Ronald asked his sister, Jon, to come up with a tie-breaker. Mary enjoys watching her grandson, James, every day after school. His mother, Katherine, picks him up at 5 pm. Robert is proud that his daughter is such a good student. Her name is Jon. How is Mary related to Robert?",
+  "rule": [
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Mary is the mother of Robert.",
+  "grounded_variables": [
+   [
+    "Jon",
+    "brother",
+    "Ronald"
+   ],
+   [
+    "Ronald",
+    "brother",
+    "James"
+   ],
+   [
+    "Katherine",
+    "son",
+    "James"
+   ],
+   [
+    "James",
+    "grandmother",
+    "Mary"
+   ],
+   [
+    "James",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Robert",
+    "daughter",
+    "Jon"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Jon",
+    "brother",
+    "James"
+   ],
+   [
+    "Katherine",
+    "mother",
+    "Mary"
+   ],
+   [
+    "Jon",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Jon",
+    "grandmother",
+    "Mary"
+   ],
+   [
+    "Robert",
+    "mother",
+    "Mary"
+   ]
+  ]
+ },
+ {
+  "query": "Patrick's father, Joseph, went bowling with his sister, Katherine. Katherine and her son Ronald went out to lunch together yesterday. Alfredo went to the Farmer's market with his mother Erica and his brother Patrick. Ronald went to the game with his sister Charlsie. How is Charlsie related to Erica?",
+  "rule": [
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the daughter of B, then C is the niece of A."
+  ],
+  "answer": "Charlsie is the niece of Erica.",
+  "grounded_variables": [
+   [
+    "Alfredo",
+    "brother",
+    "Patrick"
+   ],
+   [
+    "Patrick",
+    "father",
+    "Joseph"
+   ],
+   [
+    "Katherine",
+    "son",
+    "Ronald"
+   ],
+   [
+    "Ronald",
+    "sister",
+    "Charlsie"
+   ],
+   [
+    "Joseph",
+    "sister",
+    "Katherine"
+   ],
+   [
+    "Erica",
+    "son",
+    "Alfredo"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Alfredo",
+    "father",
+    "Joseph"
+   ],
+   [
+    "Katherine",
+    "daughter",
+    "Charlsie"
+   ],
+   [
+    "Alfredo",
+    "aunt",
+    "Katherine"
+   ],
+   [
+    "Erica",
+    "sister",
+    "Katherine"
+   ],
+   [
+    "Erica",
+    "niece",
+    "Charlsie"
+   ]
+  ]
+ },
+ {
+  "query": "Jon and Robert did the Father daughter dance at the recital and his wife Katherine was so happy she cried Dorothy had picked her daughter Lilly out the cutest new dress to wear on her birthday. Charlsie watched a golf tournament with her aunt Dorothy. James took his sister Jon too the zoo but his sister Charlsie could n't come because she had to work. How is Lilly related to Katherine?",
+  "rule": [
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the daughter of B, then C is the niece of A.",
+   "If B is the husband of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A."
+  ],
+  "answer": "Lilly is the niece of Katherine.",
+  "grounded_variables": [
+   [
+    "Robert",
+    "daughter",
+    "Jon"
+   ],
+   [
+    "Jon",
+    "brother",
+    "James"
+   ],
+   [
+    "James",
+    "sister",
+    "Charlsie"
+   ],
+   [
+    "Katherine",
+    "husband",
+    "Robert"
+   ],
+   [
+    "Charlsie",
+    "aunt",
+    "Dorothy"
+   ],
+   [
+    "Dorothy",
+    "daughter",
+    "Lilly"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Robert",
+    "son",
+    "James"
+   ],
+   [
+    "Robert",
+    "daughter",
+    "Charlsie"
+   ],
+   [
+    "Katherine",
+    "daughter",
+    "Charlsie"
+   ],
+   [
+    "Katherine",
+    "sister",
+    "Dorothy"
+   ],
+   [
+    "Katherine",
+    "niece",
+    "Lilly"
+   ]
+  ]
+ },
+ {
+  "query": "Katherine was excited to visit her son, Ronald, at college. Jon asked her brother, Ronald, to stop by and help babysit, but he was busy with his mom, Katherine. Clifton is the uncle of Ronald. Robert rushed to the hospital to find out that his wife and already given birth to a boy and had named him Ronald. Ronald and his sister Jon have been best friends ever since childhood. How is Clifton related to Robert?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Clifton is the brother of Robert.",
+  "grounded_variables": [
+   [
+    "Katherine",
+    "son",
+    "Ronald"
+   ],
+   [
+    "Ronald",
+    "uncle",
+    "Clifton"
+   ],
+   [
+    "Jon",
+    "brother",
+    "Ronald"
+   ],
+   [
+    "Ronald",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Robert",
+    "son",
+    "Ronald"
+   ],
+   [
+    "Ronald",
+    "sister",
+    "Jon"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Katherine",
+    "brother",
+    "Clifton"
+   ],
+   [
+    "Jon",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Robert",
+    "daughter",
+    "Jon"
+   ],
+   [
+    "Jon",
+    "uncle",
+    "Clifton"
+   ],
+   [
+    "Robert",
+    "brother",
+    "Clifton"
+   ]
+  ]
+ },
+ {
+  "query": "Ronald's mother Katherine and his father Robert gave him a brand new watch for Christmas. Katherine's son James was jealous he did not get one too. Katherine's son James made a crayon drawing for Mary, Katherine's mother. Jon vowed to never trust her father, Robert with her debit card again. How is Mary related to Jon?",
+  "rule": [
+   "If B is the father of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Mary is the grandmother of Jon.",
+  "grounded_variables": [
+   [
+    "Ronald",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Katherine",
+    "son",
+    "James"
+   ],
+   [
+    "Robert",
+    "son",
+    "Ronald"
+   ],
+   [
+    "James",
+    "mother",
+    "Katherine"
+   ],
+   [
+    "Katherine",
+    "mother",
+    "Mary"
+   ],
+   [
+    "Jon",
+    "father",
+    "Robert"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Ronald",
+    "brother",
+    "James"
+   ],
+   [
+    "Robert",
+    "son",
+    "James"
+   ],
+   [
+    "James",
+    "grandmother",
+    "Mary"
+   ],
+   [
+    "Robert",
+    "mother",
+    "Mary"
+   ],
+   [
+    "Jon",
+    "grandmother",
+    "Mary"
+   ]
+  ]
+ },
+ {
+  "query": "William's brother Kenneth would not let him play the xbox game. Daniel's son, Alvin, was planning a surprise party for his sister, Bonnie. Bonnie's son, David, was helping with the catering. Clifton and his son, William, went to the supermarket. David, Clifton's son, had asked them to bring him back some cookies. How is Kenneth related to Daniel?",
+  "rule": [
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Kenneth is the grandson of Daniel.",
+  "grounded_variables": [
+   [
+    "Daniel",
+    "son",
+    "Alvin"
+   ],
+   [
+    "Alvin",
+    "sister",
+    "Bonnie"
+   ],
+   [
+    "David",
+    "father",
+    "Clifton"
+   ],
+   [
+    "Clifton",
+    "son",
+    "William"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "David"
+   ],
+   [
+    "William",
+    "brother",
+    "Kenneth"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Daniel",
+    "daughter",
+    "Bonnie"
+   ],
+   [
+    "David",
+    "brother",
+    "William"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "William"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "Kenneth"
+   ],
+   [
+    "Daniel",
+    "grandson",
+    "Kenneth"
+   ]
+  ]
+ },
+ {
+  "query": "Arthur was disappointed that his father, Alvin, would n't be at the play to see him perform. Dorothy's son Seth decided to spend the night at a friend's house. Dorothy was happy as this meant she would have some alone time with her husband Alvin. Warren went to the Farmer's market with his mother Dorothy and his brother Arthur. Seth and his sister Lilly went out for ice cream. How is Lilly related to Dorothy?",
+  "rule": [
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Lilly is the daughter of Dorothy.",
+  "grounded_variables": [
+   [
+    "Alvin",
+    "wife",
+    "Dorothy"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Seth"
+   ],
+   [
+    "Seth",
+    "sister",
+    "Lilly"
+   ],
+   [
+    "Warren",
+    "brother",
+    "Arthur"
+   ],
+   [
+    "Arthur",
+    "father",
+    "Alvin"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Warren"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Alvin",
+    "son",
+    "Seth"
+   ],
+   [
+    "Alvin",
+    "daughter",
+    "Lilly"
+   ],
+   [
+    "Warren",
+    "father",
+    "Alvin"
+   ],
+   [
+    "Warren",
+    "sister",
+    "Lilly"
+   ],
+   [
+    "Dorothy",
+    "daughter",
+    "Lilly"
+   ]
+  ]
+ },
+ {
+  "query": "Erica loves cooking for her son. His name is Michael. Dorothy was excited to visit her son, Arthur, at college. Alvin 'son, Seth, aced his math class and made his father proud. Arthur and his sister Lilly went out for ice cream. Michael and his Aunt Dorothy flew first class Lilly 'father Alvin became enraged when she failed to complete her homework. Lilly was grounded for a month and unable to spend time with friends. How is Seth related to Erica?",
+  "rule": [
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Seth is the nephew of Erica.",
+  "grounded_variables": [
+   [
+    "Arthur",
+    "sister",
+    "Lilly"
+   ],
+   [
+    "Lilly",
+    "father",
+    "Alvin"
+   ],
+   [
+    "Alvin",
+    "son",
+    "Seth"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Arthur"
+   ],
+   [
+    "Erica",
+    "son",
+    "Michael"
+   ],
+   [
+    "Michael",
+    "aunt",
+    "Dorothy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Arthur",
+    "father",
+    "Alvin"
+   ],
+   [
+    "Arthur",
+    "brother",
+    "Seth"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Seth"
+   ],
+   [
+    "Erica",
+    "sister",
+    "Dorothy"
+   ],
+   [
+    "Erica",
+    "nephew",
+    "Seth"
+   ]
+  ]
+ },
+ {
+  "query": "Erica and her brother Clifton enlisted in the army Ross was thrilled his brother, Michael, was able to make it to the party. Ross adored his brother, Michael. Michael's brother, Patrick, also adored him. Erica and her son Alfredo made hot dogs. Alfredo's brother Michael ate one. How is Patrick related to Clifton?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Patrick is the nephew of Clifton.",
+  "grounded_variables": [
+   [
+    "Alfredo",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Michael",
+    "brother",
+    "Ross"
+   ],
+   [
+    "Erica",
+    "son",
+    "Alfredo"
+   ],
+   [
+    "Ross",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Michael",
+    "brother",
+    "Patrick"
+   ],
+   [
+    "Clifton",
+    "sister",
+    "Erica"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Alfredo",
+    "brother",
+    "Ross"
+   ],
+   [
+    "Erica",
+    "son",
+    "Ross"
+   ],
+   [
+    "Erica",
+    "son",
+    "Michael"
+   ],
+   [
+    "Erica",
+    "son",
+    "Patrick"
+   ],
+   [
+    "Clifton",
+    "nephew",
+    "Patrick"
+   ]
+  ]
+ },
+ {
+  "query": "Charlsie took her father Robert to his doctor's appointment and afterward her brother James came over and visited for awhile. Bonnie took her daughter Julie and son Kenneth to the library. Kenneth's brother David did n't go because he thinks it's boring. James received a novel for Christmas from his aunt Bonnie. How is David related to Robert?",
+  "rule": [
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "David is the nephew of Robert.",
+  "grounded_variables": [
+   [
+    "Robert",
+    "daughter",
+    "Charlsie"
+   ],
+   [
+    "Charlsie",
+    "brother",
+    "James"
+   ],
+   [
+    "Bonnie",
+    "daughter",
+    "Julie"
+   ],
+   [
+    "Julie",
+    "brother",
+    "Kenneth"
+   ],
+   [
+    "James",
+    "aunt",
+    "Bonnie"
+   ],
+   [
+    "Kenneth",
+    "brother",
+    "David"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Robert",
+    "son",
+    "James"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "Kenneth"
+   ],
+   [
+    "Robert",
+    "sister",
+    "Bonnie"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "David"
+   ],
+   [
+    "Robert",
+    "nephew",
+    "David"
+   ]
+  ]
+ },
+ {
+  "query": "Arthur received a novel for Christmas from his aunt Erica. Robert asked his wife Katherine if she did the shopping. Bonnie went to the movie with her brother, Alvin. His son, Arthur, could n't make it because he was helping Bonnie's dad, Daniel. Katherine, who is the sister of Erica, is a lovely girl. How is Robert related to Daniel?",
+  "rule": [
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the husband of B, then C is the son-in-law of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Robert is the son-in-law of Daniel.",
+  "grounded_variables": [
+   [
+    "Alvin",
+    "son",
+    "Arthur"
+   ],
+   [
+    "Arthur",
+    "aunt",
+    "Erica"
+   ],
+   [
+    "Daniel",
+    "daughter",
+    "Bonnie"
+   ],
+   [
+    "Bonnie",
+    "brother",
+    "Alvin"
+   ],
+   [
+    "Erica",
+    "sister",
+    "Katherine"
+   ],
+   [
+    "Katherine",
+    "husband",
+    "Robert"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Alvin",
+    "sister",
+    "Erica"
+   ],
+   [
+    "Daniel",
+    "son",
+    "Alvin"
+   ],
+   [
+    "Daniel",
+    "daughter",
+    "Erica"
+   ],
+   [
+    "Daniel",
+    "daughter",
+    "Katherine"
+   ],
+   [
+    "Daniel",
+    "son-in-law",
+    "Robert"
+   ]
+  ]
+ },
+ {
+  "query": "Bonnie and her father, Daniel, went to the marina. Daniel's daughter, Dorothy, had purchased a boat, and they were eager to see it. Patrick invited his brothers Michael and Ross to play baskteball on Saturday at 4:00 p.m. Joseph and his son Michael loved to go to the movies with Joseph's sister Bonnie. How is Dorothy related to Ross?",
+  "rule": [
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Dorothy is the aunt of Ross.",
+  "grounded_variables": [
+   [
+    "Bonnie",
+    "father",
+    "Daniel"
+   ],
+   [
+    "Daniel",
+    "daughter",
+    "Dorothy"
+   ],
+   [
+    "Joseph",
+    "sister",
+    "Bonnie"
+   ],
+   [
+    "Patrick",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Michael",
+    "father",
+    "Joseph"
+   ],
+   [
+    "Ross",
+    "brother",
+    "Patrick"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Bonnie",
+    "sister",
+    "Dorothy"
+   ],
+   [
+    "Joseph",
+    "sister",
+    "Dorothy"
+   ],
+   [
+    "Patrick",
+    "father",
+    "Joseph"
+   ],
+   [
+    "Ross",
+    "father",
+    "Joseph"
+   ],
+   [
+    "Ross",
+    "aunt",
+    "Dorothy"
+   ]
+  ]
+ },
+ {
+  "query": "Daniel was having trouble with his divorce because he only got to see his daughter Katherine a few times a week Clifton and Bonnie got married in Hawaii. Clifton is teaching his sister, Katherine and his son, Kenneth how to ski. Kenneth and his brother David always played pranks on each other David got his son, Clifton, a car for his birthday. How is Daniel related to Bonnie?",
+  "rule": [
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Daniel is the father of Bonnie.",
+  "grounded_variables": [
+   [
+    "Clifton",
+    "son",
+    "David"
+   ],
+   [
+    "David",
+    "brother",
+    "Kenneth"
+   ],
+   [
+    "Kenneth",
+    "father",
+    "Clifton"
+   ],
+   [
+    "Clifton",
+    "sister",
+    "Katherine"
+   ],
+   [
+    "Bonnie",
+    "husband",
+    "Clifton"
+   ],
+   [
+    "Katherine",
+    "father",
+    "Daniel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Clifton",
+    "son",
+    "Kenneth"
+   ],
+   [
+    "Kenneth",
+    "aunt",
+    "Katherine"
+   ],
+   [
+    "Bonnie",
+    "son",
+    "Kenneth"
+   ],
+   [
+    "Bonnie",
+    "sister",
+    "Katherine"
+   ],
+   [
+    "Bonnie",
+    "father",
+    "Daniel"
+   ]
+  ]
+ },
+ {
+  "query": "Stephen played basketball with his brother Carlos. Bertha and her sister, Diane, went to church. Diane's mom, Jennifer, was sick, and could n't make it, and Diane told the pastor so he would pray for a speedy recovery. Jennifer and her sister, Gayle, frequently bicker. However, they always make up quickly. Bertha was n't able to pick her brother Peter up at the airport so he called his dad Stephen to come collect him. James was so excited to surprise his son, Carlos, with the tickets to the playoffs. How is James related to Gayle?",
+  "rule": [
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A."
+  ],
+  "answer": "James is the father of Gayle.",
+  "grounded_variables": [
+   [
+    "Jennifer",
+    "daughter",
+    "Diane"
+   ],
+   [
+    "Diane",
+    "sister",
+    "Bertha"
+   ],
+   [
+    "Bertha",
+    "brother",
+    "Peter"
+   ],
+   [
+    "Peter",
+    "father",
+    "Stephen"
+   ],
+   [
+    "Stephen",
+    "brother",
+    "Carlos"
+   ],
+   [
+    "Carlos",
+    "father",
+    "James"
+   ],
+   [
+    "Gayle",
+    "sister",
+    "Jennifer"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Jennifer",
+    "daughter",
+    "Bertha"
+   ],
+   [
+    "Jennifer",
+    "son",
+    "Peter"
+   ],
+   [
+    "Peter",
+    "uncle",
+    "Carlos"
+   ],
+   [
+    "Jennifer",
+    "brother",
+    "Carlos"
+   ],
+   [
+    "Jennifer",
+    "father",
+    "James"
+   ],
+   [
+    "Gayle",
+    "father",
+    "James"
+   ]
+  ]
+ },
+ {
+  "query": "Daniel took his sister Mary out to lunch after learning that she got accepted into her first choice for university. Lisa told a secret to her sister, Ruth. Ruth passed it along to her brother, George. Lisa went to her brother George's birthday party Mary's son, George, had to stay home from school with a cold. Lisa and her brother George went to see a movie. Jose took his sister, Lisa, to a baseball game. How is Daniel related to Jose?",
+  "rule": [
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the mother of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Daniel is the uncle of Jose.",
+  "grounded_variables": [
+   [
+    "Lisa",
+    "brother",
+    "George"
+   ],
+   [
+    "George",
+    "mother",
+    "Mary"
+   ],
+   [
+    "Jose",
+    "sister",
+    "Lisa"
+   ],
+   [
+    "Lisa",
+    "brother",
+    "George"
+   ],
+   [
+    "George",
+    "sister",
+    "Ruth"
+   ],
+   [
+    "Ruth",
+    "sister",
+    "Lisa"
+   ],
+   [
+    "Mary",
+    "brother",
+    "Daniel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lisa",
+    "mother",
+    "Mary"
+   ],
+   [
+    "Jose",
+    "brother",
+    "George"
+   ],
+   [
+    "Jose",
+    "sister",
+    "Ruth"
+   ],
+   [
+    "Ruth",
+    "mother",
+    "Mary"
+   ],
+   [
+    "Jose",
+    "mother",
+    "Mary"
+   ],
+   [
+    "Jose",
+    "uncle",
+    "Daniel"
+   ]
+  ]
+ },
+ {
+  "query": "Daniel was playing tennis with his sister Gayle. Afterwards, he was planning on playing chess with his sister Jennifer. James sat with his daughter, Jennifer, for ice cream at a local shop. Susan went to the store with her sister Patricia Paul took his sister Maria too the zoo but his sister Patricia could n't come because she had to work. Susan just had a baby and presented the baby proudly to the new maternal grandmother, Gayle. How is James related to Maria?",
+  "rule": [
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "James is the grandfather of Maria.",
+  "grounded_variables": [
+   [
+    "Daniel",
+    "sister",
+    "Jennifer"
+   ],
+   [
+    "Jennifer",
+    "father",
+    "James"
+   ],
+   [
+    "Patricia",
+    "sister",
+    "Susan"
+   ],
+   [
+    "Susan",
+    "mother",
+    "Gayle"
+   ],
+   [
+    "Paul",
+    "sister",
+    "Patricia"
+   ],
+   [
+    "Maria",
+    "brother",
+    "Paul"
+   ],
+   [
+    "Gayle",
+    "brother",
+    "Daniel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Daniel",
+    "father",
+    "James"
+   ],
+   [
+    "Patricia",
+    "mother",
+    "Gayle"
+   ],
+   [
+    "Paul",
+    "mother",
+    "Gayle"
+   ],
+   [
+    "Maria",
+    "mother",
+    "Gayle"
+   ],
+   [
+    "Gayle",
+    "father",
+    "James"
+   ],
+   [
+    "Maria",
+    "grandfather",
+    "James"
+   ]
+  ]
+ },
+ {
+  "query": "Carlos took his son Paul out for ice cream. Harry's father, Carlos, thought his son was a monster. Meanwhile Gayle thought her son Harry was a little angel. Paul, Carlos's other son, agreed with his dad. William rushed to the hospital to find out that his wife and already given birth to a boy and had named him Jose. Carlos's brother William would not let him play the xbox game. Gayle went shoe shopping with her sister Jennifer. How is Jose related to Jennifer?",
+  "rule": [
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the brother of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Jose is the nephew of Jennifer.",
+  "grounded_variables": [
+   [
+    "Harry",
+    "father",
+    "Carlos"
+   ],
+   [
+    "Carlos",
+    "son",
+    "Paul"
+   ],
+   [
+    "Paul",
+    "father",
+    "Carlos"
+   ],
+   [
+    "Carlos",
+    "brother",
+    "William"
+   ],
+   [
+    "Gayle",
+    "son",
+    "Harry"
+   ],
+   [
+    "Jennifer",
+    "sister",
+    "Gayle"
+   ],
+   [
+    "William",
+    "son",
+    "Jose"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Harry",
+    "brother",
+    "Paul"
+   ],
+   [
+    "Paul",
+    "uncle",
+    "William"
+   ],
+   [
+    "Gayle",
+    "son",
+    "Paul"
+   ],
+   [
+    "Gayle",
+    "brother",
+    "William"
+   ],
+   [
+    "Jennifer",
+    "brother",
+    "William"
+   ],
+   [
+    "Jennifer",
+    "nephew",
+    "Jose"
+   ]
+  ]
+ },
+ {
+  "query": "Jennifer took her sister, Gayle, and Gayle's daughter, Maria, out for lunch. The food was great and everyone had a good time. Jennifer had a daughter named Diane. Stephen and his brother Carlos played harmonicas together. Stephen's daughter Diane loved it. Maria and her aunt, Mary, went to the bookstore. Maria bought some fantasy books, while Mary picked up some mysteries. Marguerite went to the store with her sister Mary. How is Marguerite related to Carlos?",
+  "rule": [
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Marguerite is the sister of Carlos.",
+  "grounded_variables": [
+   [
+    "Gayle",
+    "daughter",
+    "Maria"
+   ],
+   [
+    "Maria",
+    "aunt",
+    "Mary"
+   ],
+   [
+    "Mary",
+    "sister",
+    "Marguerite"
+   ],
+   [
+    "Jennifer",
+    "sister",
+    "Gayle"
+   ],
+   [
+    "Diane",
+    "mother",
+    "Jennifer"
+   ],
+   [
+    "Stephen",
+    "daughter",
+    "Diane"
+   ],
+   [
+    "Carlos",
+    "brother",
+    "Stephen"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Gayle",
+    "sister",
+    "Mary"
+   ],
+   [
+    "Gayle",
+    "sister",
+    "Marguerite"
+   ],
+   [
+    "Jennifer",
+    "sister",
+    "Marguerite"
+   ],
+   [
+    "Diane",
+    "aunt",
+    "Marguerite"
+   ],
+   [
+    "Stephen",
+    "sister",
+    "Marguerite"
+   ],
+   [
+    "Carlos",
+    "sister",
+    "Marguerite"
+   ]
+  ]
+ },
+ {
+  "query": "Mary made a pizza for her son Jose. Jose's sister Lisa tried a piece and liked it. Marguerite and her brother Carlos went to see a movie. Lisa wanted to visit an art museum, so she asked her father, William to take her. Mary had to work a double shift and needed someone to watch her son George. Luckily his sister Ruth was free. Carlos bought a steak dinner for himself and his brother William. How is Ruth related to Marguerite?",
+  "rule": [
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the brother of A, and C is the daughter of B, then C is the niece of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Ruth is the niece of Marguerite.",
+  "grounded_variables": [
+   [
+    "Mary",
+    "son",
+    "George"
+   ],
+   [
+    "George",
+    "sister",
+    "Ruth"
+   ],
+   [
+    "Marguerite",
+    "brother",
+    "Carlos"
+   ],
+   [
+    "Carlos",
+    "brother",
+    "William"
+   ],
+   [
+    "Jose",
+    "mother",
+    "Mary"
+   ],
+   [
+    "Lisa",
+    "brother",
+    "Jose"
+   ],
+   [
+    "William",
+    "daughter",
+    "Lisa"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Mary",
+    "daughter",
+    "Ruth"
+   ],
+   [
+    "Marguerite",
+    "brother",
+    "William"
+   ],
+   [
+    "Jose",
+    "sister",
+    "Ruth"
+   ],
+   [
+    "Lisa",
+    "sister",
+    "Ruth"
+   ],
+   [
+    "William",
+    "daughter",
+    "Ruth"
+   ],
+   [
+    "Marguerite",
+    "niece",
+    "Ruth"
+   ]
+  ]
+ },
+ {
+  "query": "Daniel took his son Michael out for ice cream. Marguerite was excited to visit her son, Kyle, at college. Michael went to his brother Kyle's Birthday party Daniel waited at dinner for his sister, Gayle. She was running late due to a phone call with her brother, William. William took his daughter Lisa to the baseball game. Lisa's brother George hates baseball and stayed home. How is George related to Marguerite?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the brother of A, and C is the son of B, then C is the nephew of A."
+  ],
+  "answer": "George is the nephew of Marguerite.",
+  "grounded_variables": [
+   [
+    "Daniel",
+    "sister",
+    "Gayle"
+   ],
+   [
+    "Gayle",
+    "brother",
+    "William"
+   ],
+   [
+    "William",
+    "daughter",
+    "Lisa"
+   ],
+   [
+    "Lisa",
+    "brother",
+    "George"
+   ],
+   [
+    "Kyle",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Michael",
+    "father",
+    "Daniel"
+   ],
+   [
+    "Marguerite",
+    "son",
+    "Kyle"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Daniel",
+    "brother",
+    "William"
+   ],
+   [
+    "William",
+    "son",
+    "George"
+   ],
+   [
+    "Kyle",
+    "father",
+    "Daniel"
+   ],
+   [
+    "Kyle",
+    "uncle",
+    "William"
+   ],
+   [
+    "Marguerite",
+    "brother",
+    "William"
+   ],
+   [
+    "Marguerite",
+    "nephew",
+    "George"
+   ]
+  ]
+ },
+ {
+  "query": "George and his sister, Ruth, went to a sneak preview of the Avengers movie and loved it. Susan and her sister, Maria, went to church. Maria's mom, Gayle, was sick, and could n't make it, and Maria told the pastor so he would pray for a speedy recovery. Lisa and her brother George went to see a movie. Ruth and her aunt, Gayle, went to the bookstore. Ruth bought some fantasy books, while Gayle picked up some mysteries. Madonna had picked her daughter Mary out the cutest new dress to wear on her birthday. Mary spent a great day shopping with her daughter, Lisa. How is Susan related to Madonna?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A."
+  ],
+  "answer": "Susan is the granddaughter of Madonna.",
+  "grounded_variables": [
+   [
+    "Mary",
+    "daughter",
+    "Lisa"
+   ],
+   [
+    "Lisa",
+    "brother",
+    "George"
+   ],
+   [
+    "George",
+    "sister",
+    "Ruth"
+   ],
+   [
+    "Gayle",
+    "daughter",
+    "Maria"
+   ],
+   [
+    "Maria",
+    "sister",
+    "Susan"
+   ],
+   [
+    "Ruth",
+    "aunt",
+    "Gayle"
+   ],
+   [
+    "Madonna",
+    "daughter",
+    "Mary"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Mary",
+    "son",
+    "George"
+   ],
+   [
+    "Mary",
+    "daughter",
+    "Ruth"
+   ],
+   [
+    "Gayle",
+    "daughter",
+    "Susan"
+   ],
+   [
+    "Mary",
+    "sister",
+    "Gayle"
+   ],
+   [
+    "Madonna",
+    "daughter",
+    "Gayle"
+   ],
+   [
+    "Madonna",
+    "granddaughter",
+    "Susan"
+   ]
+  ]
+ },
+ {
+  "query": "George's brother, Jose, recently made it into town. William is very much in love with his wife. Her name is Mary. Lisa and her brother George went to see a movie. Gayle and her son Paul went out to lunch together yesterday. Paul asked his aunt, Mary, to read him a story. Mary unfortunately was n't able to, since she did n't have her glasses, and she was almost blind without them. Gayle and Carlos are married. William and his daughter Lisa took a day off school to go to the zoo. How is Jose related to Carlos?",
+  "rule": [
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Jose is the nephew of Carlos.",
+  "grounded_variables": [
+   [
+    "Lisa",
+    "brother",
+    "George"
+   ],
+   [
+    "George",
+    "brother",
+    "Jose"
+   ],
+   [
+    "William",
+    "daughter",
+    "Lisa"
+   ],
+   [
+    "Mary",
+    "husband",
+    "William"
+   ],
+   [
+    "Carlos",
+    "wife",
+    "Gayle"
+   ],
+   [
+    "Gayle",
+    "son",
+    "Paul"
+   ],
+   [
+    "Paul",
+    "aunt",
+    "Mary"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lisa",
+    "brother",
+    "Jose"
+   ],
+   [
+    "William",
+    "son",
+    "Jose"
+   ],
+   [
+    "Mary",
+    "son",
+    "Jose"
+   ],
+   [
+    "Carlos",
+    "son",
+    "Paul"
+   ],
+   [
+    "Carlos",
+    "sister",
+    "Mary"
+   ],
+   [
+    "Carlos",
+    "nephew",
+    "Jose"
+   ]
+  ]
+ },
+ {
+  "query": "James was a single father who raised three kids: Daniel, William, and Jennifer. Carlos was so proud of his son, Paul. he received a great scholarship to college. Madonna and her son, William, went to the park to fly a kite. They had fun doing it all day. Carlos 'son, Paul, aced his math class and made his father proud. Paul took his grandmother Madonna a basket of strawberries. How is Daniel related to Paul?",
+  "rule": [
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Daniel is the uncle of Paul.",
+  "grounded_variables": [
+   [
+    "Carlos",
+    "son",
+    "Paul"
+   ],
+   [
+    "Paul",
+    "grandmother",
+    "Madonna"
+   ],
+   [
+    "Madonna",
+    "son",
+    "William"
+   ],
+   [
+    "Jennifer",
+    "father",
+    "James"
+   ],
+   [
+    "James",
+    "son",
+    "Daniel"
+   ],
+   [
+    "William",
+    "sister",
+    "Jennifer"
+   ],
+   [
+    "Paul",
+    "father",
+    "Carlos"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Carlos",
+    "mother",
+    "Madonna"
+   ],
+   [
+    "Carlos",
+    "brother",
+    "William"
+   ],
+   [
+    "Jennifer",
+    "brother",
+    "Daniel"
+   ],
+   [
+    "William",
+    "brother",
+    "Daniel"
+   ],
+   [
+    "Carlos",
+    "brother",
+    "Daniel"
+   ],
+   [
+    "Paul",
+    "uncle",
+    "Daniel"
+   ]
+  ]
+ },
+ {
+  "query": "Ethel and her aunt, Gayle, went to the deli. They got a half a pound of corned beef, and two pounds of salami. Daniel is Jennifer's older brother. He has never liked any of her boyfriends. Ethel went to her brother Jerry's birthday party Gayle and her brother Daniel went to see a movie. Marguerite coached her daughter Ethel's cheer leading squad. When Marguerite's son Jerry became interested in joining, she reorganized the team line up to include him. Ethel planned a trip to the zoo for her brother, Michael. They had a great time. How is Jennifer related to Michael?",
+  "rule": [
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A."
+  ],
+  "answer": "Jennifer is the aunt of Michael.",
+  "grounded_variables": [
+   [
+    "Gayle",
+    "brother",
+    "Daniel"
+   ],
+   [
+    "Daniel",
+    "sister",
+    "Jennifer"
+   ],
+   [
+    "Ethel",
+    "brother",
+    "Jerry"
+   ],
+   [
+    "Jerry",
+    "mother",
+    "Marguerite"
+   ],
+   [
+    "Marguerite",
+    "daughter",
+    "Ethel"
+   ],
+   [
+    "Ethel",
+    "aunt",
+    "Gayle"
+   ],
+   [
+    "Michael",
+    "sister",
+    "Ethel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Gayle",
+    "sister",
+    "Jennifer"
+   ],
+   [
+    "Ethel",
+    "mother",
+    "Marguerite"
+   ],
+   [
+    "Marguerite",
+    "sister",
+    "Gayle"
+   ],
+   [
+    "Michael",
+    "mother",
+    "Marguerite"
+   ],
+   [
+    "Marguerite",
+    "sister",
+    "Jennifer"
+   ],
+   [
+    "Michael",
+    "aunt",
+    "Jennifer"
+   ]
+  ]
+ },
+ {
+  "query": "Mary asked her daughter, Lisa, if she would like to go to a movie with her on Saturday night. Madonna asked her son Daniel if his son Jerry wanted anything in particular for his birthday. Jerry's aunt, Gayle, took him fishing Ruth went to go visit her grandmother Madonna. Ruth's brother George went with her. Lisa went to her brother George's birthday party. How is Gayle related to Mary?",
+  "rule": [
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the grandmother of B, then C is the grandmother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Gayle is the sister of Mary.",
+  "grounded_variables": [
+   [
+    "Lisa",
+    "brother",
+    "George"
+   ],
+   [
+    "George",
+    "sister",
+    "Ruth"
+   ],
+   [
+    "Daniel",
+    "son",
+    "Jerry"
+   ],
+   [
+    "Jerry",
+    "aunt",
+    "Gayle"
+   ],
+   [
+    "Ruth",
+    "grandmother",
+    "Madonna"
+   ],
+   [
+    "Mary",
+    "daughter",
+    "Lisa"
+   ],
+   [
+    "Madonna",
+    "son",
+    "Daniel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lisa",
+    "sister",
+    "Ruth"
+   ],
+   [
+    "Daniel",
+    "sister",
+    "Gayle"
+   ],
+   [
+    "Lisa",
+    "grandmother",
+    "Madonna"
+   ],
+   [
+    "Mary",
+    "mother",
+    "Madonna"
+   ],
+   [
+    "Mary",
+    "brother",
+    "Daniel"
+   ],
+   [
+    "Mary",
+    "sister",
+    "Gayle"
+   ]
+  ]
+ },
+ {
+  "query": "Bertha and her father, Stephen, went to the marina. Stephen's daughter, Diane, had purchased a boat, and they were eager to see it. Bertha just recently married her husband, Kevin. Peter played chess with his brother Alfred. Stephen and his son, Alfred, were having a big fight. Stephen's daughter, Diane, told the two of them to just settle down. Jennifer gave birth to a son named Peter. How is Jennifer related to Kevin?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the wife of A, and C is the mother of B, then C is the mother-in-law of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Jennifer is the mother-in-law of Kevin.",
+  "grounded_variables": [
+   [
+    "Stephen",
+    "son",
+    "Alfred"
+   ],
+   [
+    "Alfred",
+    "brother",
+    "Peter"
+   ],
+   [
+    "Diane",
+    "father",
+    "Stephen"
+   ],
+   [
+    "Bertha",
+    "father",
+    "Stephen"
+   ],
+   [
+    "Stephen",
+    "daughter",
+    "Diane"
+   ],
+   [
+    "Peter",
+    "mother",
+    "Jennifer"
+   ],
+   [
+    "Kevin",
+    "wife",
+    "Bertha"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Stephen",
+    "son",
+    "Peter"
+   ],
+   [
+    "Diane",
+    "brother",
+    "Peter"
+   ],
+   [
+    "Bertha",
+    "sister",
+    "Diane"
+   ],
+   [
+    "Diane",
+    "mother",
+    "Jennifer"
+   ],
+   [
+    "Bertha",
+    "mother",
+    "Jennifer"
+   ],
+   [
+    "Kevin",
+    "mother-in-law",
+    "Jennifer"
+   ]
+  ]
+ },
+ {
+  "query": "Ethel asked her brother, Kyle, to stop by and help babysit, but he was busy with his mom, Marguerite. Marguerite and her son Michael made hot dogs. Michael's brother Jerry ate one. Once Marguerite went to her mother's home with her sibling Stephen and also with her sons Michael and Jerry. How is Stephen related to Ethel?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the mother of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Stephen is the uncle of Ethel.",
+  "grounded_variables": [
+   [
+    "Kyle",
+    "mother",
+    "Marguerite"
+   ],
+   [
+    "Marguerite",
+    "son",
+    "Michael"
+   ],
+   [
+    "Ethel",
+    "brother",
+    "Kyle"
+   ],
+   [
+    "Jerry",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Michael",
+    "mother",
+    "Marguerite"
+   ],
+   [
+    "Michael",
+    "brother",
+    "Jerry"
+   ],
+   [
+    "Marguerite",
+    "brother",
+    "Stephen"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Kyle",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Ethel",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Jerry",
+    "mother",
+    "Marguerite"
+   ],
+   [
+    "Ethel",
+    "brother",
+    "Jerry"
+   ],
+   [
+    "Ethel",
+    "mother",
+    "Marguerite"
+   ],
+   [
+    "Ethel",
+    "uncle",
+    "Stephen"
+   ]
+  ]
+ },
+ {
+  "query": "Mary wanted to visit an art museum, so she asked her father, James to take her. James made a pizza for his son Daniel and granddaughter Ethel. Ethel's brother Kyle ate an orange instead. Carlos and his brother Stephen went hiking with Carlos's mother, Madonna. Madonna's daughter, Mary, brought the supplies. How is Stephen related to Kyle?",
+  "rule": [
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Stephen is the uncle of Kyle.",
+  "grounded_variables": [
+   [
+    "Mary",
+    "mother",
+    "Madonna"
+   ],
+   [
+    "Madonna",
+    "son",
+    "Carlos"
+   ],
+   [
+    "James",
+    "daughter",
+    "Mary"
+   ],
+   [
+    "Kyle",
+    "sister",
+    "Ethel"
+   ],
+   [
+    "Ethel",
+    "father",
+    "Daniel"
+   ],
+   [
+    "Carlos",
+    "brother",
+    "Stephen"
+   ],
+   [
+    "Daniel",
+    "father",
+    "James"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Mary",
+    "brother",
+    "Carlos"
+   ],
+   [
+    "James",
+    "son",
+    "Carlos"
+   ],
+   [
+    "Kyle",
+    "father",
+    "Daniel"
+   ],
+   [
+    "James",
+    "son",
+    "Stephen"
+   ],
+   [
+    "Daniel",
+    "brother",
+    "Stephen"
+   ],
+   [
+    "Kyle",
+    "uncle",
+    "Stephen"
+   ]
+  ]
+ },
+ {
+  "query": "Daniel and his son Kyle went to the cinema together. Carlos bought gifts for his lovely sister, Mary Madonna had a daughter named Mary. Madonna always goes to the park with her son Daniel on Saturdays. Kyle took his son Daniel out to play gold later that night. Daniel took his daughter Ethel to the baseball game. Ethel's brother Michael hates baseball and stayed home. How is Michael related to Carlos?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Michael is the nephew of Carlos.",
+  "grounded_variables": [
+   [
+    "Kyle",
+    "father",
+    "Daniel"
+   ],
+   [
+    "Daniel",
+    "daughter",
+    "Ethel"
+   ],
+   [
+    "Ethel",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Mary",
+    "mother",
+    "Madonna"
+   ],
+   [
+    "Madonna",
+    "son",
+    "Daniel"
+   ],
+   [
+    "Daniel",
+    "son",
+    "Kyle"
+   ],
+   [
+    "Carlos",
+    "sister",
+    "Mary"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Kyle",
+    "sister",
+    "Ethel"
+   ],
+   [
+    "Kyle",
+    "brother",
+    "Michael"
+   ],
+   [
+    "Mary",
+    "brother",
+    "Daniel"
+   ],
+   [
+    "Daniel",
+    "son",
+    "Michael"
+   ],
+   [
+    "Carlos",
+    "brother",
+    "Daniel"
+   ],
+   [
+    "Carlos",
+    "nephew",
+    "Michael"
+   ]
+  ]
+ },
+ {
+  "query": "James's wife is Madonna. They went to pick up James's son, Carlos, from school together. Stephen went to his brother Carlos's Birthday party Harry likes to visit his sister. Her name is Maria. Gayle stayed with her mother Madonna before the birth of her son Paul Paul went to his brother Harry's Birthday party. How is Stephen related to Maria?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the mother of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Stephen is the uncle of Maria.",
+  "grounded_variables": [
+   [
+    "James",
+    "son",
+    "Carlos"
+   ],
+   [
+    "Carlos",
+    "brother",
+    "Stephen"
+   ],
+   [
+    "Maria",
+    "brother",
+    "Harry"
+   ],
+   [
+    "Harry",
+    "brother",
+    "Paul"
+   ],
+   [
+    "Madonna",
+    "husband",
+    "James"
+   ],
+   [
+    "Paul",
+    "mother",
+    "Gayle"
+   ],
+   [
+    "Gayle",
+    "mother",
+    "Madonna"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "James",
+    "son",
+    "Stephen"
+   ],
+   [
+    "Maria",
+    "brother",
+    "Paul"
+   ],
+   [
+    "Madonna",
+    "son",
+    "Stephen"
+   ],
+   [
+    "Maria",
+    "mother",
+    "Gayle"
+   ],
+   [
+    "Gayle",
+    "brother",
+    "Stephen"
+   ],
+   [
+    "Maria",
+    "uncle",
+    "Stephen"
+   ]
+  ]
+ },
+ {
+  "query": "Lisa went to her father William Birthday party Carlos and his brother Daniel had a tie score. Daniel asked his sister, Jennifer, to come up with a tie-breaker. Lisa and her aunt, Jennifer, went to the deli. They got a half a pound of corned beef, and two pounds of salami. Jose invited his sister Ruth to dinner this Friday because it is her birthday. William has a daughter called Lisa. Lisa went to the store with her sister Ruth. How is Carlos related to Jose?",
+  "rule": [
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A."
+  ],
+  "answer": "Carlos is the uncle of Jose.",
+  "grounded_variables": [
+   [
+    "William",
+    "daughter",
+    "Lisa"
+   ],
+   [
+    "Lisa",
+    "aunt",
+    "Jennifer"
+   ],
+   [
+    "Ruth",
+    "sister",
+    "Lisa"
+   ],
+   [
+    "Lisa",
+    "father",
+    "William"
+   ],
+   [
+    "Jennifer",
+    "brother",
+    "Daniel"
+   ],
+   [
+    "Daniel",
+    "brother",
+    "Carlos"
+   ],
+   [
+    "Jose",
+    "sister",
+    "Ruth"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "William",
+    "sister",
+    "Jennifer"
+   ],
+   [
+    "Ruth",
+    "father",
+    "William"
+   ],
+   [
+    "Jennifer",
+    "brother",
+    "Carlos"
+   ],
+   [
+    "Jose",
+    "father",
+    "William"
+   ],
+   [
+    "William",
+    "brother",
+    "Carlos"
+   ],
+   [
+    "Jose",
+    "uncle",
+    "Carlos"
+   ]
+  ]
+ },
+ {
+  "query": "Harry meet his uncle, William, at the baseball game, excited for their team to win. Gayle went to the store with her sister Mary Gayle enjoyed a homemade dinner with her son Harry William was filled with pride and joy to see his daughter Ruth perform in her first ballet recital. Mary wanted to visit an art museum, so she asked her father, James to take her. Marguerite was happy to babysit her niece, Ruth. Ruth was a great child. James was so proud of his son, Stephen. he received a great scholarship to college. How is Marguerite related to Stephen?",
+  "rule": [
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Marguerite is the sister of Stephen.",
+  "grounded_variables": [
+   [
+    "Gayle",
+    "son",
+    "Harry"
+   ],
+   [
+    "Harry",
+    "uncle",
+    "William"
+   ],
+   [
+    "Stephen",
+    "father",
+    "James"
+   ],
+   [
+    "James",
+    "daughter",
+    "Mary"
+   ],
+   [
+    "William",
+    "daughter",
+    "Ruth"
+   ],
+   [
+    "Ruth",
+    "aunt",
+    "Marguerite"
+   ],
+   [
+    "Mary",
+    "sister",
+    "Gayle"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Gayle",
+    "brother",
+    "William"
+   ],
+   [
+    "Stephen",
+    "sister",
+    "Mary"
+   ],
+   [
+    "William",
+    "sister",
+    "Marguerite"
+   ],
+   [
+    "Stephen",
+    "sister",
+    "Gayle"
+   ],
+   [
+    "Stephen",
+    "brother",
+    "William"
+   ],
+   [
+    "Stephen",
+    "sister",
+    "Marguerite"
+   ]
+  ]
+ },
+ {
+  "query": "Alfred went to the game with his sister Bertha. Bertha went to her brother Alfred's birthday party Bertha bought her mother, Jennifer, a puppy for her birthday. Jennifer went to her brother Carlos's birthday party Jennifer was chopping carrots with her daughter Bertha and son Peter. Peter's sister Diane did not help at all. How is Carlos related to Diane?",
+  "rule": [
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the mother of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Carlos is the uncle of Diane.",
+  "grounded_variables": [
+   [
+    "Peter",
+    "mother",
+    "Jennifer"
+   ],
+   [
+    "Jennifer",
+    "daughter",
+    "Bertha"
+   ],
+   [
+    "Alfred",
+    "sister",
+    "Bertha"
+   ],
+   [
+    "Bertha",
+    "mother",
+    "Jennifer"
+   ],
+   [
+    "Bertha",
+    "brother",
+    "Alfred"
+   ],
+   [
+    "Diane",
+    "brother",
+    "Peter"
+   ],
+   [
+    "Jennifer",
+    "brother",
+    "Carlos"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Peter",
+    "sister",
+    "Bertha"
+   ],
+   [
+    "Alfred",
+    "mother",
+    "Jennifer"
+   ],
+   [
+    "Peter",
+    "brother",
+    "Alfred"
+   ],
+   [
+    "Diane",
+    "brother",
+    "Alfred"
+   ],
+   [
+    "Diane",
+    "mother",
+    "Jennifer"
+   ],
+   [
+    "Diane",
+    "uncle",
+    "Carlos"
+   ]
+  ]
+ },
+ {
+  "query": "Gayle went to the mall, because she wanted to look for a present for her daughter, Susan. Gayle, who is the sister of Mary, is a lovely girl. Mary went to the store with her sister Gayle James picked up his son Daniel from baseball practice and his daughter Gayle from ballet practice. Maria and her siblings Susan and Harry went on a business trip to Asia. How is Maria related to Daniel?",
+  "rule": [
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the daughter of B, then C is the niece of A."
+  ],
+  "answer": "Maria is the niece of Daniel.",
+  "grounded_variables": [
+   [
+    "Gayle",
+    "daughter",
+    "Susan"
+   ],
+   [
+    "Susan",
+    "brother",
+    "Harry"
+   ],
+   [
+    "James",
+    "daughter",
+    "Gayle"
+   ],
+   [
+    "Gayle",
+    "sister",
+    "Mary"
+   ],
+   [
+    "Daniel",
+    "father",
+    "James"
+   ],
+   [
+    "Harry",
+    "sister",
+    "Maria"
+   ],
+   [
+    "Mary",
+    "sister",
+    "Gayle"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Gayle",
+    "son",
+    "Harry"
+   ],
+   [
+    "James",
+    "daughter",
+    "Mary"
+   ],
+   [
+    "Daniel",
+    "sister",
+    "Mary"
+   ],
+   [
+    "Gayle",
+    "daughter",
+    "Maria"
+   ],
+   [
+    "Daniel",
+    "sister",
+    "Gayle"
+   ],
+   [
+    "Daniel",
+    "niece",
+    "Maria"
+   ]
+  ]
+ },
+ {
+  "query": "Susan and her sisters Maria went to the spa. Patricia, another sister of Susan, had to babysit and could n't join them. Patricia and her sister, Susan, went to church. Susan's mom, Gayle, was sick, and could n't make it, and Susan told the pastor so he would pray for a speedy recovery. Carlos is out playing tennis with his daughter Maria because it is nice and sunny outside. Paul asked to join his father, Carlos, at church on Sunday. Paul's wife, Tony, decided to tag along. How is Tony related to Gayle?",
+  "rule": [
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the wife of B, then C is the daughter-in-law of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Tony is the daughter-in-law of Gayle.",
+  "grounded_variables": [
+   [
+    "Gayle",
+    "daughter",
+    "Susan"
+   ],
+   [
+    "Susan",
+    "sister",
+    "Patricia"
+   ],
+   [
+    "Susan",
+    "sister",
+    "Maria"
+   ],
+   [
+    "Maria",
+    "father",
+    "Carlos"
+   ],
+   [
+    "Carlos",
+    "son",
+    "Paul"
+   ],
+   [
+    "Patricia",
+    "sister",
+    "Susan"
+   ],
+   [
+    "Paul",
+    "wife",
+    "Tony"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Gayle",
+    "daughter",
+    "Patricia"
+   ],
+   [
+    "Susan",
+    "father",
+    "Carlos"
+   ],
+   [
+    "Susan",
+    "brother",
+    "Paul"
+   ],
+   [
+    "Patricia",
+    "brother",
+    "Paul"
+   ],
+   [
+    "Gayle",
+    "son",
+    "Paul"
+   ],
+   [
+    "Gayle",
+    "daughter-in-law",
+    "Tony"
+   ]
+  ]
+ },
+ {
+  "query": "Daniel called up his mother, Madonna. He told her all about his son, Jerry's, report card. Daniel waited at dinner for his sister, Jennifer. She was running late due to a phone call with her brother, Carlos. Madonna was excited to visit her son, Daniel, at college. Ethel took her brother Jerry and other brother Michael with her to eat pasta at a pasta buffet. How is Carlos related to Michael?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Carlos is the uncle of Michael.",
+  "grounded_variables": [
+   [
+    "Michael",
+    "sister",
+    "Ethel"
+   ],
+   [
+    "Ethel",
+    "brother",
+    "Jerry"
+   ],
+   [
+    "Jerry",
+    "father",
+    "Daniel"
+   ],
+   [
+    "Madonna",
+    "son",
+    "Daniel"
+   ],
+   [
+    "Daniel",
+    "sister",
+    "Jennifer"
+   ],
+   [
+    "Jennifer",
+    "brother",
+    "Carlos"
+   ],
+   [
+    "Daniel",
+    "mother",
+    "Madonna"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Michael",
+    "brother",
+    "Jerry"
+   ],
+   [
+    "Michael",
+    "father",
+    "Daniel"
+   ],
+   [
+    "Madonna",
+    "daughter",
+    "Jennifer"
+   ],
+   [
+    "Madonna",
+    "son",
+    "Carlos"
+   ],
+   [
+    "Daniel",
+    "brother",
+    "Carlos"
+   ],
+   [
+    "Michael",
+    "uncle",
+    "Carlos"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,6931 @@
+[
+ {
+  "query": "Nicole's grandfather, Harold, accompanied her to the basketball match Beverly went car shopping with her husband Louis and her daughter Nicole. Harold bought a new dress for his daughter Marie. How is Marie related to Louis?",
+  "rule": [
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Marie is the sister of Louis.",
+  "grounded_variables": [
+   [
+    "Louis",
+    "wife",
+    "Beverly"
+   ],
+   [
+    "Beverly",
+    "daughter",
+    "Nicole"
+   ],
+   [
+    "Nicole",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Marie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Louis",
+    "daughter",
+    "Nicole"
+   ],
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ],
+   [
+    "Louis",
+    "sister",
+    "Marie"
+   ]
+  ]
+ },
+ {
+  "query": "Bernardo's father, Antonio, and grandfather, Harold, went hiking during the first weekend of spring. Antonio took his mother Shantel to the bakery. Shantel wanted to buy her daughter Marie a cake. How is Harold related to Marie?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Harold is the father of Marie.",
+  "grounded_variables": [
+   [
+    "Antonio",
+    "son",
+    "Bernardo"
+   ],
+   [
+    "Bernardo",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Marie",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Antonio"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Antonio",
+    "father",
+    "Harold"
+   ],
+   [
+    "Marie",
+    "brother",
+    "Antonio"
+   ],
+   [
+    "Marie",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel made dinner for her husband Harold. Shantel planned a birthday party for her grandson, Wayne. Shantel became concerned when she had n't heard from her husband Harold all day. Nicole and Wayne are siblings who are enjoying lunch together. How is Nicole related to Shantel?",
+  "rule": [
+   "If B is the grandson of A, and C is the sister of B, then C is the granddaughter of A.",
+   "If B is the husband of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the wife of A, and C is the grandson of B, then C is the grandson of A."
+  ],
+  "answer": "Nicole is the granddaughter of Shantel.",
+  "grounded_variables": [
+   [
+    "Harold",
+    "wife",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "grandson",
+    "Wayne"
+   ],
+   [
+    "Wayne",
+    "sister",
+    "Nicole"
+   ],
+   [
+    "Shantel",
+    "husband",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Harold",
+    "grandson",
+    "Wayne"
+   ],
+   [
+    "Harold",
+    "granddaughter",
+    "Nicole"
+   ],
+   [
+    "Shantel",
+    "granddaughter",
+    "Nicole"
+   ]
+  ]
+ },
+ {
+  "query": "Pedro's mother, Shantel, told him he was in trouble. Her son Louis had told her that Pedro had been stealing from her purse. Samuel's father, Louis, and grandfather, Harold, went hiking during the first weekend of spring. How is Harold related to Pedro?",
+  "rule": [
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Harold is the father of Pedro.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Louis"
+   ],
+   [
+    "Louis",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "grandfather",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "brother",
+    "Louis"
+   ],
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ],
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Beverly wanted to do something special for her son, Samuel, on his fifth birthday. She asked her husband Louis for gift ideas. Harold has a daughter named Beverly who has a son named Samuel. How is Harold related to Louis?",
+  "rule": [
+   "If B is the mother of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Harold is the father of Louis.",
+  "grounded_variables": [
+   [
+    "Louis",
+    "wife",
+    "Beverly"
+   ],
+   [
+    "Beverly",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "mother",
+    "Beverly"
+   ],
+   [
+    "Beverly",
+    "father",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Louis",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Harold was so excited to surprise his son, Robert, with the tickets to the playoffs. Harold took his son Pedro to the park to feed the squirrels. Pedro loved going to the store with his mom Shantel. She always bought him snacks Robert was so proud of his son, Mario. he received a great scholarship to college. How is Shantel related to Mario?",
+  "rule": [
+   "If B is the father of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Shantel is the grandmother of Mario.",
+  "grounded_variables": [
+   [
+    "Robert",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "son",
+    "Pedro"
+   ],
+   [
+    "Pedro",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Mario",
+    "father",
+    "Robert"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Robert",
+    "brother",
+    "Pedro"
+   ],
+   [
+    "Robert",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Mario",
+    "grandmother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Beverly and Louis have been married for 35 years. Harold took his daughter Beverly to the florist. Beverly's son Paul thinks it is a special occasion. Beverly always goes to the park with her son Paul on Saturdays. How is Harold related to Louis?",
+  "rule": [
+   "If B is the mother of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Harold is the father of Louis.",
+  "grounded_variables": [
+   [
+    "Paul",
+    "mother",
+    "Beverly"
+   ],
+   [
+    "Beverly",
+    "father",
+    "Harold"
+   ],
+   [
+    "Louis",
+    "wife",
+    "Beverly"
+   ],
+   [
+    "Beverly",
+    "son",
+    "Paul"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Paul",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Louis",
+    "son",
+    "Paul"
+   ],
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel took her granddaughter Elsie to the cinema. Shantel always goes to the park with her son Louis on Saturdays. Harold and his daughter Marie made a pizza. Marie's daughter Elsie really enjoyed the pizza. How is Louis related to Harold?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Louis is the son of Harold.",
+  "grounded_variables": [
+   [
+    "Marie",
+    "daughter",
+    "Elsie"
+   ],
+   [
+    "Elsie",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Louis"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Marie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Marie",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Marie",
+    "brother",
+    "Louis"
+   ],
+   [
+    "Harold",
+    "son",
+    "Louis"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel and her son Robert traveled around the world Bernardo and his uncle Robert went to the movies Sunday after church and got popcorn and candy while they were there. Bobby went to the Farmer's market with his mother Tracy and his brother Bernardo. How is Shantel related to Tracy?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Shantel is the mother of Tracy.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "son",
+    "Bobby"
+   ],
+   [
+    "Bobby",
+    "brother",
+    "Bernardo"
+   ],
+   [
+    "Bernardo",
+    "uncle",
+    "Robert"
+   ],
+   [
+    "Robert",
+    "mother",
+    "Shantel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "son",
+    "Bernardo"
+   ],
+   [
+    "Tracy",
+    "brother",
+    "Robert"
+   ],
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Dorothy became concerned when she had n't heard from her husband Pedro all day. Dorothy's husband, Pedro, surprised her with tickets to a football game for their anniversary. Jerome wanted to ask his mom, Dorothy if he could go to a sleepover. He asked his grandfather, Harold for advice. How is Harold related to Dorothy?",
+  "rule": [
+   "If B is the wife of A, and C is the son of B, then C is the son of A.",
+   "If B is the husband of A, and C is the father of B, then C is the father-in-law of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Harold is the father-in-law of Dorothy.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "wife",
+    "Dorothy"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Jerome"
+   ],
+   [
+    "Jerome",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Dorothy",
+    "husband",
+    "Pedro"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "son",
+    "Jerome"
+   ],
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ],
+   [
+    "Dorothy",
+    "father-in-law",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Paul meet his uncle, Robert, at the baseball game, excited for their team to win. Paul and Samuel were both still very upset with their mother, Beverly. Robert's mother Shantel had to help him with his homework because he was having a test soon. How is Shantel related to Beverly?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Shantel is the mother of Beverly.",
+  "grounded_variables": [
+   [
+    "Beverly",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "brother",
+    "Paul"
+   ],
+   [
+    "Paul",
+    "uncle",
+    "Robert"
+   ],
+   [
+    "Robert",
+    "mother",
+    "Shantel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Beverly",
+    "son",
+    "Paul"
+   ],
+   [
+    "Beverly",
+    "brother",
+    "Robert"
+   ],
+   [
+    "Beverly",
+    "mother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Samuel went to visit his grandmother, Shantel, in Europe. Louis took his dad Harold to the game. Louis's son Samuel was going to be playing Shantel was mad at her son, Pedro. She found he'd been stealing from her purse. How is Pedro related to Harold?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Pedro is the son of Harold.",
+  "grounded_variables": [
+   [
+    "Louis",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Pedro"
+   ],
+   [
+    "Harold",
+    "son",
+    "Louis"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Louis",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Louis",
+    "brother",
+    "Pedro"
+   ],
+   [
+    "Harold",
+    "son",
+    "Pedro"
+   ]
+  ]
+ },
+ {
+  "query": "Erika 'father Antonio became enraged when she failed to complete her homework. Erika was grounded for a month and unable to spend time with friends. Antonio bought a new dress for his daughter Erika. Antonio's mother, Shantel, took him shopping for a new television Antonio asked his wife Tracy if she did the shopping. How is Shantel related to Tracy?",
+  "rule": [
+   "If B is the father of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the daughter of B, then C is the daughter of A."
+  ],
+  "answer": "Shantel is the mother of Tracy.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "husband",
+    "Antonio"
+   ],
+   [
+    "Antonio",
+    "daughter",
+    "Erika"
+   ],
+   [
+    "Erika",
+    "father",
+    "Antonio"
+   ],
+   [
+    "Antonio",
+    "mother",
+    "Shantel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "daughter",
+    "Erika"
+   ],
+   [
+    "Erika",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel enjoyed a homemade dinner with her son Antonio Robert took his dad Harold to the game. Robert's son Mario was going to be playing Mario went to visit his grandmother, Shantel, in Europe. How is Antonio related to Harold?",
+  "rule": [
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Antonio is the son of Harold.",
+  "grounded_variables": [
+   [
+    "Robert",
+    "son",
+    "Mario"
+   ],
+   [
+    "Mario",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Antonio"
+   ],
+   [
+    "Harold",
+    "son",
+    "Robert"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Robert",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Robert",
+    "brother",
+    "Antonio"
+   ],
+   [
+    "Harold",
+    "son",
+    "Antonio"
+   ]
+  ]
+ },
+ {
+  "query": "Dorothy and her son James went out to lunch together yesterday. Harold took his son Robert to the junkyard. Harold's son Pedro did n't go because he thought is was a gross place. Pedro was so excited to surprise his son, James, with the tickets to the playoffs. How is Robert related to Dorothy?",
+  "rule": [
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Robert is the brother of Dorothy.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "son",
+    "Robert"
+   ],
+   [
+    "James",
+    "father",
+    "Pedro"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "James"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "brother",
+    "Robert"
+   ],
+   [
+    "James",
+    "uncle",
+    "Robert"
+   ],
+   [
+    "Dorothy",
+    "brother",
+    "Robert"
+   ]
+  ]
+ },
+ {
+  "query": "Pedro asked his wife Dorothy if she did the shopping. Pedro wants to visit his sister, Tracy, and her daughter, Laura. Laura requested that Pedro bring her grandmother, Shantel, with him. How is Shantel related to Dorothy?",
+  "rule": [
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the mother of B, then C is the mother-in-law of A."
+  ],
+  "answer": "Shantel is the mother-in-law of Dorothy.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "daughter",
+    "Laura"
+   ],
+   [
+    "Laura",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Pedro",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Dorothy",
+    "husband",
+    "Pedro"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Pedro",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Dorothy",
+    "mother-in-law",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Tracy and her mother Harold made breakfast together. James's grandfather, Harold, went out to get groceries. In the mean time, James's mother, Dorothy, cooked up some vegetables. Shantel had picked her daughter Dorothy out the cutest new dress to wear on her birthday. How is Tracy related to Shantel?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A."
+  ],
+  "answer": "Tracy is the daughter of Shantel.",
+  "grounded_variables": [
+   [
+    "Dorothy",
+    "son",
+    "James"
+   ],
+   [
+    "James",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Tracy"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Dorothy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Dorothy",
+    "father",
+    "Harold"
+   ],
+   [
+    "Dorothy",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Tracy"
+   ]
+  ]
+ },
+ {
+  "query": "Robert and his brother Antonio played harmonicas together. Robert's daughter Michelle loved it. Marie and her daughter Michelle went to see a movie yesterday and then got ice cream afterwards. Marie just had a baby and presented the baby proudly to the new maternal grandmother, Shantel. How is Shantel related to Antonio?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the mother of B, then C is the grandmother of A."
+  ],
+  "answer": "Shantel is the mother of Antonio.",
+  "grounded_variables": [
+   [
+    "Michelle",
+    "mother",
+    "Marie"
+   ],
+   [
+    "Marie",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Robert",
+    "daughter",
+    "Michelle"
+   ],
+   [
+    "Antonio",
+    "brother",
+    "Robert"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Michelle",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Robert",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Antonio",
+    "mother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Harold bought a new dress for his daughter Tracy. Shantel and her daughter Tracy went to see a movie yesterday and then got ice cream afterwards. Harold went to the movies with his son Louis. Louis's daughter, Nicole, was n't interested in the film they were seeing so she stayed home instead. How is Shantel related to Nicole?",
+  "rule": [
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Shantel is the grandmother of Nicole.",
+  "grounded_variables": [
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Tracy"
+   ],
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Nicole",
+    "father",
+    "Louis"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Louis",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Louis",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Nicole",
+    "grandmother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Tracy just had a baby and presented the baby proudly to the new maternal grandmother, Shantel. Antonio took his daughter Bettie to the park that afternoon to play. Bettie just had a baby and presented the baby proudly to the new maternal grandmother, Tracy. Dorothy went to her brother Antonio's birthday party. How is Shantel related to Dorothy?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Shantel is the mother of Dorothy.",
+  "grounded_variables": [
+   [
+    "Bettie",
+    "mother",
+    "Tracy"
+   ],
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Antonio",
+    "daughter",
+    "Bettie"
+   ],
+   [
+    "Dorothy",
+    "brother",
+    "Antonio"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Bettie",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Antonio",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Dorothy",
+    "mother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Harold was so excited to surprise his son, Louis, with the tickets to the playoffs. Shantel enjoyed a homemade dinner with her son Louis Tracy was making dinner for her son, Kevin. Shantel, Kevin's grandmother, stopped by, so Shantel made a bit more so they all had enough to eat. How is Harold related to Tracy?",
+  "rule": [
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Harold is the father of Tracy.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "son",
+    "Kevin"
+   ],
+   [
+    "Kevin",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Louis"
+   ],
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Tracy",
+    "brother",
+    "Louis"
+   ],
+   [
+    "Tracy",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Dorothy made dinner for her husband Pedro. Laura takes good care of her grandmother, Shantel. Tracy and her daughter Laura like to look at the stars on clear nights. Tracy often borrows the telescope that belongs to her brother, Pedro, so they can see the stars better. How is Shantel related to Dorothy?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the mother of B, then C is the mother-in-law of A."
+  ],
+  "answer": "Shantel is the mother-in-law of Dorothy.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "daughter",
+    "Laura"
+   ],
+   [
+    "Laura",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Pedro",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Dorothy",
+    "husband",
+    "Pedro"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Pedro",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Dorothy",
+    "mother-in-law",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel spent a great day shopping with her daughter, Beverly. Harold's daughter Tracy was playing on the swings in the park. Beverly, his other daughter, was napping in the stroller. Tracy had picked her daughter Emma out the cutest new dress to wear on her birthday. How is Emma related to Shantel?",
+  "rule": [
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Emma is the granddaughter of Shantel.",
+  "grounded_variables": [
+   [
+    "Beverly",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Tracy"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Beverly"
+   ],
+   [
+    "Tracy",
+    "daughter",
+    "Emma"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Beverly",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Tracy"
+   ],
+   [
+    "Shantel",
+    "granddaughter",
+    "Emma"
+   ]
+  ]
+ },
+ {
+  "query": "Robert bought tickets for him to see the game with his nephew, Jerome. Dorothy wanted to do something special for her son, Jerome, on his fifth birthday. She asked her husband Pedro for gift ideas. Harold was so proud of his son, Robert. he received a great scholarship to college. How is Harold related to Pedro?",
+  "rule": [
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Harold is the father of Pedro.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "wife",
+    "Dorothy"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Jerome"
+   ],
+   [
+    "Jerome",
+    "uncle",
+    "Robert"
+   ],
+   [
+    "Robert",
+    "father",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "son",
+    "Jerome"
+   ],
+   [
+    "Pedro",
+    "brother",
+    "Robert"
+   ],
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Antonio took his son Bernardo out for ice cream. Harold took his son Antonio out for ice cream. Harold took his daughter, Marie, to a baseball game. Marie asked her mother, Shantel, what they were going to have for lunch. How is Shantel related to Bernardo?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the mother of B, then C is the grandmother of A."
+  ],
+  "answer": "Shantel is the grandmother of Bernardo.",
+  "grounded_variables": [
+   [
+    "Antonio",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Marie"
+   ],
+   [
+    "Marie",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Bernardo",
+    "father",
+    "Antonio"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Antonio",
+    "sister",
+    "Marie"
+   ],
+   [
+    "Antonio",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Bernardo",
+    "grandmother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Tracy was making dinner for her son, Kevin. Shantel, Kevin's grandmother, stopped by, so Shantel made a bit more so they all had enough to eat. Louis was disappointed that his father, Harold, would n't be at the play to see him perform. Shantel enjoyed a homemade dinner with her son Louis. How is Harold related to Tracy?",
+  "rule": [
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Harold is the father of Tracy.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "son",
+    "Kevin"
+   ],
+   [
+    "Kevin",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Louis"
+   ],
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Tracy",
+    "brother",
+    "Louis"
+   ],
+   [
+    "Tracy",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Tracy took her sister, Marie, out to dinner for her birthday. Robert's wife, Marie, surprised him on his birthday. He could n't believe she pulled it off. Tracy was making dinner for her son, Bobby. Shantel, Bobby's grandmother, stopped by, so Shantel made a bit more so they all had enough to eat. How is Shantel related to Robert?",
+  "rule": [
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the wife of A, and C is the mother of B, then C is the mother-in-law of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Shantel is the mother-in-law of Robert.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "son",
+    "Bobby"
+   ],
+   [
+    "Bobby",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Marie",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Robert",
+    "wife",
+    "Marie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Marie",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Robert",
+    "mother-in-law",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel took her granddaughter Karen to the cinema. Shantel loves her son Antonio very much. He loves her, too. Beverly began teaching her daughter, Karen, how to sew clothes. Beverly had learned the trait from her father, Harold. How is Antonio related to Harold?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Antonio is the son of Harold.",
+  "grounded_variables": [
+   [
+    "Beverly",
+    "daughter",
+    "Karen"
+   ],
+   [
+    "Karen",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Antonio"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Beverly"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Beverly",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Beverly",
+    "brother",
+    "Antonio"
+   ],
+   [
+    "Harold",
+    "son",
+    "Antonio"
+   ]
+  ]
+ },
+ {
+  "query": "Beverly's father Harold loves his little princess even though she gets into a lot of trouble at school. Dorothy gave birth to a son named Jeffrey. Dorothy asked her mother, Shantel, what they were going to have for lunch. Shantel had picked her daughter Beverly out the cutest new dress to wear on her birthday. How is Harold related to Jeffrey?",
+  "rule": [
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the mother of A, and C is the father of B, then C is the grandfather of A."
+  ],
+  "answer": "Harold is the grandfather of Jeffrey.",
+  "grounded_variables": [
+   [
+    "Dorothy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Beverly"
+   ],
+   [
+    "Beverly",
+    "father",
+    "Harold"
+   ],
+   [
+    "Jeffrey",
+    "mother",
+    "Dorothy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Dorothy",
+    "sister",
+    "Beverly"
+   ],
+   [
+    "Dorothy",
+    "father",
+    "Harold"
+   ],
+   [
+    "Jeffrey",
+    "grandfather",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel asked her daughter, Beverly, if she would like to go to a movie with her on Saturday night. Beverly 'father Harold became enraged when she failed to complete her homework. Beverly was grounded for a month and unable to spend time with friends. Pedro and his mother Shantel were attempting to wrap a present for his daughter Rebecca. How is Harold related to Rebecca?",
+  "rule": [
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Harold is the grandfather of Rebecca.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Beverly"
+   ],
+   [
+    "Beverly",
+    "father",
+    "Harold"
+   ],
+   [
+    "Rebecca",
+    "father",
+    "Pedro"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "sister",
+    "Beverly"
+   ],
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ],
+   [
+    "Rebecca",
+    "grandfather",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Beverly and her father Harold were attempting to coax her son Samuel from out of a tall tree. Samuel took his grandmother Shantel a basket of strawberries. Shantel was mad at her son, Pedro. She found he'd been stealing from her purse. How is Pedro related to Harold?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Pedro is the son of Harold.",
+  "grounded_variables": [
+   [
+    "Beverly",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Pedro"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Beverly"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Beverly",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Beverly",
+    "brother",
+    "Pedro"
+   ],
+   [
+    "Harold",
+    "son",
+    "Pedro"
+   ]
+  ]
+ },
+ {
+  "query": "Harold was so excited to surprise his son, Louis, with the tickets to the playoffs. Louis bought tickets for him to see the game with his nephew, Mario. Robert asked his wife Marie if she had any news about the family. Marie mentioned that her son, Mario, got straight A's this semester at college. How is Harold related to Robert?",
+  "rule": [
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Harold is the father of Robert.",
+  "grounded_variables": [
+   [
+    "Robert",
+    "wife",
+    "Marie"
+   ],
+   [
+    "Marie",
+    "son",
+    "Mario"
+   ],
+   [
+    "Mario",
+    "uncle",
+    "Louis"
+   ],
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Robert",
+    "son",
+    "Mario"
+   ],
+   [
+    "Robert",
+    "brother",
+    "Louis"
+   ],
+   [
+    "Robert",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel was mad at her son, Pedro. She found he'd been stealing from her purse. Harold 'son, Robert, aced his math class and made his father proud. Pedro drove his daughter Rebecca to soccer practice. Harold loved his granddaughter, Rebecca. How is Robert related to Shantel?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Robert is the son of Shantel.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "daughter",
+    "Rebecca"
+   ],
+   [
+    "Rebecca",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "son",
+    "Robert"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Pedro"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ],
+   [
+    "Pedro",
+    "brother",
+    "Robert"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Robert"
+   ]
+  ]
+ },
+ {
+  "query": "Lizzie's father Robert loves his little princess even though she gets into a lot of trouble at school. Robert met his wife Marie for dinner. Robert's daughter Lizzie stayed home to study. Shantel is proud that her son graduated college. His name is Robert. How is Shantel related to Marie?",
+  "rule": [
+   "If B is the father of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the daughter of B, then C is the daughter of A."
+  ],
+  "answer": "Shantel is the mother of Marie.",
+  "grounded_variables": [
+   [
+    "Lizzie",
+    "father",
+    "Robert"
+   ],
+   [
+    "Robert",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Marie",
+    "husband",
+    "Robert"
+   ],
+   [
+    "Robert",
+    "daughter",
+    "Lizzie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Lizzie",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Marie",
+    "daughter",
+    "Lizzie"
+   ],
+   [
+    "Marie",
+    "mother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Marie went to her father Harold Birthday party Shantel went to the mall, because she wanted to look for a present for her daughter, Marie. Dorothy and her son James went to visit Dorothy's mother Shantel in the hospital. How is Harold related to James?",
+  "rule": [
+   "If B is the mother of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Harold is the grandfather of James.",
+  "grounded_variables": [
+   [
+    "Dorothy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Marie"
+   ],
+   [
+    "Marie",
+    "father",
+    "Harold"
+   ],
+   [
+    "James",
+    "mother",
+    "Dorothy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Dorothy",
+    "sister",
+    "Marie"
+   ],
+   [
+    "Dorothy",
+    "father",
+    "Harold"
+   ],
+   [
+    "James",
+    "grandfather",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Marie and Robert have been married for 35 years. Elsie wanted to visit her grandmother Shantel, but Shantel was asleep. Elsie and Robert did the Father daughter dance at the recital and his wife Marie was so happy she cried. How is Shantel related to Robert?",
+  "rule": [
+   "If B is the wife of A, and C is the mother of B, then C is the mother-in-law of A.",
+   "If B is the husband of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Shantel is the mother-in-law of Robert.",
+  "grounded_variables": [
+   [
+    "Marie",
+    "husband",
+    "Robert"
+   ],
+   [
+    "Robert",
+    "daughter",
+    "Elsie"
+   ],
+   [
+    "Elsie",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Robert",
+    "wife",
+    "Marie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Marie",
+    "daughter",
+    "Elsie"
+   ],
+   [
+    "Marie",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Robert",
+    "mother-in-law",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Harold took his adult sons Pedro and Louis for a drink at the bar. Louis's son Wayne wanted to come too but he was still too young for a drink. Shantel and her son Pedro went out to lunch together yesterday. How is Wayne related to Shantel?",
+  "rule": [
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Wayne is the grandson of Shantel.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "son",
+    "Louis"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Pedro"
+   ],
+   [
+    "Louis",
+    "son",
+    "Wayne"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "brother",
+    "Louis"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Louis"
+   ],
+   [
+    "Shantel",
+    "grandson",
+    "Wayne"
+   ]
+  ]
+ },
+ {
+  "query": "Harold went to see his daughter Marie for parents day at college. Dorothy is so happy her husband got a promotion at work. His name is Pedro. Cheryl's grandfather, Harold, taught her how to make a paper airplane while her mother, Dorothy, prepared dinner. How is Marie related to Pedro?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A."
+  ],
+  "answer": "Marie is the sister of Pedro.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "wife",
+    "Dorothy"
+   ],
+   [
+    "Dorothy",
+    "daughter",
+    "Cheryl"
+   ],
+   [
+    "Cheryl",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Marie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "daughter",
+    "Cheryl"
+   ],
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ],
+   [
+    "Pedro",
+    "sister",
+    "Marie"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel told her husband, Harold, to take his son Louis to the store for flour. Louis's son, Wayne, tagged along. Shantel and Harold have been married for 35 years. How is Wayne related to Harold?",
+  "rule": [
+   "If B is the wife of A, and C is the grandson of B, then C is the grandson of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the son of A, and C is the son of B, then C is the grandson of A."
+  ],
+  "answer": "Wayne is the grandson of Harold.",
+  "grounded_variables": [
+   [
+    "Shantel",
+    "husband",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "son",
+    "Louis"
+   ],
+   [
+    "Louis",
+    "son",
+    "Wayne"
+   ],
+   [
+    "Harold",
+    "wife",
+    "Shantel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Shantel",
+    "son",
+    "Louis"
+   ],
+   [
+    "Shantel",
+    "grandson",
+    "Wayne"
+   ],
+   [
+    "Harold",
+    "grandson",
+    "Wayne"
+   ]
+  ]
+ },
+ {
+  "query": "Tracy had picked her daughter Laura out the cutest new dress to wear on her birthday. Antonio asked to join his father, Harold, at church on Sunday. Antonio's wife, Tracy, decided to tag along. Laura decided to give her uncle, Louis, a call on his birthday. How is Louis related to Harold?",
+  "rule": [
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Louis is the son of Harold.",
+  "grounded_variables": [
+   [
+    "Antonio",
+    "wife",
+    "Tracy"
+   ],
+   [
+    "Tracy",
+    "daughter",
+    "Laura"
+   ],
+   [
+    "Laura",
+    "uncle",
+    "Louis"
+   ],
+   [
+    "Harold",
+    "son",
+    "Antonio"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Antonio",
+    "daughter",
+    "Laura"
+   ],
+   [
+    "Antonio",
+    "brother",
+    "Louis"
+   ],
+   [
+    "Harold",
+    "son",
+    "Louis"
+   ]
+  ]
+ },
+ {
+  "query": "Harold took his son Pedro to the park to feed the squirrels. Dorothy and Pedro are married. Dorothy had picked her daughter Heather out the cutest new dress to wear on her birthday. Heather went to the baseball game with her uncle Antonio. How is Antonio related to Harold?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A."
+  ],
+  "answer": "Antonio is the son of Harold.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "wife",
+    "Dorothy"
+   ],
+   [
+    "Dorothy",
+    "daughter",
+    "Heather"
+   ],
+   [
+    "Heather",
+    "uncle",
+    "Antonio"
+   ],
+   [
+    "Harold",
+    "son",
+    "Pedro"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "daughter",
+    "Heather"
+   ],
+   [
+    "Pedro",
+    "brother",
+    "Antonio"
+   ],
+   [
+    "Harold",
+    "son",
+    "Antonio"
+   ]
+  ]
+ },
+ {
+  "query": "Harold took his daughters Beverly and Tracy to the opera. Beverly's daughter Nicole hates the opera and did n't go. Shantel went to the mall, because she wanted to look for a present for her daughter, Tracy. How is Nicole related to Shantel?",
+  "rule": [
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Nicole is the granddaughter of Shantel.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Beverly"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Tracy"
+   ],
+   [
+    "Beverly",
+    "daughter",
+    "Nicole"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "sister",
+    "Beverly"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Beverly"
+   ],
+   [
+    "Shantel",
+    "granddaughter",
+    "Nicole"
+   ]
+  ]
+ },
+ {
+  "query": "Shantel asked her husband Harold if he could chop up some vegetables for dinner. Harold and his wife Shantel went to the beach to watch the fireworks on the 4th of July. Shantel has a grandson who is Jeffrey. Jeffrey and Heather asked their mother, if they could go play in the pool. How is Heather related to Shantel?",
+  "rule": [
+   "If B is the husband of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the wife of A, and C is the grandson of B, then C is the grandson of A.",
+   "If B is the grandson of A, and C is the sister of B, then C is the granddaughter of A."
+  ],
+  "answer": "Heather is the granddaughter of Shantel.",
+  "grounded_variables": [
+   [
+    "Harold",
+    "wife",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "grandson",
+    "Jeffrey"
+   ],
+   [
+    "Jeffrey",
+    "sister",
+    "Heather"
+   ],
+   [
+    "Shantel",
+    "husband",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Harold",
+    "grandson",
+    "Jeffrey"
+   ],
+   [
+    "Harold",
+    "granddaughter",
+    "Heather"
+   ],
+   [
+    "Shantel",
+    "granddaughter",
+    "Heather"
+   ]
+  ]
+ },
+ {
+  "query": "John wanted to ask his mom, Marie if he could go to a sleepover. He asked his grandfather, Harold for advice. Robert and Marie, the happy couple, just got married last week. Robert told his wife Marie to pick up their daughter. How is Harold related to Marie?",
+  "rule": [
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A.",
+   "If B is the husband of A, and C is the father of B, then C is the father-in-law of A."
+  ],
+  "answer": "Harold is the father-in-law of Marie.",
+  "grounded_variables": [
+   [
+    "Robert",
+    "wife",
+    "Marie"
+   ],
+   [
+    "Marie",
+    "son",
+    "John"
+   ],
+   [
+    "John",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Marie",
+    "husband",
+    "Robert"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Robert",
+    "son",
+    "John"
+   ],
+   [
+    "Robert",
+    "father",
+    "Harold"
+   ],
+   [
+    "Marie",
+    "father-in-law",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Robert was out with his son John. Later that day they went to see Robert's father, Harold. John bought to dress for his father Robert Robert and Marie were married twenty years ago today, becoming husband and wife on a glorious spring day. How is Harold related to Marie?",
+  "rule": [
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Harold is the father of Marie.",
+  "grounded_variables": [
+   [
+    "Marie",
+    "husband",
+    "Robert"
+   ],
+   [
+    "Robert",
+    "son",
+    "John"
+   ],
+   [
+    "John",
+    "father",
+    "Robert"
+   ],
+   [
+    "Robert",
+    "father",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Marie",
+    "son",
+    "John"
+   ],
+   [
+    "John",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Marie",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "Bobby's grandmother, Shantel, made him some cookies. Pedro's wife Dorothy bought him a watch Tracy put her son Bobby to sleep before heading out with her sister Dorothy. How is Shantel related to Pedro?",
+  "rule": [
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the wife of A, and C is the mother of B, then C is the mother-in-law of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Shantel is the mother-in-law of Pedro.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "son",
+    "Bobby"
+   ],
+   [
+    "Bobby",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Dorothy",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Pedro",
+    "wife",
+    "Dorothy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Dorothy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Pedro",
+    "mother-in-law",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Beverly made dinner for her husband Louis. Louis was out with his son Paul. Later that day they went to see Louis's father, Harold. Paul took his son Louis out to play gold later that night. How is Harold related to Beverly?",
+  "rule": [
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Harold is the father of Beverly.",
+  "grounded_variables": [
+   [
+    "Beverly",
+    "husband",
+    "Louis"
+   ],
+   [
+    "Louis",
+    "son",
+    "Paul"
+   ],
+   [
+    "Paul",
+    "father",
+    "Louis"
+   ],
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Beverly",
+    "son",
+    "Paul"
+   ],
+   [
+    "Paul",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Beverly",
+    "father",
+    "Harold"
+   ]
+  ]
+ },
+ {
+  "query": "As a female, Dorothy sometimes had a hard time relating to her husband Pedro since he was a male. Pedro wrote a poem for his wife Dorothy. Shantel has a lovely granddaughter named Rebecca. Rebecca and her father Pedro have an excellent relationship. How is Shantel related to Pedro?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the husband of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the wife of A, and C is the mother of B, then C is the mother-in-law of A."
+  ],
+  "answer": "Shantel is the mother-in-law of Pedro.",
+  "grounded_variables": [
+   [
+    "Dorothy",
+    "husband",
+    "Pedro"
+   ],
+   [
+    "Pedro",
+    "daughter",
+    "Rebecca"
+   ],
+   [
+    "Rebecca",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Pedro",
+    "wife",
+    "Dorothy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Dorothy",
+    "daughter",
+    "Rebecca"
+   ],
+   [
+    "Dorothy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Pedro",
+    "mother-in-law",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Harold is taking his wife Shantel out to dinner for their date tonight. Shantel made a pizza with her son Louis and husband Harold. Louis's son Paul loves pizza. How is Paul related to Harold?",
+  "rule": [
+   "If B is the son of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the wife of A, and C is the grandson of B, then C is the grandson of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Paul is the grandson of Harold.",
+  "grounded_variables": [
+   [
+    "Shantel",
+    "husband",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "son",
+    "Louis"
+   ],
+   [
+    "Louis",
+    "son",
+    "Paul"
+   ],
+   [
+    "Harold",
+    "wife",
+    "Shantel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Shantel",
+    "son",
+    "Louis"
+   ],
+   [
+    "Shantel",
+    "grandson",
+    "Paul"
+   ],
+   [
+    "Harold",
+    "grandson",
+    "Paul"
+   ]
+  ]
+ },
+ {
+  "query": "Harold took his son Pedro to the park to feed the squirrels. Shantel was eager to spend time with her son, Pedro. Antonio and drove his daughter Laura to the airport for her vacation. Before they left, Laura's grandfather Harold said goodbye to her. How is Shantel related to Antonio?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Shantel is the mother of Antonio.",
+  "grounded_variables": [
+   [
+    "Antonio",
+    "daughter",
+    "Laura"
+   ],
+   [
+    "Laura",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "son",
+    "Pedro"
+   ],
+   [
+    "Pedro",
+    "mother",
+    "Shantel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Antonio",
+    "father",
+    "Harold"
+   ],
+   [
+    "Antonio",
+    "brother",
+    "Pedro"
+   ],
+   [
+    "Antonio",
+    "mother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Antonio and drove his daughter Emma to the airport for her vacation. Before they left, Emma's grandfather Harold said goodbye to her. Harold rushed to the hospital to find out that his wife and already given birth to a boy and had named him Pedro. Pedro's mother Shantel had to help him with his homework because he was having a test soon. How is Shantel related to Antonio?",
+  "rule": [
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Shantel is the mother of Antonio.",
+  "grounded_variables": [
+   [
+    "Antonio",
+    "daughter",
+    "Emma"
+   ],
+   [
+    "Emma",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "son",
+    "Pedro"
+   ],
+   [
+    "Pedro",
+    "mother",
+    "Shantel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Antonio",
+    "father",
+    "Harold"
+   ],
+   [
+    "Antonio",
+    "brother",
+    "Pedro"
+   ],
+   [
+    "Antonio",
+    "mother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Dorothy was excited to visit her son, Roberto, at college. Harold and his wife Shantel, took their daughter Dorothy and her brother Louis to see an opera. How is Roberto related to Shantel?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A."
+  ],
+  "answer": "Roberto is the grandson of Shantel.",
+  "grounded_variables": [
+   [
+    "Louis",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Dorothy"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Louis"
+   ],
+   [
+    "Dorothy",
+    "son",
+    "Roberto"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Louis",
+    "sister",
+    "Dorothy"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Dorothy"
+   ],
+   [
+    "Shantel",
+    "grandson",
+    "Roberto"
+   ]
+  ]
+ },
+ {
+  "query": "Tracy thought it would be nice to bake a cake for her daughter, Emma. Tracy's father, Harold, however, snuck a piece of the cake before anyone could have some! Shantel and Harold have been married for 35 years. Harold and Shantel were married twenty years ago today, becoming husband and wife on a glorious spring day. How is Emma related to Harold?",
+  "rule": [
+   "If B is the wife of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the husband of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the daughter of B, then C is the granddaughter of A."
+  ],
+  "answer": "Emma is the granddaughter of Harold.",
+  "grounded_variables": [
+   [
+    "Shantel",
+    "husband",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Tracy"
+   ],
+   [
+    "Tracy",
+    "daughter",
+    "Emma"
+   ],
+   [
+    "Harold",
+    "wife",
+    "Shantel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Shantel",
+    "daughter",
+    "Tracy"
+   ],
+   [
+    "Shantel",
+    "granddaughter",
+    "Emma"
+   ],
+   [
+    "Harold",
+    "granddaughter",
+    "Emma"
+   ]
+  ]
+ },
+ {
+  "query": "Marie enjoyed a homemade dinner with her son Allan Harold picked up his son Pedro from baseball practice and his daughter Marie from ballet practice. Shantel and her son Pedro went out to lunch together yesterday. How is Allan related to Shantel?",
+  "rule": [
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A."
+  ],
+  "answer": "Allan is the grandson of Shantel.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Marie"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Pedro"
+   ],
+   [
+    "Marie",
+    "son",
+    "Allan"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "sister",
+    "Marie"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Marie"
+   ],
+   [
+    "Shantel",
+    "grandson",
+    "Allan"
+   ]
+  ]
+ },
+ {
+  "query": "Harold met his wife Shantel for dinner. Harold's daughter Dorothy stayed home to study. Dorothy spent a great day shopping with her daughter, Rebecca. Shantel is so happy her husband got a promotion at work. His name is Harold. How is Rebecca related to Harold?",
+  "rule": [
+   "If B is the wife of A, and C is the granddaughter of B, then C is the granddaughter of A.",
+   "If B is the daughter of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the husband of A, and C is the daughter of B, then C is the daughter of A."
+  ],
+  "answer": "Rebecca is the granddaughter of Harold.",
+  "grounded_variables": [
+   [
+    "Shantel",
+    "husband",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Dorothy"
+   ],
+   [
+    "Dorothy",
+    "daughter",
+    "Rebecca"
+   ],
+   [
+    "Harold",
+    "wife",
+    "Shantel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Shantel",
+    "daughter",
+    "Dorothy"
+   ],
+   [
+    "Shantel",
+    "granddaughter",
+    "Rebecca"
+   ],
+   [
+    "Harold",
+    "granddaughter",
+    "Rebecca"
+   ]
+  ]
+ },
+ {
+  "query": "Rebecca bought her grandfather, Harold, a tie for his birthday. Pedro and his daughter Rebecca were dancing. Pedro's mom, Shantel, asked if she could have the next dance, so Rebecca stepped aside at the end of the song. Tracy was always arguing with her mother's husband Harold. How is Tracy related to Shantel?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A."
+  ],
+  "answer": "Tracy is the daughter of Shantel.",
+  "grounded_variables": [
+   [
+    "Pedro",
+    "daughter",
+    "Rebecca"
+   ],
+   [
+    "Rebecca",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Tracy"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Pedro"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pedro",
+    "father",
+    "Harold"
+   ],
+   [
+    "Pedro",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Shantel",
+    "daughter",
+    "Tracy"
+   ]
+  ]
+ },
+ {
+  "query": "Harold and his daughter Tracy took a day off school to go to the zoo. Shantel was excited to visit her son, Pedro, at college. Bernardo's grandmother, Shantel, was eager to spend a weekend with all of her grandchildren. Tracy was excited to visit her son, Bernardo, at college. How is Pedro related to Harold?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Pedro is the son of Harold.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "son",
+    "Bernardo"
+   ],
+   [
+    "Bernardo",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Shantel",
+    "son",
+    "Pedro"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Tracy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Tracy",
+    "brother",
+    "Pedro"
+   ],
+   [
+    "Harold",
+    "son",
+    "Pedro"
+   ]
+  ]
+ },
+ {
+  "query": "Laura was glad to see her father, Antonio, at her dance recital. Harold's son, Pedro, came first in a relay race at his school. Harold's son, Antonio, felt jealous of Pedro. Pedro's mother, Shantel, waited impatiently for him at the diner. How is Shantel related to Laura?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Shantel is the grandmother of Laura.",
+  "grounded_variables": [
+   [
+    "Antonio",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "son",
+    "Pedro"
+   ],
+   [
+    "Pedro",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Laura",
+    "father",
+    "Antonio"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Antonio",
+    "brother",
+    "Pedro"
+   ],
+   [
+    "Antonio",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Laura",
+    "grandmother",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Marie fixed her husband Robert dinner and then they watched a movie they rented. Robert and his sister Dorothy were arguing about politics. Heather, Dorothy's daughter, heard them, but did n't want to get involved in the fight. Heather wanted to visit her grandmother Shantel, but Shantel was asleep. How is Shantel related to Marie?",
+  "rule": [
+   "If B is the husband of A, and C is the mother of B, then C is the mother-in-law of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Shantel is the mother-in-law of Marie.",
+  "grounded_variables": [
+   [
+    "Dorothy",
+    "daughter",
+    "Heather"
+   ],
+   [
+    "Heather",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Robert",
+    "sister",
+    "Dorothy"
+   ],
+   [
+    "Marie",
+    "husband",
+    "Robert"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Dorothy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Robert",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Marie",
+    "mother-in-law",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Wayne invited his mother, Beverly, and her father, Harold, to Christmas dinner. Harold's daughter, Tracy, was going to be there, too. Wayne bought to dress for his father Louis. How is Tracy related to Louis?",
+  "rule": [
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Tracy is the sister of Louis.",
+  "grounded_variables": [
+   [
+    "Beverly",
+    "father",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Tracy"
+   ],
+   [
+    "Wayne",
+    "mother",
+    "Beverly"
+   ],
+   [
+    "Louis",
+    "son",
+    "Wayne"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Beverly",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Wayne",
+    "aunt",
+    "Tracy"
+   ],
+   [
+    "Louis",
+    "sister",
+    "Tracy"
+   ]
+  ]
+ },
+ {
+  "query": "Pedro is taking his wife Dorothy out to dinner for their date tonight. Tracy loves cooking for her son. His name is Bernardo Shantel was excited because she got to go to the zoo with her grandson Bernardo. Tracy went to the store with her sister Dorothy. How is Shantel related to Pedro?",
+  "rule": [
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the wife of A, and C is the mother of B, then C is the mother-in-law of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Shantel is the mother-in-law of Pedro.",
+  "grounded_variables": [
+   [
+    "Tracy",
+    "son",
+    "Bernardo"
+   ],
+   [
+    "Bernardo",
+    "grandmother",
+    "Shantel"
+   ],
+   [
+    "Dorothy",
+    "sister",
+    "Tracy"
+   ],
+   [
+    "Pedro",
+    "wife",
+    "Dorothy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Tracy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Dorothy",
+    "mother",
+    "Shantel"
+   ],
+   [
+    "Pedro",
+    "mother-in-law",
+    "Shantel"
+   ]
+  ]
+ },
+ {
+  "query": "Dorothy wanted to visit an art museum, so she asked her father, Harold to take her. Marie and her husband Robert like to go fishing on the weekends. Sometimes they bring along Harold who is Lizzie's grandfather and they have a lot of fun together. Lizzie is a good daughter and makes sure everything is prepared for the trip beforehand. How is Dorothy related to Robert?",
+  "rule": [
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Dorothy is the sister of Robert.",
+  "grounded_variables": [
+   [
+    "Robert",
+    "wife",
+    "Marie"
+   ],
+   [
+    "Marie",
+    "daughter",
+    "Lizzie"
+   ],
+   [
+    "Lizzie",
+    "grandfather",
+    "Harold"
+   ],
+   [
+    "Harold",
+    "daughter",
+    "Dorothy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Robert",
+    "daughter",
+    "Lizzie"
+   ],
+   [
+    "Robert",
+    "father",
+    "Harold"
+   ],
+   [
+    "Robert",
+    "sister",
+    "Dorothy"
+   ]
+  ]
+ },
+ {
+  "query": "Patricia and her sister Thelma were building a sand castle. Benito, Patricia's brother, came by and kicked it, and the girls cried. William took his daughter Thelma to dance practice. William took his daughter Thelma to cheer practice. Thelma went to the baseball game with her uncle Milton. How is Milton related to Benito?",
+  "rule": [
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Milton is the uncle of Benito.",
+  "grounded_variables": [
+   [
+    "Patricia",
+    "sister",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "father",
+    "William"
+   ],
+   [
+    "William",
+    "daughter",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "uncle",
+    "Milton"
+   ],
+   [
+    "Benito",
+    "sister",
+    "Patricia"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Patricia",
+    "father",
+    "William"
+   ],
+   [
+    "William",
+    "brother",
+    "Milton"
+   ],
+   [
+    "Benito",
+    "father",
+    "William"
+   ],
+   [
+    "Benito",
+    "uncle",
+    "Milton"
+   ]
+  ]
+ },
+ {
+  "query": "Jeremy was disappointed that his father, Donald, would n't be at the play to see him perform. Charles and his brother Jeremy went shopping at an electronics store. Charles found the perfect pair of headphones for his brother Andrew's birthday. Donald 'son, Charles, aced his math class and made his father proud. Charles has a aunt named Guadalupe, routinely he went to school with his aunt. How is Guadalupe related to Andrew?",
+  "rule": [
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Guadalupe is the aunt of Andrew.",
+  "grounded_variables": [
+   [
+    "Andrew",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Donald",
+    "son",
+    "Charles"
+   ],
+   [
+    "Charles",
+    "aunt",
+    "Guadalupe"
+   ],
+   [
+    "Jeremy",
+    "father",
+    "Donald"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Andrew",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Donald",
+    "sister",
+    "Guadalupe"
+   ],
+   [
+    "Andrew",
+    "father",
+    "Donald"
+   ],
+   [
+    "Andrew",
+    "aunt",
+    "Guadalupe"
+   ]
+  ]
+ },
+ {
+  "query": "Angela asked her daughter, Nancy, if she would like to go to a movie with her on Saturday night. Angela was wondering where her daughter Adeline was, so she texted her. Adeline replied that she was with her brother Gilbert at the mall. Guadalupe and Samuel are siblings who are enjoying lunch together. Samuel is buying his daughter Nancy a brand new car for her birthday. How is Guadalupe related to Gilbert?",
+  "rule": [
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Guadalupe is the aunt of Gilbert.",
+  "grounded_variables": [
+   [
+    "Adeline",
+    "mother",
+    "Angela"
+   ],
+   [
+    "Angela",
+    "daughter",
+    "Nancy"
+   ],
+   [
+    "Nancy",
+    "father",
+    "Samuel"
+   ],
+   [
+    "Gilbert",
+    "sister",
+    "Adeline"
+   ],
+   [
+    "Samuel",
+    "sister",
+    "Guadalupe"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Adeline",
+    "sister",
+    "Nancy"
+   ],
+   [
+    "Adeline",
+    "father",
+    "Samuel"
+   ],
+   [
+    "Gilbert",
+    "father",
+    "Samuel"
+   ],
+   [
+    "Gilbert",
+    "aunt",
+    "Guadalupe"
+   ]
+  ]
+ },
+ {
+  "query": "Milton needed to go pick his son Pat up a Christmas present. So he asked his daughter Margaretta to help pick something out for Pat. Pat and his sister Irene went out for ice cream. Irene went over to her uncle Samuel's house for dinner. Pat took his sister Margaretta out to lunch after learning that she got accepted into her first choice for university. How is Samuel related to Pat?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "Samuel is the uncle of Pat.",
+  "grounded_variables": [
+   [
+    "Milton",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Margaretta",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Pat",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "uncle",
+    "Samuel"
+   ],
+   [
+    "Pat",
+    "father",
+    "Milton"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Milton",
+    "son",
+    "Pat"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Irene"
+   ],
+   [
+    "Milton",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Pat",
+    "uncle",
+    "Samuel"
+   ]
+  ]
+ },
+ {
+  "query": "Donald made sandwiches for his sons Andrew and Richard. Andrew's brother Charles ate a salad instead. Charles and his brother Andrew always played pranks on each other Jeremy bought to dress for his father Donald. How is Jeremy related to Andrew?",
+  "rule": [
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Jeremy is the brother of Andrew.",
+  "grounded_variables": [
+   [
+    "Andrew",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "father",
+    "Donald"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Andrew"
+   ],
+   [
+    "Donald",
+    "son",
+    "Jeremy"
+   ],
+   [
+    "Andrew",
+    "brother",
+    "Charles"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Andrew",
+    "father",
+    "Donald"
+   ],
+   [
+    "Charles",
+    "father",
+    "Donald"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Andrew",
+    "brother",
+    "Jeremy"
+   ]
+  ]
+ },
+ {
+  "query": "Donald and his sister, Angela love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town. Samuel and his brother William went shopping at an electronics store. Samuel found the perfect pair of headphones for his brother Donald's birthday. Thelma planned a trip to the zoo for her brother, Benito. They had a great time. William took his son Benito to the park to feed the squirrels. How is Thelma related to Angela?",
+  "rule": [
+   "If B is the brother of A, and C is the daughter of B, then C is the niece of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Thelma is the niece of Angela.",
+  "grounded_variables": [
+   [
+    "Donald",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "brother",
+    "William"
+   ],
+   [
+    "Angela",
+    "brother",
+    "Donald"
+   ],
+   [
+    "William",
+    "son",
+    "Benito"
+   ],
+   [
+    "Benito",
+    "sister",
+    "Thelma"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Donald",
+    "brother",
+    "William"
+   ],
+   [
+    "Angela",
+    "brother",
+    "William"
+   ],
+   [
+    "William",
+    "daughter",
+    "Thelma"
+   ],
+   [
+    "Angela",
+    "niece",
+    "Thelma"
+   ]
+  ]
+ },
+ {
+  "query": "Margaretta, a female, took her husband who is a male, Angel, out for lunch. Milton took his daughter Irene to the baseball game. Irene's brother Pat hates baseball and stayed home. Margaretta enjoys playing cards with her brother. His name is Pat. Guadalupe went to the beach with her husband Milton. How is Angel related to Guadalupe?",
+  "rule": [
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the husband of B, then C is the son-in-law of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Angel is the son-in-law of Guadalupe.",
+  "grounded_variables": [
+   [
+    "Milton",
+    "daughter",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Guadalupe",
+    "husband",
+    "Milton"
+   ],
+   [
+    "Pat",
+    "sister",
+    "Margaretta"
+   ],
+   [
+    "Margaretta",
+    "husband",
+    "Angel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Milton",
+    "son",
+    "Pat"
+   ],
+   [
+    "Guadalupe",
+    "son",
+    "Pat"
+   ],
+   [
+    "Guadalupe",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Guadalupe",
+    "son-in-law",
+    "Angel"
+   ]
+  ]
+ },
+ {
+  "query": "Samuel and his brother Milton took Samuel daughter Nancy to the movies. Angela took her daughter Hattie to her ballet practice. She then had to rush to get to the park where her son Gilbert was ending his baseball practice. Nancy went to her brother Gilbert's birthday party. How is Hattie related to Milton?",
+  "rule": [
+   "If B is the brother of A, and C is the daughter of B, then C is the niece of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Hattie is the niece of Milton.",
+  "grounded_variables": [
+   [
+    "Nancy",
+    "brother",
+    "Gilbert"
+   ],
+   [
+    "Gilbert",
+    "mother",
+    "Angela"
+   ],
+   [
+    "Angela",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Nancy"
+   ],
+   [
+    "Milton",
+    "brother",
+    "Samuel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Nancy",
+    "mother",
+    "Angela"
+   ],
+   [
+    "Nancy",
+    "sister",
+    "Hattie"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Milton",
+    "niece",
+    "Hattie"
+   ]
+  ]
+ },
+ {
+  "query": "Jose 'son, Milton, aced his math class and made his father proud. Pat took his sister Irene too the zoo but his sister Arlene could n't come because she had to work. Milton took his daughter Irene to the park that afternoon to play. Margaretta, who is the sister of Arlene, is a lovely girl. How is Margaretta related to Jose?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A."
+  ],
+  "answer": "Margaretta is the granddaughter of Jose.",
+  "grounded_variables": [
+   [
+    "Milton",
+    "daughter",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Pat",
+    "sister",
+    "Arlene"
+   ],
+   [
+    "Arlene",
+    "sister",
+    "Margaretta"
+   ],
+   [
+    "Jose",
+    "son",
+    "Milton"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Milton",
+    "son",
+    "Pat"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Jose",
+    "granddaughter",
+    "Margaretta"
+   ]
+  ]
+ },
+ {
+  "query": "Jose made sandwiches for his sons William and Samuel. William's brother Milton ate a salad instead. Melanie and her sister Victoria were baking cake. Melanie's brother Milton came in and tried to eat some of the mix, but they told him to wait until it was finished. How is Jose related to Victoria?",
+  "rule": [
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Jose is the father of Victoria.",
+  "grounded_variables": [
+   [
+    "Victoria",
+    "sister",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "brother",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "brother",
+    "William"
+   ],
+   [
+    "William",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "father",
+    "Jose"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Victoria",
+    "brother",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Milton",
+    "father",
+    "Jose"
+   ],
+   [
+    "Victoria",
+    "father",
+    "Jose"
+   ]
+  ]
+ },
+ {
+  "query": "Samuel loves to fish with his brother, Milton and his daughter Adeline. Jeremy was happy to spend the day with his mom Victoria and his grandfather Jose. Then Victoria's brother Milton showed up for dinner. How is Jose related to Adeline?",
+  "rule": [
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Jose is the grandfather of Adeline.",
+  "grounded_variables": [
+   [
+    "Victoria",
+    "son",
+    "Jeremy"
+   ],
+   [
+    "Jeremy",
+    "grandfather",
+    "Jose"
+   ],
+   [
+    "Samuel",
+    "brother",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Adeline",
+    "father",
+    "Samuel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Victoria",
+    "father",
+    "Jose"
+   ],
+   [
+    "Samuel",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Samuel",
+    "father",
+    "Jose"
+   ],
+   [
+    "Adeline",
+    "grandfather",
+    "Jose"
+   ]
+  ]
+ },
+ {
+  "query": "Nancy and her sister, Adeline, frequently bicker. However, they always make up quickly. Antonia joined her husband Jose, her son Samuel and daughter-in-law Angela for brunch last Sunday. Angela had picked her daughter Adeline out the cutest new dress to wear on her birthday. How is Nancy related to Jose?",
+  "rule": [
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Nancy is the granddaughter of Jose.",
+  "grounded_variables": [
+   [
+    "Angela",
+    "daughter",
+    "Adeline"
+   ],
+   [
+    "Adeline",
+    "sister",
+    "Nancy"
+   ],
+   [
+    "Jose",
+    "wife",
+    "Antonia"
+   ],
+   [
+    "Antonia",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "wife",
+    "Angela"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Angela",
+    "daughter",
+    "Nancy"
+   ],
+   [
+    "Jose",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Nancy"
+   ],
+   [
+    "Jose",
+    "granddaughter",
+    "Nancy"
+   ]
+  ]
+ },
+ {
+  "query": "Benito and his sister, Thelma, went to a sneak preview of the Avengers movie and loved it. Melanie went to visit her daughter Thelma the other day. Melanie's son Benito was too busy at work to go along. Henry and Thelma asked their mother, if they could go play in the pool. Thelma vowed to never trust her father, William with her debit card again. How is William related to Henry?",
+  "rule": [
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "William is the father of Henry.",
+  "grounded_variables": [
+   [
+    "Henry",
+    "sister",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Benito",
+    "sister",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "father",
+    "William"
+   ],
+   [
+    "Melanie",
+    "son",
+    "Benito"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Henry",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Benito",
+    "father",
+    "William"
+   ],
+   [
+    "Henry",
+    "brother",
+    "Benito"
+   ],
+   [
+    "Henry",
+    "father",
+    "William"
+   ]
+  ]
+ },
+ {
+  "query": "Donald would n't let his son Richard go to the park by himself. Richard's brother Andrew offered to go with him. Andrew's mother, Victoria, was disappointed that he failed his math class Charles and his brother, Jeremy run a turtle farm. Donald was so proud of his son, Jeremy. he received a great scholarship to college. How is Victoria related to Charles?",
+  "rule": [
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Victoria is the mother of Charles.",
+  "grounded_variables": [
+   [
+    "Donald",
+    "son",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Andrew"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Jeremy",
+    "father",
+    "Donald"
+   ],
+   [
+    "Andrew",
+    "mother",
+    "Victoria"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Donald",
+    "son",
+    "Andrew"
+   ],
+   [
+    "Charles",
+    "father",
+    "Donald"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Andrew"
+   ],
+   [
+    "Charles",
+    "mother",
+    "Victoria"
+   ]
+  ]
+ },
+ {
+  "query": "Antonia bought her son William a new suit that his son Henry promptly spilled juice all over. Milton and his brother Samuel always played pranks on each other Milton took his daughter Arlene to the park that afternoon to play. Antonia took her granddaughter Arlene to the cinema. How is Henry related to Samuel?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the son of B, then C is the nephew of A."
+  ],
+  "answer": "Henry is the nephew of Samuel.",
+  "grounded_variables": [
+   [
+    "Milton",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Arlene",
+    "grandmother",
+    "Antonia"
+   ],
+   [
+    "Samuel",
+    "brother",
+    "Milton"
+   ],
+   [
+    "Antonia",
+    "son",
+    "William"
+   ],
+   [
+    "William",
+    "son",
+    "Henry"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Milton",
+    "mother",
+    "Antonia"
+   ],
+   [
+    "Samuel",
+    "mother",
+    "Antonia"
+   ],
+   [
+    "Samuel",
+    "brother",
+    "William"
+   ],
+   [
+    "Samuel",
+    "nephew",
+    "Henry"
+   ]
+  ]
+ },
+ {
+  "query": "Victoria was making dinner for her son, Richard. Antonia, Richard's grandmother, stopped by, so Antonia made a bit more so they all had enough to eat. Samuel bought a new dress for his daughter Hattie. Jose took his son Samuel out for dinner with his wife Antonia for his birthday. How is Hattie related to Victoria?",
+  "rule": [
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the daughter of B, then C is the niece of A."
+  ],
+  "answer": "Hattie is the niece of Victoria.",
+  "grounded_variables": [
+   [
+    "Antonia",
+    "husband",
+    "Jose"
+   ],
+   [
+    "Jose",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "grandmother",
+    "Antonia"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Hattie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Antonia",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Victoria",
+    "mother",
+    "Antonia"
+   ],
+   [
+    "Victoria",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Victoria",
+    "niece",
+    "Hattie"
+   ]
+  ]
+ },
+ {
+  "query": "Jose and his grandfather, Gilbert, went to see Hamilton last night and thoroughly enjoyed it. Angela baked chocolate muffins for her son Gilbert and daughter Nancy. Nancy and her sister, Adeline, frequently bicker. However, they always make up quickly. Jose went to see his daughter Victoria for parents day at college. How is Victoria related to Adeline?",
+  "rule": [
+   "If B is the son of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Victoria is the aunt of Adeline.",
+  "grounded_variables": [
+   [
+    "Angela",
+    "son",
+    "Gilbert"
+   ],
+   [
+    "Gilbert",
+    "grandfather",
+    "Jose"
+   ],
+   [
+    "Jose",
+    "daughter",
+    "Victoria"
+   ],
+   [
+    "Adeline",
+    "sister",
+    "Nancy"
+   ],
+   [
+    "Nancy",
+    "mother",
+    "Angela"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Angela",
+    "father",
+    "Jose"
+   ],
+   [
+    "Angela",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Adeline",
+    "mother",
+    "Angela"
+   ],
+   [
+    "Adeline",
+    "aunt",
+    "Victoria"
+   ]
+  ]
+ },
+ {
+  "query": "Charles's aunt Angela likes to drink a little bit too much wine at family gatherings. Donald and Victoria took their kids Charles and Jeremy too the mall Jeremy enjoys going fishing with his brother. His name is Richard. How is Angela related to Richard?",
+  "rule": [
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Angela is the aunt of Richard.",
+  "grounded_variables": [
+   [
+    "Richard",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Jeremy",
+    "father",
+    "Donald"
+   ],
+   [
+    "Donald",
+    "wife",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Charles"
+   ],
+   [
+    "Charles",
+    "aunt",
+    "Angela"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Richard",
+    "father",
+    "Donald"
+   ],
+   [
+    "Donald",
+    "son",
+    "Charles"
+   ],
+   [
+    "Donald",
+    "sister",
+    "Angela"
+   ],
+   [
+    "Richard",
+    "aunt",
+    "Angela"
+   ]
+  ]
+ },
+ {
+  "query": "Melanie and her daughter Patricia went to see a movie yesterday and then got ice cream afterwards. William went to see his daughter Patricia for parents day at college. Thelma vowed to never trust her father, William with her debit card again. Jose sat with his daughter, Melanie, for ice cream at a local shop. Benito went to the game with his sister Thelma. How is Jose related to Benito?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the mother of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A."
+  ],
+  "answer": "Jose is the grandfather of Benito.",
+  "grounded_variables": [
+   [
+    "Benito",
+    "sister",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "father",
+    "William"
+   ],
+   [
+    "Patricia",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "father",
+    "Jose"
+   ],
+   [
+    "William",
+    "daughter",
+    "Patricia"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Benito",
+    "father",
+    "William"
+   ],
+   [
+    "Patricia",
+    "grandfather",
+    "Jose"
+   ],
+   [
+    "William",
+    "father",
+    "Jose"
+   ],
+   [
+    "Benito",
+    "grandfather",
+    "Jose"
+   ]
+  ]
+ },
+ {
+  "query": "Benito's brother, Henry, recently made it into town. William and his sister Guadalupe have been best friends ever since childhood. William sat with his daughter, Thelma, for ice cream at a local shop. Melanie took her son Henry to school and then she and her daughter Thelma went shopping. How is Guadalupe related to Benito?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Guadalupe is the aunt of Benito.",
+  "grounded_variables": [
+   [
+    "Thelma",
+    "father",
+    "William"
+   ],
+   [
+    "William",
+    "sister",
+    "Guadalupe"
+   ],
+   [
+    "Benito",
+    "brother",
+    "Henry"
+   ],
+   [
+    "Henry",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "daughter",
+    "Thelma"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Thelma",
+    "aunt",
+    "Guadalupe"
+   ],
+   [
+    "Benito",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "sister",
+    "Guadalupe"
+   ],
+   [
+    "Benito",
+    "aunt",
+    "Guadalupe"
+   ]
+  ]
+ },
+ {
+  "query": "Guadalupe and her husband Milton went to pick up their daughter Margaretta from school. Her brother Pat had to stay late for science olympiad. Antonia 'daughter Melanie visited for Christmas. Melanie's brother Milton was out of town for the holidays. How is Pat related to Antonia?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A."
+  ],
+  "answer": "Pat is the grandson of Antonia.",
+  "grounded_variables": [
+   [
+    "Antonia",
+    "daughter",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "brother",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "wife",
+    "Guadalupe"
+   ],
+   [
+    "Guadalupe",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Margaretta",
+    "brother",
+    "Pat"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Antonia",
+    "son",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Milton",
+    "son",
+    "Pat"
+   ],
+   [
+    "Antonia",
+    "grandson",
+    "Pat"
+   ]
+  ]
+ },
+ {
+  "query": "Thelma wanted to visit an art museum, so she asked her father, William to take her. Patricia and her brother Benito went to see a movie. Thelma asked her mother, Melanie, what they were going to have for lunch. Donald likes to visit his sister. Her name is Melanie. William and his son Benito went to the cinema together. How is Donald related to Patricia?",
+  "rule": [
+   "If B is the mother of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the father of A, and C is the brother of B, then C is the uncle of A."
+  ],
+  "answer": "Donald is the uncle of Patricia.",
+  "grounded_variables": [
+   [
+    "Thelma",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "brother",
+    "Donald"
+   ],
+   [
+    "Patricia",
+    "brother",
+    "Benito"
+   ],
+   [
+    "Benito",
+    "father",
+    "William"
+   ],
+   [
+    "William",
+    "daughter",
+    "Thelma"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Thelma",
+    "uncle",
+    "Donald"
+   ],
+   [
+    "Patricia",
+    "father",
+    "William"
+   ],
+   [
+    "William",
+    "brother",
+    "Donald"
+   ],
+   [
+    "Patricia",
+    "uncle",
+    "Donald"
+   ]
+  ]
+ },
+ {
+  "query": "Guadalupe's husband, Milton, went skiing with his son, Pat. Pat meet with his mom, Guadalupe, for dinner at her favorite restaurant. Irene invited her brother Pat and her sister Margaretta over for dinner. How is Pat related to Margaretta?",
+  "rule": [
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Pat is the brother of Margaretta.",
+  "grounded_variables": [
+   [
+    "Guadalupe",
+    "husband",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "son",
+    "Pat"
+   ],
+   [
+    "Irene",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Pat",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Margaretta",
+    "sister",
+    "Irene"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Guadalupe",
+    "son",
+    "Pat"
+   ],
+   [
+    "Irene",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Margaretta",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Margaretta",
+    "brother",
+    "Pat"
+   ]
+  ]
+ },
+ {
+  "query": "Henry and Patricia asked their mother, if they could go play in the pool. Patricia fixed her husband Juan dinner and then they watched a movie they rented. William bought his son, Benito, a new video game for his birthday. Benito wanted his sister, Patricia, and Patricia's brother, Henry, to play the game with him. How is Juan related to William?",
+  "rule": [
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the husband of B, then C is the son-in-law of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Juan is the son-in-law of William.",
+  "grounded_variables": [
+   [
+    "Benito",
+    "sister",
+    "Patricia"
+   ],
+   [
+    "Patricia",
+    "brother",
+    "Henry"
+   ],
+   [
+    "William",
+    "son",
+    "Benito"
+   ],
+   [
+    "Henry",
+    "sister",
+    "Patricia"
+   ],
+   [
+    "Patricia",
+    "husband",
+    "Juan"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Benito",
+    "brother",
+    "Henry"
+   ],
+   [
+    "William",
+    "son",
+    "Henry"
+   ],
+   [
+    "William",
+    "daughter",
+    "Patricia"
+   ],
+   [
+    "William",
+    "son-in-law",
+    "Juan"
+   ]
+  ]
+ },
+ {
+  "query": "Irene and her Grandfather Jose enjoyed feeding the ducks at the park Irene went shoe shopping with her sister Margaretta. Arlene 'father Milton became enraged when she failed to complete her homework. Arlene was grounded for a month and unable to spend time with friends. Milton took his daughter, Arlene, to a baseball game. Margaretta went shoe shopping with her sister Arlene. How is Jose related to Arlene?",
+  "rule": [
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A."
+  ],
+  "answer": "Jose is the grandfather of Arlene.",
+  "grounded_variables": [
+   [
+    "Arlene",
+    "sister",
+    "Margaretta"
+   ],
+   [
+    "Margaretta",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Irene",
+    "grandfather",
+    "Jose"
+   ],
+   [
+    "Arlene",
+    "father",
+    "Milton"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Arlene",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Irene"
+   ],
+   [
+    "Milton",
+    "father",
+    "Jose"
+   ],
+   [
+    "Arlene",
+    "grandfather",
+    "Jose"
+   ]
+  ]
+ },
+ {
+  "query": "Antonia loves cooking for her son. His name is Samuel Richard's father, Donald, thought his son was a monster. Meanwhile Victoria thought her son Richard was a little angel. Charles, Donald's other son, agreed with his dad. Samuel took his sister, Victoria, to a baseball game. How is Charles related to Antonia?",
+  "rule": [
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Charles is the grandson of Antonia.",
+  "grounded_variables": [
+   [
+    "Richard",
+    "father",
+    "Donald"
+   ],
+   [
+    "Donald",
+    "son",
+    "Charles"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Richard"
+   ],
+   [
+    "Antonia",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "sister",
+    "Victoria"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Richard",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Charles"
+   ],
+   [
+    "Antonia",
+    "daughter",
+    "Victoria"
+   ],
+   [
+    "Antonia",
+    "grandson",
+    "Charles"
+   ]
+  ]
+ },
+ {
+  "query": "Victoria was happy to babysit her niece, Hattie. Hattie was a great child. Andrew and his brother, Charles run a turtle farm. Donald took his son Andrew out for dinner with his wife Victoria for his birthday. Angela had picked her daughter Hattie out the cutest new dress to wear on her birthday. How is Charles related to Angela?",
+  "rule": [
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Charles is the nephew of Angela.",
+  "grounded_variables": [
+   [
+    "Angela",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Hattie",
+    "aunt",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "husband",
+    "Donald"
+   ],
+   [
+    "Donald",
+    "son",
+    "Andrew"
+   ],
+   [
+    "Andrew",
+    "brother",
+    "Charles"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Angela",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Andrew"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Charles"
+   ],
+   [
+    "Angela",
+    "nephew",
+    "Charles"
+   ]
+  ]
+ },
+ {
+  "query": "Benito likes to visit his sister. Her name is Patricia. Thelma took her brother Henry and other brother Benito with her to eat pasta at a pasta buffet. William took his daughter Patricia over to his sister Angela's house to see her new cat. How is Henry related to Angela?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the brother of A, and C is the son of B, then C is the nephew of A."
+  ],
+  "answer": "Henry is the nephew of Angela.",
+  "grounded_variables": [
+   [
+    "William",
+    "daughter",
+    "Patricia"
+   ],
+   [
+    "Patricia",
+    "brother",
+    "Benito"
+   ],
+   [
+    "Benito",
+    "sister",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "brother",
+    "Henry"
+   ],
+   [
+    "Angela",
+    "brother",
+    "William"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "William",
+    "son",
+    "Benito"
+   ],
+   [
+    "William",
+    "daughter",
+    "Thelma"
+   ],
+   [
+    "William",
+    "son",
+    "Henry"
+   ],
+   [
+    "Angela",
+    "nephew",
+    "Henry"
+   ]
+  ]
+ },
+ {
+  "query": "Guadalupe asked her daughter, Arlene, if she would like to go to a movie with her on Saturday night. Guadalupe and her daughter Arlene went to see a movie yesterday and then got ice cream afterwards. Arlene and her uncle Samuel went to the pet shop. Arlene saw a puppy that she loved, so Samuel bought it for her. Pat was playing tennis with his sister Margaretta. Afterwards, he was planning on playing chess with his sister Arlene. How is Samuel related to Margaretta?",
+  "rule": [
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Samuel is the uncle of Margaretta.",
+  "grounded_variables": [
+   [
+    "Guadalupe",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Arlene",
+    "uncle",
+    "Samuel"
+   ],
+   [
+    "Pat",
+    "sister",
+    "Arlene"
+   ],
+   [
+    "Arlene",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Margaretta",
+    "brother",
+    "Pat"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Guadalupe",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Pat",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Margaretta",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Margaretta",
+    "uncle",
+    "Samuel"
+   ]
+  ]
+ },
+ {
+  "query": "Andrew was so happy for his brother, Jeremy, getting a promotion. Richard played scrabble with his mother Victoria and his brother Charles. Jeremy adored his brother, Richard. Richard's brother, Charles, also adored him. How is Victoria related to Andrew?",
+  "rule": [
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Victoria is the mother of Andrew.",
+  "grounded_variables": [
+   [
+    "Andrew",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Jeremy",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Charles"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Andrew",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Charles",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Andrew",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Andrew",
+    "mother",
+    "Victoria"
+   ]
+  ]
+ },
+ {
+  "query": "Arlene and her sister Irene can now be heard gossiping about Arlene's father Milton. Guadalupe baked a cake for her son Pat. For her daughter, Margaretta, Guadalupe made some fudge brownies. Pat is Irene's older brother. He has never liked any of her boyfriends. How is Milton related to Margaretta?",
+  "rule": [
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Milton is the father of Margaretta.",
+  "grounded_variables": [
+   [
+    "Guadalupe",
+    "son",
+    "Pat"
+   ],
+   [
+    "Pat",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "sister",
+    "Arlene"
+   ],
+   [
+    "Arlene",
+    "father",
+    "Milton"
+   ],
+   [
+    "Margaretta",
+    "mother",
+    "Guadalupe"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Guadalupe",
+    "daughter",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "father",
+    "Milton"
+   ],
+   [
+    "Margaretta",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Margaretta",
+    "father",
+    "Milton"
+   ]
+  ]
+ },
+ {
+  "query": "Victoria always goes to the park with her son Charles on Saturdays. Milton was on the phone with his wife Guadalupe. Guadalupe kept getting interrupted by her daughter Arlene. Guadalupe and her daughter Arlene are going shopping today. Guadalupe also brought her sister Victoria along. How is Charles related to Milton?",
+  "rule": [
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A.",
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A."
+  ],
+  "answer": "Charles is the nephew of Milton.",
+  "grounded_variables": [
+   [
+    "Arlene",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Guadalupe",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Milton",
+    "wife",
+    "Guadalupe"
+   ],
+   [
+    "Guadalupe",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Charles"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Arlene",
+    "aunt",
+    "Victoria"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Milton",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Milton",
+    "nephew",
+    "Charles"
+   ]
+  ]
+ },
+ {
+  "query": "Andrew was so happy for his brother, Charles, getting a promotion. Victoria and her father Jose were attempting to coax her son Andrew from out of a tall tree. Charles's brother, Jeremy, recently made it into town. Jose and his son Milton went to the cinema together. How is Jeremy related to Milton?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A."
+  ],
+  "answer": "Jeremy is the nephew of Milton.",
+  "grounded_variables": [
+   [
+    "Victoria",
+    "son",
+    "Andrew"
+   ],
+   [
+    "Andrew",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Milton",
+    "father",
+    "Jose"
+   ],
+   [
+    "Jose",
+    "daughter",
+    "Victoria"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Victoria",
+    "son",
+    "Charles"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Jeremy"
+   ],
+   [
+    "Milton",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Milton",
+    "nephew",
+    "Jeremy"
+   ]
+  ]
+ },
+ {
+  "query": "Milton invited his sister Melanie to dinner this Friday because it is her birthday. Victoria took her brothers William and Samuel to a baseball game. Victoria's son Richard went dancing instead. Melanie and her brother Samuel went to see a movie. How is Richard related to Milton?",
+  "rule": [
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A."
+  ],
+  "answer": "Richard is the nephew of Milton.",
+  "grounded_variables": [
+   [
+    "Samuel",
+    "brother",
+    "William"
+   ],
+   [
+    "William",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Melanie",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Milton",
+    "sister",
+    "Melanie"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Richard"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Samuel",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Melanie",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Milton",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Milton",
+    "nephew",
+    "Richard"
+   ]
+  ]
+ },
+ {
+  "query": "Angela loved her nephew, Benito. Benito likes to visit his sister. Her name is Patricia. William took his daughter Patricia and son Benito to the baseball game. Benito was sad that his brother Henry could n't go to the game because he was sick. How is Angela related to Henry?",
+  "rule": [
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A."
+  ],
+  "answer": "Angela is the aunt of Henry.",
+  "grounded_variables": [
+   [
+    "William",
+    "daughter",
+    "Patricia"
+   ],
+   [
+    "Patricia",
+    "brother",
+    "Benito"
+   ],
+   [
+    "Henry",
+    "brother",
+    "Benito"
+   ],
+   [
+    "Benito",
+    "father",
+    "William"
+   ],
+   [
+    "Benito",
+    "aunt",
+    "Angela"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "William",
+    "son",
+    "Benito"
+   ],
+   [
+    "Henry",
+    "father",
+    "William"
+   ],
+   [
+    "William",
+    "sister",
+    "Angela"
+   ],
+   [
+    "Henry",
+    "aunt",
+    "Angela"
+   ]
+  ]
+ },
+ {
+  "query": "Thelma was excited because today she was going to the zoo with her uncle Milton. Melanie asked her daughter, Patricia, if she would like to go to a movie with her on Saturday night. Thelma, who is the sister of Patricia, is a lovely girl. Jose needed to go pick his son William up a Christmas present. So he asked his daughter Melanie to help pick something out for William. How is Milton related to William?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the father of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Milton is the brother of William.",
+  "grounded_variables": [
+   [
+    "Melanie",
+    "daughter",
+    "Patricia"
+   ],
+   [
+    "Patricia",
+    "sister",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "uncle",
+    "Milton"
+   ],
+   [
+    "Jose",
+    "daughter",
+    "Melanie"
+   ],
+   [
+    "William",
+    "father",
+    "Jose"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Melanie",
+    "daughter",
+    "Thelma"
+   ],
+   [
+    "Melanie",
+    "brother",
+    "Milton"
+   ],
+   [
+    "Jose",
+    "son",
+    "Milton"
+   ],
+   [
+    "William",
+    "brother",
+    "Milton"
+   ]
+  ]
+ },
+ {
+  "query": "Arlene and her mother Milton made breakfast together. Guadalupe and her daughter Margaretta went to see a movie yesterday and then got ice cream afterwards. Milton drove his daughter Margaretta to soccer practice. Irene vowed to never trust her father, Milton with her debit card again. Arlene's father, Milton, felt a wave of sadness when Arlene left for college. How is Guadalupe related to Irene?",
+  "rule": [
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Guadalupe is the mother of Irene.",
+  "grounded_variables": [
+   [
+    "Arlene",
+    "father",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Irene",
+    "father",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Margaretta",
+    "mother",
+    "Guadalupe"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Arlene",
+    "sister",
+    "Margaretta"
+   ],
+   [
+    "Irene",
+    "sister",
+    "Arlene"
+   ],
+   [
+    "Arlene",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Irene",
+    "mother",
+    "Guadalupe"
+   ]
+  ]
+ },
+ {
+  "query": "Thelma's father, William, was busy planning a party for his daughter Patricia. Thelma's brother, Benito, helped with the catering. Melanie just had a baby and presented the baby proudly to the new maternal grandmother, Antonia. Patricia bought her mother, Melanie, a puppy for her birthday. How is Antonia related to Benito?",
+  "rule": [
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the mother of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Antonia is the grandmother of Benito.",
+  "grounded_variables": [
+   [
+    "Benito",
+    "sister",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "father",
+    "William"
+   ],
+   [
+    "Patricia",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "mother",
+    "Antonia"
+   ],
+   [
+    "William",
+    "daughter",
+    "Patricia"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Benito",
+    "father",
+    "William"
+   ],
+   [
+    "Patricia",
+    "grandmother",
+    "Antonia"
+   ],
+   [
+    "William",
+    "mother",
+    "Antonia"
+   ],
+   [
+    "Benito",
+    "grandmother",
+    "Antonia"
+   ]
+  ]
+ },
+ {
+  "query": "Guadalupe asked her daughter, Irene, if she would like to go to a movie with her on Saturday night. Pat wanted to join the theater group his sister Arlene was a part of. Arlene's mother, Guadalupe, signed him up for the group. Milton was disappointed that his father, Jose, would n't be at the play to see him perform. Irene went shopping at the mall with her father Milton. How is Jose related to Pat?",
+  "rule": [
+   "If B is the father of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Jose is the grandfather of Pat.",
+  "grounded_variables": [
+   [
+    "Pat",
+    "sister",
+    "Arlene"
+   ],
+   [
+    "Arlene",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Guadalupe",
+    "daughter",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "father",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "father",
+    "Jose"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Pat",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Pat",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Pat",
+    "father",
+    "Milton"
+   ],
+   [
+    "Pat",
+    "grandfather",
+    "Jose"
+   ]
+  ]
+ },
+ {
+  "query": "Angela was eager to spend time with her son, Gilbert. Samuel bought toys for his son Gilbert and his daughter Hattie. Nancy and her father, Samuel, went to the marina. Samuel's daughter, Hattie, had purchased a boat, and they were eager to see it. How is Angela related to Nancy?",
+  "rule": [
+   "If B is the father of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Angela is the mother of Nancy.",
+  "grounded_variables": [
+   [
+    "Nancy",
+    "father",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Hattie",
+    "father",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "son",
+    "Gilbert"
+   ],
+   [
+    "Gilbert",
+    "mother",
+    "Angela"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Nancy",
+    "sister",
+    "Hattie"
+   ],
+   [
+    "Hattie",
+    "brother",
+    "Gilbert"
+   ],
+   [
+    "Hattie",
+    "mother",
+    "Angela"
+   ],
+   [
+    "Nancy",
+    "mother",
+    "Angela"
+   ]
+  ]
+ },
+ {
+  "query": "Charles and his brother, Richard run a turtle farm. Victoria and her son Jeremy traveled around the world Richard and his brother, Charles run a turtle farm. Richard and his brother Jeremy went to the park to play basketball. Rebecca's husband, Richard, surprised her with tickets to a football game for their anniversary. How is Victoria related to Rebecca?",
+  "rule": [
+   "If B is the husband of A, and C is the mother of B, then C is the mother-in-law of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Victoria is the mother-in-law of Rebecca.",
+  "grounded_variables": [
+   [
+    "Charles",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Jeremy",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Rebecca",
+    "husband",
+    "Richard"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Charles",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Charles",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Richard",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Rebecca",
+    "mother-in-law",
+    "Victoria"
+   ]
+  ]
+ },
+ {
+  "query": "Henry's mother, Melanie, told him he was in trouble. Her son Benito had told her that Henry had been stealing from her purse. Benito's mother, Melanie, was disappointed that he failed his math class Jose is Patricia's beloved grandfather. They like to go to the park and eat ice cream with Melanie, who is Patricia's mother. How is Jose related to Henry?",
+  "rule": [
+   "If B is the brother of A, and C is the grandfather of B, then C is the grandfather of A.",
+   "If B is the daughter of A, and C is the grandfather of B, then C is the father of A.",
+   "If B is the mother of A, and C is the father of B, then C is the grandfather of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A."
+  ],
+  "answer": "Jose is the grandfather of Henry.",
+  "grounded_variables": [
+   [
+    "Henry",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "son",
+    "Benito"
+   ],
+   [
+    "Melanie",
+    "daughter",
+    "Patricia"
+   ],
+   [
+    "Patricia",
+    "grandfather",
+    "Jose"
+   ],
+   [
+    "Benito",
+    "mother",
+    "Melanie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Henry",
+    "brother",
+    "Benito"
+   ],
+   [
+    "Melanie",
+    "father",
+    "Jose"
+   ],
+   [
+    "Benito",
+    "grandfather",
+    "Jose"
+   ],
+   [
+    "Henry",
+    "grandfather",
+    "Jose"
+   ]
+  ]
+ },
+ {
+  "query": "Irene had lunch with her sisters Margaretta and Arlene. Margaretta's brother Pat came too. Milton and his sister Melanie have been best friends ever since childhood. Milton was so excited to surprise his son, Pat, with the tickets to the playoffs. How is Melanie related to Arlene?",
+  "rule": [
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the sister of A, and C is the father of B, then C is the father of A.",
+   "If B is the brother of A, and C is the father of B, then C is the father of A."
+  ],
+  "answer": "Melanie is the aunt of Arlene.",
+  "grounded_variables": [
+   [
+    "Margaretta",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Pat",
+    "father",
+    "Milton"
+   ],
+   [
+    "Arlene",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "sister",
+    "Margaretta"
+   ],
+   [
+    "Milton",
+    "sister",
+    "Melanie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Margaretta",
+    "father",
+    "Milton"
+   ],
+   [
+    "Arlene",
+    "sister",
+    "Margaretta"
+   ],
+   [
+    "Arlene",
+    "father",
+    "Milton"
+   ],
+   [
+    "Arlene",
+    "aunt",
+    "Melanie"
+   ]
+  ]
+ },
+ {
+  "query": "Victoria enjoyed a homemade dinner with her son Andrew Charles and his brother Jeremy always played pranks on each other Andrew likes to watch baseball with his brother. His name is Richard. Richard and his Aunt Guadalupe flew first class Victoria took her son Charles to school because he missed the bus. How is Guadalupe related to Jeremy?",
+  "rule": [
+   "If B is the son of A, and C is the aunt of B, then C is the sister of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Guadalupe is the aunt of Jeremy.",
+  "grounded_variables": [
+   [
+    "Victoria",
+    "son",
+    "Andrew"
+   ],
+   [
+    "Andrew",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "aunt",
+    "Guadalupe"
+   ],
+   [
+    "Jeremy",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Charles",
+    "mother",
+    "Victoria"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Victoria",
+    "son",
+    "Richard"
+   ],
+   [
+    "Victoria",
+    "sister",
+    "Guadalupe"
+   ],
+   [
+    "Jeremy",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Jeremy",
+    "aunt",
+    "Guadalupe"
+   ]
+  ]
+ },
+ {
+  "query": "Antonia called her son Samuel and his sister Melanie was at his house visiting so he said he would call her back later. Guadalupe and her sister, Melanie, frequently bicker. However, they always make up quickly. Guadalupe went to the beach with her sister Victoria. Victoria brought along her son Richard, who likes the beach a lot. How is Richard related to Antonia?",
+  "rule": [
+   "If B is the daughter of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A."
+  ],
+  "answer": "Richard is the grandson of Antonia.",
+  "grounded_variables": [
+   [
+    "Antonia",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "sister",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "sister",
+    "Guadalupe"
+   ],
+   [
+    "Guadalupe",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Richard"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Antonia",
+    "daughter",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Antonia",
+    "daughter",
+    "Victoria"
+   ],
+   [
+    "Antonia",
+    "grandson",
+    "Richard"
+   ]
+  ]
+ },
+ {
+  "query": "Angela called her sister Guadalupe and asked if Guadalupe could babysit her daughter Nancy. Nancy went to the store with her sister Adeline Adeline took her father, Samuel, out to dinner. Samuel has a daughter called Adeline. How is Guadalupe related to Adeline?",
+  "rule": [
+   "If B is the father of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the mother of A, and C is the sister of B, then C is the aunt of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the aunt of B, then C is the sister of A."
+  ],
+  "answer": "Guadalupe is the aunt of Adeline.",
+  "grounded_variables": [
+   [
+    "Samuel",
+    "daughter",
+    "Adeline"
+   ],
+   [
+    "Adeline",
+    "sister",
+    "Nancy"
+   ],
+   [
+    "Nancy",
+    "mother",
+    "Angela"
+   ],
+   [
+    "Angela",
+    "sister",
+    "Guadalupe"
+   ],
+   [
+    "Adeline",
+    "father",
+    "Samuel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Samuel",
+    "daughter",
+    "Nancy"
+   ],
+   [
+    "Nancy",
+    "aunt",
+    "Guadalupe"
+   ],
+   [
+    "Samuel",
+    "sister",
+    "Guadalupe"
+   ],
+   [
+    "Adeline",
+    "aunt",
+    "Guadalupe"
+   ]
+  ]
+ },
+ {
+  "query": "Margaretta wanted to visit her grandmother Antonia, but Antonia was asleep. Guadalupe had picked her daughter Margaretta out the cutest new dress to wear on her birthday. Irene wanted to visit an art museum, so she asked her father, Milton to take her. Guadalupe told her son Pat to give the dog a bath. Pat's sister Irene helped him. How is Antonia related to Milton?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the grandmother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the son of A, and C is the grandmother of B, then C is the mother of A."
+  ],
+  "answer": "Antonia is the mother of Milton.",
+  "grounded_variables": [
+   [
+    "Guadalupe",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Margaretta",
+    "grandmother",
+    "Antonia"
+   ],
+   [
+    "Pat",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "brother",
+    "Pat"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Guadalupe",
+    "mother",
+    "Antonia"
+   ],
+   [
+    "Pat",
+    "grandmother",
+    "Antonia"
+   ],
+   [
+    "Milton",
+    "son",
+    "Pat"
+   ],
+   [
+    "Milton",
+    "mother",
+    "Antonia"
+   ]
+  ]
+ },
+ {
+  "query": "Victoria, who is the sister of Guadalupe, is a lovely girl. Jeremy and his brother, Charles run a turtle farm. Victoria was mad at her son, Jeremy. She found he'd been stealing from her purse. Jeremy invited his brothers Richard and Charles to play baskteball on Saturday at 4:00 p.m. How is Richard related to Guadalupe?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the sister of A, and C is the son of B, then C is the nephew of A."
+  ],
+  "answer": "Richard is the nephew of Guadalupe.",
+  "grounded_variables": [
+   [
+    "Charles",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Jeremy",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Jeremy"
+   ],
+   [
+    "Jeremy",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Guadalupe",
+    "sister",
+    "Victoria"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Charles",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Charles"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Richard"
+   ],
+   [
+    "Guadalupe",
+    "nephew",
+    "Richard"
+   ]
+  ]
+ },
+ {
+  "query": "Antonia asked her daughter, Victoria, if she would like to go to a movie with her on Saturday night. Antonia and Jose have been married for 35 years. Victoria and her husband Donald took their son Richard to the wedding. Richard's brother Charles hates weddings and did n't go. How is Charles related to Jose?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the husband of A, and C is the son of B, then C is the son of A.",
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A."
+  ],
+  "answer": "Charles is the grandson of Jose.",
+  "grounded_variables": [
+   [
+    "Donald",
+    "son",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Jose",
+    "wife",
+    "Antonia"
+   ],
+   [
+    "Antonia",
+    "daughter",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "husband",
+    "Donald"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Donald",
+    "son",
+    "Charles"
+   ],
+   [
+    "Jose",
+    "daughter",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Charles"
+   ],
+   [
+    "Jose",
+    "grandson",
+    "Charles"
+   ]
+  ]
+ },
+ {
+  "query": "Charles invited his brothers Richard and Jeremy to play baskteball on Saturday at 4:00 p.m. Victoria just had a baby and presented the baby proudly to the new maternal grandmother, Antonia. Victoria's son Andrew is turning nine today, so she is throwing him a party. Richard was so happy for his brother, Andrew, getting a promotion. How is Antonia related to Jeremy?",
+  "rule": [
+   "If B is the mother of A, and C is the mother of B, then C is the grandmother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Antonia is the grandmother of Jeremy.",
+  "grounded_variables": [
+   [
+    "Charles",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Andrew"
+   ],
+   [
+    "Andrew",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Jeremy",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Victoria",
+    "mother",
+    "Antonia"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Charles",
+    "brother",
+    "Andrew"
+   ],
+   [
+    "Charles",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Jeremy",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Jeremy",
+    "grandmother",
+    "Antonia"
+   ]
+  ]
+ },
+ {
+  "query": "Mollie is enjoying dinner with her husband Jeremy. Richard adored his brother, Andrew. Andrew's brother, Charles, also adored him. Donald 'son, Richard, aced his math class and made his father proud. Charles was so happy for his brother, Jeremy, getting a promotion. How is Mollie related to Donald?",
+  "rule": [
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the son of A, and C is the wife of B, then C is the daughter-in-law of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Mollie is the daughter-in-law of Donald.",
+  "grounded_variables": [
+   [
+    "Richard",
+    "brother",
+    "Andrew"
+   ],
+   [
+    "Andrew",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Donald",
+    "son",
+    "Richard"
+   ],
+   [
+    "Jeremy",
+    "wife",
+    "Mollie"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Richard",
+    "brother",
+    "Charles"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Donald",
+    "son",
+    "Jeremy"
+   ],
+   [
+    "Donald",
+    "daughter-in-law",
+    "Mollie"
+   ]
+  ]
+ },
+ {
+  "query": "Guadalupe spent a great day shopping with her daughter, Margaretta. Arlene and her mother Milton made breakfast together. Guadalupe took her daughter Irene to the park. Irene was sad her sister Arlene could not join. Margaretta and her uncle William went to the pet shop. Margaretta saw a puppy that she loved, so William bought it for her. How is William related to Milton?",
+  "rule": [
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A."
+  ],
+  "answer": "William is the brother of Milton.",
+  "grounded_variables": [
+   [
+    "Arlene",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Guadalupe",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Margaretta",
+    "uncle",
+    "William"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Arlene",
+    "mother",
+    "Guadalupe"
+   ],
+   [
+    "Arlene",
+    "sister",
+    "Margaretta"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Milton",
+    "brother",
+    "William"
+   ]
+  ]
+ },
+ {
+  "query": "Victoria, who is the sister of Melanie, is a lovely girl. Richard and his brother, Andrew run a turtle farm. Jose bought a new dress for his daughter Melanie. Victoria loves cooking for her son. His name is Jeremy Richard played chess with his brother Jeremy. How is Andrew related to Jose?",
+  "rule": [
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the daughter of A, and C is the son of B, then C is the grandson of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Andrew is the grandson of Jose.",
+  "grounded_variables": [
+   [
+    "Victoria",
+    "son",
+    "Jeremy"
+   ],
+   [
+    "Jeremy",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Jose",
+    "daughter",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Andrew"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Victoria",
+    "son",
+    "Richard"
+   ],
+   [
+    "Jose",
+    "daughter",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Andrew"
+   ],
+   [
+    "Jose",
+    "grandson",
+    "Andrew"
+   ]
+  ]
+ },
+ {
+  "query": "Victoria loves cooking for her son. His name is Richard Samuel took his nephew Richard to the hockey game. Samuel's daughter, Hattie, made a dinner for her sister, Nancy. Gilbert took his sister Nancy out to lunch after learning that she got accepted into her first choice for university. How is Gilbert related to Victoria?",
+  "rule": [
+   "If B is the brother of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Gilbert is the nephew of Victoria.",
+  "grounded_variables": [
+   [
+    "Victoria",
+    "son",
+    "Richard"
+   ],
+   [
+    "Richard",
+    "uncle",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Hattie",
+    "sister",
+    "Nancy"
+   ],
+   [
+    "Nancy",
+    "brother",
+    "Gilbert"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Victoria",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Nancy"
+   ],
+   [
+    "Samuel",
+    "son",
+    "Gilbert"
+   ],
+   [
+    "Victoria",
+    "nephew",
+    "Gilbert"
+   ]
+  ]
+ },
+ {
+  "query": "Milton invited his father Jose and his brother Samuel to go on a weekend fishing trip. Angela did the laundry with her son Gilbert. Gilbert's sister Adeline never washes clothes. Samuel took his wife Angela out for dinner. How is Adeline related to Jose?",
+  "rule": [
+   "If B is the son of A, and C is the daughter of B, then C is the granddaughter of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the wife of A, and C is the son of B, then C is the son of A."
+  ],
+  "answer": "Adeline is the granddaughter of Jose.",
+  "grounded_variables": [
+   [
+    "Jose",
+    "son",
+    "Milton"
+   ],
+   [
+    "Milton",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "wife",
+    "Angela"
+   ],
+   [
+    "Angela",
+    "son",
+    "Gilbert"
+   ],
+   [
+    "Gilbert",
+    "sister",
+    "Adeline"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Jose",
+    "son",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "son",
+    "Gilbert"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Adeline"
+   ],
+   [
+    "Jose",
+    "granddaughter",
+    "Adeline"
+   ]
+  ]
+ },
+ {
+  "query": "William took his daughter Thelma to the park. Patricia, Emilie\u00b4s sister went with them. Patricia asked her mother, Melanie, what they were going to have for lunch. William took his son Benito out for ice cream. Henry bought a steak dinner for himself and his brother Benito. How is Melanie related to Henry?",
+  "rule": [
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Melanie is the mother of Henry.",
+  "grounded_variables": [
+   [
+    "Benito",
+    "father",
+    "William"
+   ],
+   [
+    "William",
+    "daughter",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "sister",
+    "Patricia"
+   ],
+   [
+    "Patricia",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Henry",
+    "brother",
+    "Benito"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Benito",
+    "sister",
+    "Thelma"
+   ],
+   [
+    "Benito",
+    "sister",
+    "Patricia"
+   ],
+   [
+    "Benito",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Henry",
+    "mother",
+    "Melanie"
+   ]
+  ]
+ },
+ {
+  "query": "Irene and her sister Arlene were building a sand castle. Pat, Irene's brother, came by and kicked it, and the girls cried. Margaretta and her dad Milton went fishing till Donald her uncle came home Margaretta and her brother Pat went to see a movie. How is Arlene related to Donald?",
+  "rule": [
+   "If B is the brother of A, and C is the daughter of B, then C is the niece of A.",
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A."
+  ],
+  "answer": "Arlene is the niece of Donald.",
+  "grounded_variables": [
+   [
+    "Margaretta",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Pat",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Irene",
+    "sister",
+    "Arlene"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Donald",
+    "brother",
+    "Milton"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Margaretta",
+    "sister",
+    "Irene"
+   ],
+   [
+    "Margaretta",
+    "sister",
+    "Arlene"
+   ],
+   [
+    "Milton",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Donald",
+    "niece",
+    "Arlene"
+   ]
+  ]
+ },
+ {
+  "query": "Hattie took her father Samuel and mother Angela to the beach; Samuel's daughter, Adeline, tagged along too. Samuel bought a new dress for his daughter Adeline. Angela was excited to visit her son, Gilbert, at college. How is Gilbert related to Samuel?",
+  "rule": [
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Gilbert is the son of Samuel.",
+  "grounded_variables": [
+   [
+    "Adeline",
+    "father",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Hattie",
+    "mother",
+    "Angela"
+   ],
+   [
+    "Angela",
+    "son",
+    "Gilbert"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Adeline"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Adeline",
+    "sister",
+    "Hattie"
+   ],
+   [
+    "Adeline",
+    "mother",
+    "Angela"
+   ],
+   [
+    "Adeline",
+    "brother",
+    "Gilbert"
+   ],
+   [
+    "Samuel",
+    "son",
+    "Gilbert"
+   ]
+  ]
+ },
+ {
+  "query": "Nancy and her sister Hattie went to the mall. While at the mall Nancy found the perfect Mother's Day gift for her mother Angela. Angela was excited to visit her son, Gilbert, at college. Adeline's father, Samuel, felt a wave of sadness when Adeline left for college. Samuel took his daughter Hattie to cheer practice. How is Gilbert related to Adeline?",
+  "rule": [
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the father of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Gilbert is the brother of Adeline.",
+  "grounded_variables": [
+   [
+    "Nancy",
+    "mother",
+    "Angela"
+   ],
+   [
+    "Angela",
+    "son",
+    "Gilbert"
+   ],
+   [
+    "Adeline",
+    "father",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Hattie",
+    "sister",
+    "Nancy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Nancy",
+    "brother",
+    "Gilbert"
+   ],
+   [
+    "Adeline",
+    "sister",
+    "Hattie"
+   ],
+   [
+    "Adeline",
+    "sister",
+    "Nancy"
+   ],
+   [
+    "Adeline",
+    "brother",
+    "Gilbert"
+   ]
+  ]
+ },
+ {
+  "query": "Samuel took his sister Victoria out to lunch after learning that she got accepted into her first choice for university. Milton was thrilled his brother, Samuel, was able to make it to the party. Guadalupe and her husband Milton went to pick up their daughter Margaretta from school. Her brother Pat had to stay late for science olympiad. How is Pat related to Victoria?",
+  "rule": [
+   "If B is the wife of A, and C is the son of B, then C is the son of A.",
+   "If B is the brother of A, and C is the son of B, then C is the nephew of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Pat is the nephew of Victoria.",
+  "grounded_variables": [
+   [
+    "Guadalupe",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Margaretta",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Milton",
+    "wife",
+    "Guadalupe"
+   ],
+   [
+    "Victoria",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "brother",
+    "Milton"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Guadalupe",
+    "son",
+    "Pat"
+   ],
+   [
+    "Milton",
+    "son",
+    "Pat"
+   ],
+   [
+    "Victoria",
+    "brother",
+    "Milton"
+   ],
+   [
+    "Victoria",
+    "nephew",
+    "Pat"
+   ]
+  ]
+ },
+ {
+  "query": "Thelma wanted to visit an art museum, so she asked her father, William to take her. Gilbert is Nancy's older brother. He has never liked any of her boyfriends. Hattie and her brother Gilbert are having an argument over when her dad, Samuel, will be back from the store. Thelma went to the baseball game with her uncle Samuel. How is Nancy related to William?",
+  "rule": [
+   "If B is the brother of A, and C is the daughter of B, then C is the niece of A.",
+   "If B is the son of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the uncle of B, then C is the brother of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A."
+  ],
+  "answer": "Nancy is the niece of William.",
+  "grounded_variables": [
+   [
+    "William",
+    "daughter",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "uncle",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Hattie",
+    "brother",
+    "Gilbert"
+   ],
+   [
+    "Gilbert",
+    "sister",
+    "Nancy"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "William",
+    "brother",
+    "Samuel"
+   ],
+   [
+    "Samuel",
+    "son",
+    "Gilbert"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Nancy"
+   ],
+   [
+    "William",
+    "niece",
+    "Nancy"
+   ]
+  ]
+ },
+ {
+  "query": "Guadalupe had picked her daughter Arlene out the cutest new dress to wear on her birthday. Margaretta went shoe shopping with her sister Arlene. Irene wanted her sister, Arlene, to go the same college she attends. Arlene chose to attend college with her brother, Pat, instead. Irene, who is the sister of Margaretta, is a lovely girl. How is Pat related to Guadalupe?",
+  "rule": [
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Pat is the son of Guadalupe.",
+  "grounded_variables": [
+   [
+    "Guadalupe",
+    "daughter",
+    "Arlene"
+   ],
+   [
+    "Arlene",
+    "sister",
+    "Margaretta"
+   ],
+   [
+    "Irene",
+    "sister",
+    "Arlene"
+   ],
+   [
+    "Arlene",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Margaretta",
+    "sister",
+    "Irene"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Guadalupe",
+    "daughter",
+    "Margaretta"
+   ],
+   [
+    "Irene",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Margaretta",
+    "brother",
+    "Pat"
+   ],
+   [
+    "Guadalupe",
+    "son",
+    "Pat"
+   ]
+  ]
+ },
+ {
+  "query": "Gilbert likes to visit his sister. Her name is Hattie. Adeline planned a trip to the zoo for her brother, Gilbert. They had a great time. Samuel wrote a poem for his wife Angela. Samuel asked his brother Donald if he would come help him fix his car next weekend. Angela went to the mall, because she wanted to look for a present for her daughter, Hattie. How is Adeline related to Donald?",
+  "rule": [
+   "If B is the brother of A, and C is the sister of B, then C is the sister of A.",
+   "If B is the brother of A, and C is the daughter of B, then C is the niece of A.",
+   "If B is the daughter of A, and C is the sister of B, then C is the daughter of A.",
+   "If B is the wife of A, and C is the daughter of B, then C is the daughter of A."
+  ],
+  "answer": "Adeline is the niece of Donald.",
+  "grounded_variables": [
+   [
+    "Samuel",
+    "wife",
+    "Angela"
+   ],
+   [
+    "Angela",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Hattie",
+    "brother",
+    "Gilbert"
+   ],
+   [
+    "Gilbert",
+    "sister",
+    "Adeline"
+   ],
+   [
+    "Donald",
+    "brother",
+    "Samuel"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Samuel",
+    "daughter",
+    "Hattie"
+   ],
+   [
+    "Hattie",
+    "sister",
+    "Adeline"
+   ],
+   [
+    "Samuel",
+    "daughter",
+    "Adeline"
+   ],
+   [
+    "Donald",
+    "niece",
+    "Adeline"
+   ]
+  ]
+ },
+ {
+  "query": "Victoria and her son Andrew went to pick up his brother Richard from school. Victoria and her son, Andrew, went to the park, and had a wonderful time. Charles wanted to have a family cookout so he invited his brother Jeremy. Jeremy wanted to invite his other brother Andrew. How is Charles related to Richard?",
+  "rule": [
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the son of A, and C is the brother of B, then C is the son of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A."
+  ],
+  "answer": "Charles is the brother of Richard.",
+  "grounded_variables": [
+   [
+    "Richard",
+    "brother",
+    "Andrew"
+   ],
+   [
+    "Andrew",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Andrew"
+   ],
+   [
+    "Andrew",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Jeremy",
+    "brother",
+    "Charles"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Richard",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "son",
+    "Jeremy"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Jeremy"
+   ],
+   [
+    "Richard",
+    "brother",
+    "Charles"
+   ]
+  ]
+ },
+ {
+  "query": "Richard wanted to have a family cookout so he invited his brother Andrew. Andrew wanted to invite his other brother Charles. Once Victoria went to her mother's home with her sibling William and also with her sons Andrew and Richard. How is William related to Charles?",
+  "rule": [
+   "If B is the mother of A, and C is the brother of B, then C is the uncle of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A.",
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "William is the uncle of Charles.",
+  "grounded_variables": [
+   [
+    "Richard",
+    "brother",
+    "Andrew"
+   ],
+   [
+    "Andrew",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Andrew"
+   ],
+   [
+    "Andrew",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Victoria",
+    "brother",
+    "William"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Richard",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Charles",
+    "brother",
+    "Richard"
+   ],
+   [
+    "Charles",
+    "mother",
+    "Victoria"
+   ],
+   [
+    "Charles",
+    "uncle",
+    "William"
+   ]
+  ]
+ },
+ {
+  "query": "Melanie always goes to the park with her son Benito on Saturdays. Melanie and her daughter Patricia went to see a movie yesterday and then got ice cream afterwards. Melanie gave up her son Benito at birth because she was still so young. Melanie had another son named Henry and a daughter named Thelma when she got older. How is Henry related to Patricia?",
+  "rule": [
+   "If B is the brother of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the sister of A, and C is the brother of B, then C is the brother of A.",
+   "If B is the mother of A, and C is the daughter of B, then C is the sister of A."
+  ],
+  "answer": "Henry is the brother of Patricia.",
+  "grounded_variables": [
+   [
+    "Benito",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "daughter",
+    "Thelma"
+   ],
+   [
+    "Thelma",
+    "brother",
+    "Henry"
+   ],
+   [
+    "Patricia",
+    "mother",
+    "Melanie"
+   ],
+   [
+    "Melanie",
+    "son",
+    "Benito"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Benito",
+    "sister",
+    "Thelma"
+   ],
+   [
+    "Benito",
+    "brother",
+    "Henry"
+   ],
+   [
+    "Patricia",
+    "brother",
+    "Benito"
+   ],
+   [
+    "Patricia",
+    "brother",
+    "Henry"
+   ]
+  ]
+ },
+ {
+  "query": "Antonia was wondering where her daughter Victoria was, so she texted her. Victoria replied that she was with her brother Milton at the mall. William took his daughter Patricia out for dinner. Antonia invited her daughter Victoria to lunch. Victoria's brother William could n't leave work to join them. How is Patricia related to Milton?",
+  "rule": [
+   "If B is the daughter of A, and C is the brother of B, then C is the son of A.",
+   "If B is the mother of A, and C is the son of B, then C is the brother of A.",
+   "If B is the brother of A, and C is the daughter of B, then C is the niece of A.",
+   "If B is the sister of A, and C is the mother of B, then C is the mother of A."
+  ],
+  "answer": "Patricia is the niece of Milton.",
+  "grounded_variables": [
+   [
+    "Milton",
+    "sister",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "mother",
+    "Antonia"
+   ],
+   [
+    "Antonia",
+    "daughter",
+    "Victoria"
+   ],
+   [
+    "Victoria",
+    "brother",
+    "William"
+   ],
+   [
+    "William",
+    "daughter",
+    "Patricia"
+   ]
+  ],
+  "implementation_result": [
+   [
+    "Milton",
+    "mother",
+    "Antonia"
+   ],
+   [
+    "Antonia",
+    "son",
+    "William"
+   ],
+   [
+    "Milton",
+    "brother",
+    "William"
+   ],
+   [
+    "Milton",
+    "niece",
+    "Patricia"
+   ]
+  ]
+ }
+]

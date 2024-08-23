@@ -1,0 +1,20 @@
+Please convert the following inference rule into a symbolic representation in Prolog without changing its wordings. Ensure the conclusion and the premises are separated by ":-".
+The predicates for each atom should be represented as relationships in lowercase.
+Please try to use the objects and predicates in the provided schema to describe the symbolic rule. If the schema does not contain corresponding elements to describe the rule, generate the symbolic rule directly from its natural language form.
+
+### Examples
+Schema Objects: Joshua, Don, James
+Schema Predicates: sister_of, brother_of
+Rule: If B is the sister of A, and C is the brother of B, then C is the brother of A.
+Symbolic Rule: brother_of(C, A) :- sister_of(B, A), brother_of(C, B).
+------
+Schema Objects: Joshua, Don, James
+Schema Predicates: sister_of, father_of, brother_of
+Rule: If B is the father of A, and C is the daughter of B, then C is the sister of A.
+Symbolic Rule: sister_of(C, A) :- father_of(B, A), daughter_of(C, B).
+
+### Todo
+Schema Objects: {objects}
+Schema Predicates: {predicates}
+Rule: {rule}
+Symbolic Rule:

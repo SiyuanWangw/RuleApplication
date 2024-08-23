@@ -1,0 +1,31 @@
+At each turn, you will be provided a list of identified supporting facts and an inference rule. 
+Please on a new line starting with "Rule Implementation:" to implement the rule based on the supporting facts to analyze and deduce new potential fact.
+Then on a new line starting with "New fact:" to outline the new inferred fact in both natural language form and its corresponding symbolic format within "[" and "]".
+Please try to use the objects and predicates in the provided schema to describe symbolic facts. If the schema is null or does not contain corresponding elements, generate the symbolic fact directly from its natural language form.
+Finally predict "Yes" or "No" to judge whether the new inferred fact can solve the query, in a new line starting with "Judgement:".
+
+### Examples
+Schema Objects: Gary
+Schema Predicates: big, not_green
+Query: Is it true that Gary is not red?
+Fact List: 3. Gary is big.
+Rule: All big things are not green.
+Rule Implementation: According to the rule, since Gary is big, we can infer that Gary is not green.
+New fact: Gary is not green. [not_green(Gary)]
+Judgement: No. Because the new fact does not state the relationship between Gary and red.
+------
+Schema Objects: Bob
+Schema Predicates: furry, big, not_quiet
+Query: Is it true that Bob is not quiet?
+Fact List: 1. Bob is furry. 2. Bob is big.
+Rule: If Bob is furry and Bob is big then Bob is not quiet.
+Rule Implementation: According to the rule, since Bob is furry and Bob is big, we can infer that Bob is not quiet.
+New fact: Bob is not quiet. [not_quiet(Bob)]
+Judgement: Yes. Because the new fact states the relationship between Bob and quiet.
+
+### Here's what you need to do.
+Schema Objects: {objects}
+Schema Predicates: {predicates}
+Query: {query}
+Fact List: {fact_list}
+Rule: {rule}
