@@ -623,7 +623,7 @@ def parse_args():
 if __name__ == '__main__':
     args = parse_args()
     wm_neurosymbolic_reasoner = WM_Neurosymbolic(args)
-    examples = wm_neurosymbolic_reasoner.load_raw_dataset(args.split)[40:]
+    examples = wm_neurosymbolic_reasoner.load_raw_dataset(args.split)
 
     if args.dataset_name == "clutrr":
         wm_neurosymbolic_reasoner.rule_initialization(examples=examples)
