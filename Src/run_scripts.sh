@@ -19,20 +19,20 @@
 #     --model_name "gpt-4-turbo-2024-04-09" \
 #     --data_path "../Data/" \
 #     --dataset_name "proofwriter" \
-#     --split "eval_dep3"
+#     --split "eval_dep5"
 
 # python final_predict.py \
 #     --api_key "API_KEY" \
 #     --model_name "gpt-4-turbo-2024-04-09" \
 #     --data_path "../Data/" \
 #     --dataset_name "proofwriter" \
-#     --split "eval_dep3"
+#     --split "eval_dep5"
 
 # python evaluate.py \
 #    --model_name "gpt-4-turbo-2024-04-09" \
 #    --data_path "../Data/" \
 #    --dataset_name "proofwriter" \
-#    --split "eval_dep3" \
+#    --split "eval_dep5" \
 
 
 ### Boxes

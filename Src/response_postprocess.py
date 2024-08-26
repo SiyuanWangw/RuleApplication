@@ -83,9 +83,9 @@ def post_process_rule(args, response):
                         each_premise_args = each_premise.split("(")[1].split(")")[0].strip().split(", ")
                         premise_triplet_list.append([each_premise_predicate, each_premise_args])
                 if len(premise_triplet_list) > 0:
-                    break
+                    return [conclusion_triplet, premise_triplet_list]
         
-        return [conclusion_triplet, premise_triplet_list]
+        return None
 
 def post_process_implement(args, response):
     response = response.replace("\n\n", "\n")

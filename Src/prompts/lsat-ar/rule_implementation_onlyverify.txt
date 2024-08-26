@@ -1,0 +1,25 @@
+At each turn, you will be provided a context background, a constraint rule, a query and an option fact. 
+Please on a new line starting with "Rule Implementation:" to implement the rule based on the option fact to analyze there is a conflict between them.
+Then predict "Yes" or "No" to judge whether there is a conflict between the rule and facts, in a new line starting with "Judgement:".
+
+### Examples
+Context Background: Of the eight students\u2014George, Helen, Irving, Kyle, Lenore, Nina, Olivia, and Robert\u2014in a seminar, exactly six will give individual oral reports during three consecutive days\u2014Monday, Tuesday, and Wednesday. Exactly two reports will be given each day\u2014one in the morning and one in the afternoon\u2014according to the following conditions.
+Rule: Tuesday is the only day on which George can give a report.
+Query: If Kyle and Lenore do not give reports, then the morning reports on Monday, Tuesday, and Wednesday, respectively, could be given by
+Option Fact: - B) Irving, Robert, and Helen
+Rule Implementation: According to the rule and the fact Robert give report on Tuesday morning, there is no conflict and we can infer George give a report on Tuesday afternoon.
+Judgement: No. 
+------
+Context Background: An author is planning to write a mystery novel consisting of seven chapters, chapter 1 through chapter 7. Each of seven different clues\u2014R, S, T, U, W, X, and Z\u2014is to be mentioned exactly once, one clue per chapter. The order in which the clues are mentioned is subject to the following constraints.
+Rule: T must be mentioned before W, and there must be exactly two chapters separating the mention of T from the mention of W.
+Query: Which one of the following could be the order in which the clues are mentioned, from the first chapter through the seventh?
+Option Fact: - A) S, T, Z, X, U, W, R
+Rule Implementation: According to the rule, and the fact that there are three chapters "Z, X, U" between T and W, there is a conflict with "two chapters".
+Judgement: Yes. 
+
+### Here's what you need to do.
+Context Background: {context}
+Rule: {rule}
+Query: {query}
+Option Fact: {facts}
+Rule Implementation:

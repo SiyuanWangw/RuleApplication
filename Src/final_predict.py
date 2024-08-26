@@ -4,7 +4,7 @@ import os
 import sys
 import random
 from evaluation_utils import *
-from utils import OpenAIModel
+from models.openai_models import OpenAIModel
 
 def load_prompt_final_predict(dataset_name):
     file_path = os.path.join('./prompts', dataset_name, 'final_predict.txt')
@@ -18,7 +18,7 @@ def load_prompt_final_predict(dataset_name):
 def load_raw_dataset(data_path, dataset_name, split):
     print(os.getcwd())
     with open(os.path.join(data_path, dataset_name, f'{split}.json')) as f:
-        raw_dataset = json.load(f)[:75]
+        raw_dataset = json.load(f)
     print(f"Loaded {len(raw_dataset)} examples from {dataset_name} {split} split.\n")
     return raw_dataset
 
@@ -50,10 +50,8 @@ def final_predict(args):
             facts_verb = [each[0] if type(each) == list else each for each in fact_memory[key]]
         
         prompt = final_predict_prompt.format(rules=rules, fact_list=" ".join(facts_verb), query=question)
-        response, _ = openai_api.generate(system_input, prompt)
+        response = openai_api.model_generate(system_input, prompt)
         output[key] = response
-        # print(prompt)
-        print(response)
     
     with open(os.path.join(args.save_path, f'{args.dataset_name}/symbolic_memory/final/{args.split}_{args.model_name}.json'), "w") as f:
         print(len(output))

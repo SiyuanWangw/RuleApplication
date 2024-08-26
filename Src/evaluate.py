@@ -114,12 +114,12 @@ def evaluate_performance(examples, dataset_name, predictions, backup_predication
                     no_hit_acc_num += 1 
             
     print(hit_num, total_num)
-    return total_num, (hit_acc_num+no_hit_acc_num)/total_num*100, hit_num, hit_acc_num/hit_num*100
+    return total_num, (hit_acc_num+no_hit_acc_num)/total_num*100, hit_num, hit_acc_num/hit_num*100 if hit_num>0 else 0
 
 def load_raw_dataset(data_path, dataset_name, split):
     print(os.getcwd())
     with open(os.path.join(data_path, dataset_name, f'{split}.json')) as f:
-        raw_dataset = json.load(f)[:10]
+        raw_dataset = json.load(f)
     print(f"Loaded {len(raw_dataset)} examples from {dataset_name} {split} split.\n")
     return raw_dataset
 

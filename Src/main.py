@@ -1,8 +1,8 @@
 import json
 import os
 from tqdm import tqdm
-from wm_neurosymbolic.models.openai_models import OpenAIModel
-from wm_neurosymbolic.models.llama_models import LLamaGenerator
+from models.openai_models import OpenAIModel
+from models.llama_models import LLamaGenerator
 from utils import *
 from response_postprocess import *
 import argparse
@@ -34,8 +34,9 @@ class WM_Neurosymbolic:
     def update_schema(self, object_schema, predicate_schema, new_facts, is_fact=True):
         variables = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'X', 'Y', 'Z']
         if self.dataset_name == "lsat-ar":
-            if len(new_facts) >= 2:
-                for _ in new_facts[1]:
+            fact_variables = new_facts[1]
+            if len(fact_variables) >= 2:
+                for _ in fact_variables:
                     if _ not in object_schema:
                         object_schema.append(_)
             return object_schema, predicate_schema
@@ -227,11 +228,14 @@ class WM_Neurosymbolic:
                     else:
                         prompt = rule_init_prompt.format(rule=each_rule, objects=object_schema, predicates=predicate_schema)
                     response = self.model.model_generate(system_input, prompt)
-                    output[key].append(response)
 
                     all_rule_dict[each_rule] = post_process_rule(args, response)
-                    object_schema_list, predicate_schema_list = self.update_schema(object_schema_list, predicate_schema_list, all_rule_dict[each_rule][0], is_fact=False)
-            
+                    if all_rule_dict[each_rule] is None:
+                        response = self.model.model_generate(system_input, prompt)
+                        all_rule_dict[each_rule] = post_process_rule(args, response)
+                    object_schema_list, predicate_schema_list = self.update_schema(object_schema_list, predicate_schema_list, all_rule_dict[each_rule], is_fact=False)
+                    output[key].append(response)
+
             if key not in all_example_memory_schema or all_example_memory_schema[key] != [object_schema_list, predicate_schema_list]:
                 all_example_memory_schema[key] = [object_schema_list, predicate_schema_list]
             
@@ -619,7 +623,7 @@ def parse_args():
 if __name__ == '__main__':
     args = parse_args()
     wm_neurosymbolic_reasoner = WM_Neurosymbolic(args)
-    examples = wm_neurosymbolic_reasoner.load_raw_dataset(args.split)[3:10]
+    examples = wm_neurosymbolic_reasoner.load_raw_dataset(args.split)[40:]
 
     if args.dataset_name == "clutrr":
         wm_neurosymbolic_reasoner.rule_initialization(examples=examples)

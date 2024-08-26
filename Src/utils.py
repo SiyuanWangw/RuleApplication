@@ -37,17 +37,20 @@ def load_prompt_rule_init(args):
 
 def load_prompt_rule_implementation(args):
     file_path = os.path.join('./prompts', args.dataset_name, 'rule_implementation.txt')
-    with open(file_path) as f:
-        rule_init_implement = f.read()
     
     if args.dataset_name == "clutrr":
         system_input = "You are an expert in determining kinship relationships. You will receive a query about the kinship between two individuals, and your task is to answer this query."
     elif args.dataset_name == "proofwriter":
-        system_input = "You are an expert in logiacl reasoning. You will receive a context including a list of facts and inference rules, and a specific query. Your task is to answer this query following the provided rule."
+        system_input = "You are an expert in logical reasoning. You will receive a context including a list of facts and inference rules, and a specific query. Your task is to answer this query following the provided rule."
     elif args.dataset_name == "boxes":
         system_input = "You are an expert in logical reasoning. You will receive a context including a list of state facts and operational facts, a list of rules and a specific query. Your task is to answer this query following the provided rule."
     elif args.dataset_name == "lsat-ar":
+        if "gpt-3.5" in args.model_name or "llama" in args.model_name:
+            file_path = os.path.join('./prompts', args.dataset_name, 'rule_implementation_onlyverify.txt')
         system_input = 'You are an expert in logical reasoning. You will receive a context including background information followed by a list of constraint rules, and a specific query with five candidate options (A, B, C, D, E). Your task is to accurately select the answer that satisfies the provided rule.'
+    
+    with open(file_path) as f:
+        rule_init_implement = f.read()
     return system_input, rule_init_implement
 
 
