@@ -16,7 +16,7 @@ Facts:
 ------
 Schema Objects: Monday, Tuesday, Wednesday, morning 
 Schema Predicates: assign
-Context: Each of seven candidates for the position of judge\u2014Hamadi, Jefferson, Kurtz, Li, McDonnell, Ortiz, and Perkins\u2014will be appointed to an open position on one of two courts\u2014the appellate court or the trial court. There are three open positions on the appellate court and six open positions on the trial court, but not all of them will be filled at this time. The judicial appointments will conform to the following conditions: Li must be appointed to the appellate court. Kurtz must be appointed to the trial court. Hamadi cannot be appointed to the same court as Perkins.
+Context: Each of seven candidates for the position of judge\u2014Hamadi, Jefferson, Kurtz, Li, McDonnell, Ortiz, and Perkins\u2014will be appointed to an open position on one of two courts\u2014the appellate court or the trial court. There are three open positions on the appellate court and six open positions on the trial court, but not all of them will be filled at this time. The judicial appointments will conform to the following condition.
 Query: Which one of the following is an acceptable set of appointments of candidates to courts?
 Option: E) appellate: Li, Perkins;  trial: Hamadi, Jefferson, Kurtz, McDonnell, Ortiz
 Facts: 
