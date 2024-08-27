@@ -1,3 +1,3 @@
-# Symbolic Working Memory Enhances Language Models for Complex Rule Application
+# Symbolic Working Memory Enhances Language Models for Complex Rule Application [[Paper]](https://arxiv.org/abs/2408.13654)
 
 ### To be added ...
